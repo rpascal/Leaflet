@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeafletTesting", "MapsAndShit\LeafletTesting.csproj", "{4A55B587-A8DD-462E-B51B-C5C0325BF2AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeafletTesting", "LeafletTesting\LeafletTesting.csproj", "{4A55B587-A8DD-462E-B51B-C5C0325BF2AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

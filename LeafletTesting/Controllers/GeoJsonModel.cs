@@ -44,6 +44,7 @@ namespace LeafletTesting.Models
         public string Fips { get; set; }
         public string State { get; set; }
         public string Center { get; set; }
+        public string city { get; set; }
 
     }
 
