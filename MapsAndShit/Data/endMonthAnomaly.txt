@@ -1,0 +1,5 @@
+Forecasted Degrees Above/Below Normal.  Updated 2017-12-21
+date,JC,ME,PN,OE,CE,TE,PP/WPP,WVP,MP,PEWV,PEMD
+December 21 to 31,-1,-1,-1,-1,-1,-2,-1,0,-1,-1,-1
+December 22 to 31,-1,-1,-1,-2,-2,-2,-1,0,-1,-1,-1
+December 23 to 31,-1,-1,-2,-2,-2,-3,-1,0,-1,-1,-1

@@ -1,0 +1,696 @@
+|ADV|170111/0005|170111/0300|KARX||0|0                                          
+WIZ032   490320 Buffalo                          WI US     44.38    -91.75      0.00  0  ARX                
+WIZ033   490330 Trempealeau                      WI US     44.30    -91.36      0.00  0  ARX                
+WIZ034   490340 Jackson                          WI US     44.32    -90.81      0.00  0  ARX                
+WIZ029   490290 Clark                            WI US     44.73    -90.61      0.00  0  ARX                
+WIZ017   490170 Taylor                           WI US     45.21    -90.50      0.00  0  ARX                
+|ADV|170111/0005|170111/0300|KARX||0|0                                          
+MNZ086   230860 Dodge                            MN US     44.02    -92.86      0.00  0  ARX                
+MNZ094   230940 Mower                            MN US     43.67    -92.75      0.00  0  ARX                
+MNZ087   230870 Olmsted                          MN US     44.00    -92.40      0.00  0  ARX                
+MNZ079   230790 Wabasha                          MN US     44.28    -92.23      0.00  0  ARX                
+MNZ095   230950 Fillmore                         MN US     43.67    -92.09      0.00  0  ARX                
+MNZ088   230880 Winona                           MN US     43.99    -91.78      0.00  0  ARX                
+MNZ096   230960 Houston                          MN US     43.67    -91.49      0.00  0  ARX                
+|ADV|170111/0002|170111/0115|KARX||0|1                                          
+IAZ008   150080 Mitchell                         IA US     43.36    -92.79      0.00  0  ARX                
+IAZ018   150180 Floyd                            IA US     43.06    -92.79      0.00  0  ARX                
+IAZ009   150090 Howard                           IA US     43.36    -92.32      0.00  0  ARX                
+IAZ019   150190 Chickasaw                        IA US     43.06    -92.32      0.00  0  ARX                
+IAZ010   150100 Winneshiek                       IA US     43.29    -91.84      0.00  0  ARX                
+IAZ029   150290 Fayette                          IA US     42.86    -91.84      0.00  0  ARX                
+IAZ011   150110 Allamakee                        IA US     43.28    -91.38      0.00  0  ARX                
+IAZ030   150300 Clayton                          IA US     42.84    -91.34      0.00  0  ARX                
+WIZ041   490410 La_Crosse                        WI US     43.91    -91.12      0.00  0  ARX                
+WIZ054   490540 Crawford                         WI US     43.24    -90.93      0.00  0  ARX                
+WIZ053   490530 Vernon                           WI US     43.59    -90.83      0.00  0  ARX                
+WIZ061   490610 Grant                            WI US     42.87    -90.71      0.00  0  ARX                
+WIZ042   490420 Monroe                           WI US     43.95    -90.62      0.00  0  ARX                
+WIZ055   490550 Richland                         WI US     43.38    -90.43      0.00  0  ARX                
+WIZ043   490430 Juneau                           WI US     43.92    -90.11      0.00  0  ARX                
+WIZ044   490440 Adams                            WI US     43.97    -89.77      0.00  0  ARX                
+|ADV|170111/0045|170111/0145|KMQT||0|1                                          
+MIZ005   220050 Marquette                        MI US     46.43    -87.64      0.00  0  MQT                
+|ADV|170111/0045|170111/0300|KMQT||0|0                                          
+MIZ006   220060 Alger                            MI US     46.41    -86.60      0.00  0  MQT                
+MIZ085   220850 Northern_Schoolcraft             MI US     46.33    -86.21      0.00  0  MQT                
+MIZ007   220070 Luce                             MI US     46.47    -85.54      0.00  0  MQT                
+|ADV|170111/0045|170111/0600|KMQT||0|0                                          
+MIZ002   220020 Ontonagon                        MI US     46.66    -89.31      0.00  0  MQT                
+MIZ084   220840 Southern_Houghton                MI US     46.61    -88.82      0.00  0  MQT                
+MIZ003   220030 Houghton                         MI US     47.05    -88.62      0.00  0  MQT                
+MIZ001   220010 Keweenaw                         MI US     47.60    -88.42      0.00  0  MQT                
+MIZ004   220040 Baraga                           MI US     46.66    -88.37      0.00  0  MQT                
+|ADV|170111/0116|170111/0400|KGRB||0|0                                          
+WIZ035   490350 Wood                             WI US     44.46    -90.04      0.00  0  GRB                
+WIZ030   490300 Marathon                         WI US     44.90    -89.76      0.00  0  GRB                
+WIZ018   490180 Lincoln                          WI US     45.34    -89.73      0.00  0  GRB                
+WIZ010   490100 Oneida                           WI US     45.71    -89.52      0.00  0  GRB                
+WIZ005   490050 Vilas                            WI US     46.05    -89.51      0.00  0  GRB                
+WIZ036   490360 Portage                          WI US     44.48    -89.50      0.00  0  GRB                
+WIZ019   490190 Langlade                         WI US     45.26    -89.07      0.00  0  GRB                
+WIZ011   490110 Forest                           WI US     45.67    -88.77      0.00  0  GRB                
+WIZ031   490310 Shawano                          WI US     44.79    -88.77      0.00  0  GRB                
+WIZ020   490200 Menominee                        WI US     45.00    -88.71      0.00  0  GRB                
+WIZ021   490210 Northern_Oconto_County           WI US     45.20    -88.43      0.00  0  GRB                
+WIZ012   490120 Florence                         WI US     45.85    -88.40      0.00  0  GRB                
+WIZ074   490740 Southern_Oconto_County           WI US     44.88    -88.14      0.00  0  GRB                
+WIZ013   490130 Northern_Marinette_County        WI US     45.55    -88.11      0.00  0  GRB                
+WIZ073   490730 Southern_Marinette_County        WI US     45.19    -87.95      0.00  0  GRB                
+|WRN|170111/0116|170111/0400|KGRB||0|1                                          
+WIZ035   490350 Wood                             WI US     44.46    -90.04      0.00  0  GRB                
+WIZ030   490300 Marathon                         WI US     44.90    -89.76      0.00  0  GRB                
+WIZ018   490180 Lincoln                          WI US     45.34    -89.73      0.00  0  GRB                
+WIZ010   490100 Oneida                           WI US     45.71    -89.52      0.00  0  GRB                
+WIZ005   490050 Vilas                            WI US     46.05    -89.51      0.00  0  GRB                
+WIZ036   490360 Portage                          WI US     44.48    -89.50      0.00  0  GRB                
+WIZ019   490190 Langlade                         WI US     45.26    -89.07      0.00  0  GRB                
+WIZ011   490110 Forest                           WI US     45.67    -88.77      0.00  0  GRB                
+WIZ031   490310 Shawano                          WI US     44.79    -88.77      0.00  0  GRB                
+WIZ020   490200 Menominee                        WI US     45.00    -88.71      0.00  0  GRB                
+WIZ021   490210 Northern_Oconto_County           WI US     45.20    -88.43      0.00  0  GRB                
+WIZ012   490120 Florence                         WI US     45.85    -88.40      0.00  0  GRB                
+WIZ074   490740 Southern_Oconto_County           WI US     44.88    -88.14      0.00  0  GRB                
+WIZ013   490130 Northern_Marinette_County        WI US     45.55    -88.11      0.00  0  GRB                
+WIZ073   490730 Southern_Marinette_County        WI US     45.19    -87.95      0.00  0  GRB                
+|ADV|170111/0116|170111/0230|KGRB||0|1                                          
+WIZ045   490450 Waushara                         WI US     44.11    -89.24      0.00  0  GRB                
+|ADV|170111/0116|170111/0400|KGRB||0|0                                          
+WIZ037   490370 Waupaca                          WI US     44.47    -88.96      0.00  0  GRB                
+|ADV|170111/0120|170111/0600|KGYX|FZRA|0|0                                      
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+|ADV|170111/0135|170111/0245|KAPX||0|1                                          
+MIZ015   220150 Mackinac                         MI US     46.08    -85.09      0.00  0  APX                
+MIZ008   220080 Chippewa                         MI US     46.30    -84.57      0.00  0  APX                
+|ADV|170111/0140|170111/0245|KPHI||0|1                                          
+PAZ103   381030 Western_Montgomery               PA US     40.28    -75.48      0.00  0  PHI                
+PAZ105   381050 Upper_Bucks                      PA US     40.44    -75.24      0.00  0  PHI                
+NJZ009   300090 Hunterdon                        NJ US     40.57    -74.91      0.00  0  PHI                
+NJZ010   300100 Somerset                         NJ US     40.56    -74.62      0.00  0  PHI                
+NJZ008   300080 Morris                           NJ US     40.86    -74.54      0.00  0  PHI                
+|ADV|170111/0140|170111/1000|KPHI||0|0                                          
+PAZ054   380540 Carbon                           PA US     40.92    -75.71      0.00  0  PHI                
+PAZ055   380550 Monroe                           PA US     41.06    -75.34      0.00  0  PHI                
+|ADV|170111/0140|170111/0500|KPHI||0|0                                          
+PAZ060   380600 Berks                            PA US     40.42    -75.93      0.00  0  PHI                
+PAZ061   380610 Lehigh                           PA US     40.61    -75.59      0.00  0  PHI                
+PAZ062   380620 Northampton                      PA US     40.75    -75.31      0.00  0  PHI                
+NJZ007   300070 Warren                           NJ US     40.86    -75.00      0.00  0  PHI                
+NJZ001   300010 Sussex                           NJ US     41.14    -74.69      0.00  0  PHI                
+|ADV|170111/0200|170111/0300|KPBZ||0|1                                          
+PAZ015   380150 Clarion                          PA US     41.19    -79.42      0.00  0  PBZ                
+PAZ023   380230 Indiana                          PA US     40.65    -79.09      0.00  0  PBZ                
+|ADV|170111/0147|170111/0400|KPBZ||0|0                                          
+MDZ001   200010 Garrett                          MD US     39.53    -79.27      0.00  0  PBZ                
+PAZ009   380090 Forest                           PA US     41.51    -79.24      0.00  0  PBZ                
+PAZ016   380160 Jefferson                        PA US     41.13    -79.00      0.00  0  PBZ                
+|ADV|170111/0221|170111/0700|KBGM||0|0                                          
+NYZ022   320220 Steuben                          NY US     42.27    -77.38      0.00  0  BGM                
+NYZ015   320150 Yates                            NY US     42.63    -77.11      0.00  0  BGM                
+NYZ023   320230 Schuyler                         NY US     42.39    -76.88      0.00  0  BGM                
+NYZ016   320160 Seneca                           NY US     42.78    -76.82      0.00  0  BGM                
+NYZ024   320240 Chemung                          NY US     42.14    -76.76      0.00  0  BGM                
+NYZ017   320170 Southern_Cayuga                  NY US     42.80    -76.53      0.00  0  BGM                
+PAZ038   380380 Bradford                         PA US     41.79    -76.52      0.00  0  BGM                
+NYZ025   320250 Tompkins                         NY US     42.45    -76.47      0.00  0  BGM                
+NYZ055   320550 Tioga                            NY US     42.17    -76.31      0.00  0  BGM                
+NYZ018   320180 Onondaga                         NY US     43.01    -76.19      0.00  0  BGM                
+NYZ044   320440 Cortland                         NY US     42.60    -76.07      0.00  0  BGM                
+|ADV|170111/0221|170111/0900|KBGM||0|0                                          
+NYZ056   320560 Broome                           NY US     42.16    -75.82      0.00  0  BGM                
+PAZ039   380390 Susquehanna                      PA US     41.82    -75.80      0.00  0  BGM                
+NYZ036   320360 Madison                          NY US     42.91    -75.67      0.00  0  BGM                
+NYZ045   320450 Chenango                         NY US     42.49    -75.61      0.00  0  BGM                
+NYZ037   320370 Southern_Oneida                  NY US     43.12    -75.41      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|170111/0221|170111/0700|KBGM||0|0                                          
+PAZ043   380430 Wyoming                          PA US     41.52    -76.02      0.00  0  BGM                
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+|ADV|170111/0221|170111/0900|KBGM||0|0                                          
+NYZ009   320090 Northern_Oneida                  NY US     43.38    -75.47      0.00  0  BGM                
+|ADV|170111/0244|170111/0345|KLWX|FZRA|0|1                                      
+VAZ036   460360 Nelson                           VA US     37.79    -78.89      0.00  0  LWX                
+VAZ037   460370 Albemarle                        VA US     38.02    -78.56      0.00  0  LWX                
+VAZ038   460380 Greene                           VA US     38.30    -78.47      0.00  0  LWX                
+VAZ039   460390 Madison                          VA US     38.41    -78.28      0.00  0  LWX                
+VAZ040   460400 Rappahannock                     VA US     38.68    -78.16      0.00  0  LWX                
+VAZ501   465010 Northern_Fauquier                VA US     38.85    -77.89      0.00  0  LWX                
+|ADV|170111/0244|170111/0600|KLWX|FZRA|0|0                                      
+VAZ503   465030 Western_Highland                 VA US     38.43    -79.66      0.00  0  LWX                
+VAZ504   465040 Eastern_Highland                 VA US     38.33    -79.52      0.00  0  LWX                
+WVZ505   485050 Western_Pendleton                WV US     38.75    -79.47      0.00  0  LWX                
+WVZ506   485060 Eastern_Pendleton                WV US     38.64    -79.29      0.00  0  LWX                
+WVZ501   485010 Western_Grant                    WV US     39.22    -79.28      0.00  0  LWX                
+WVZ502   485020 Eastern_Grant                    WV US     39.06    -79.16      0.00  0  LWX                
+VAZ025   460250 Augusta                          VA US     38.16    -79.13      0.00  0  LWX                
+WVZ503   485030 Western_Mineral                  WV US     39.39    -79.12      0.00  0  LWX                
+MDZ501   205010 Extreme_Western_Allegany         MD US     39.60    -78.93      0.00  0  LWX                
+WVZ504   485040 Eastern_Mineral                  WV US     39.42    -78.89      0.00  0  LWX                
+VAZ026   460260 Rockingham                       VA US     38.51    -78.88      0.00  0  LWX                
+WVZ055   480550 Hardy                            WV US     39.01    -78.86      0.00  0  LWX                
+WVZ050   480500 Hampshire                        WV US     39.32    -78.61      0.00  0  LWX                
+MDZ502   205020 Central_and_Eastern_Allegany     MD US     39.63    -78.60      0.00  0  LWX                
+VAZ027   460270 Shenandoah                       VA US     38.86    -78.57      0.00  0  LWX                
+VAZ029   460290 Page                             VA US     38.62    -78.48      0.00  0  LWX                
+VAZ028   460280 Frederick                        VA US     39.20    -78.26      0.00  0  LWX                
+WVZ051   480510 Morgan                           WV US     39.56    -78.26      0.00  0  LWX                
+VAZ030   460300 Warren                           VA US     38.91    -78.21      0.00  0  LWX                
+WVZ052   480520 Berkeley                         WV US     39.46    -78.03      0.00  0  LWX                
+VAZ031   460310 Clarke                           VA US     39.11    -78.00      0.00  0  LWX                
+WVZ053   480530 Jefferson                        WV US     39.31    -77.86      0.00  0  LWX                
+MDZ003   200030 Washington                       MD US     39.60    -77.81      0.00  0  LWX                
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|170111/0252|170111/0600|KRNK|FZRA|0|0                                      
+VAZ019   460190 Alleghany                        VA US     37.79    -80.01      0.00  0  RNK                
+VAZ020   460200 Bath                             VA US     38.06    -79.74      0.00  0  RNK                
+VAZ024   460240 Rockbridge                       VA US     37.81    -79.45      0.00  0  RNK                
+VAZ035   460350 Amherst                          VA US     37.60    -79.15      0.00  0  RNK                
+|ADV|170111/0300|170111/1100|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+|ADV|170111/0300|170111/0415|KARX||0|1                                          
+WIZ032   490320 Buffalo                          WI US     44.38    -91.75      0.00  0  ARX                
+WIZ033   490330 Trempealeau                      WI US     44.30    -91.36      0.00  0  ARX                
+WIZ034   490340 Jackson                          WI US     44.32    -90.81      0.00  0  ARX                
+WIZ029   490290 Clark                            WI US     44.73    -90.61      0.00  0  ARX                
+WIZ017   490170 Taylor                           WI US     45.21    -90.50      0.00  0  ARX                
+|ADV|170111/0300|170111/0415|KARX||0|1                                          
+MNZ086   230860 Dodge                            MN US     44.02    -92.86      0.00  0  ARX                
+MNZ094   230940 Mower                            MN US     43.67    -92.75      0.00  0  ARX                
+MNZ087   230870 Olmsted                          MN US     44.00    -92.40      0.00  0  ARX                
+MNZ079   230790 Wabasha                          MN US     44.28    -92.23      0.00  0  ARX                
+MNZ095   230950 Fillmore                         MN US     43.67    -92.09      0.00  0  ARX                
+MNZ088   230880 Winona                           MN US     43.99    -91.78      0.00  0  ARX                
+MNZ096   230960 Houston                          MN US     43.67    -91.49      0.00  0  ARX                
+|ADV|170111/0344|170111/0600|KALY||0|0                                          
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+|ADV|170111/0344|170111/0600|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+|ADV|170111/0400|170111/0500|KBUF||0|1                                          
+NYZ020   320200 Cattaraugus                      NY US     42.25    -78.68      0.00  0  BUF                
+NYZ012   320120 Wyoming                          NY US     42.70    -78.22      0.00  0  BUF                
+NYZ021   320210 Allegany                         NY US     42.26    -78.03      0.00  0  BUF                
+NYZ013   320130 Livingston                       NY US     42.73    -77.78      0.00  0  BUF                
+NYZ014   320140 Ontario                          NY US     42.85    -77.30      0.00  0  BUF                
+|ADV|170111/0350|170111/1200|KBUF||0|0                                          
+NYZ006   320060 Oswego                           NY US     43.43    -76.14      0.00  0  BUF                
+NYZ007   320070 Jefferson                        NY US     44.04    -75.91      0.00  0  BUF                
+NYZ008   320080 Lewis                            NY US     43.78    -75.45      0.00  0  BUF                
+|ADV|170111/0348|170111/1200|KGYX||0|0                                          
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+|ADV|170111/0348|170111/0600|KGYX|FZRA|0|0                                      
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+|ADV|170111/0400|170111/0500|KGRB||0|1                                          
+WIZ035   490350 Wood                             WI US     44.46    -90.04      0.00  0  GRB                
+WIZ030   490300 Marathon                         WI US     44.90    -89.76      0.00  0  GRB                
+WIZ018   490180 Lincoln                          WI US     45.34    -89.73      0.00  0  GRB                
+WIZ010   490100 Oneida                           WI US     45.71    -89.52      0.00  0  GRB                
+WIZ005   490050 Vilas                            WI US     46.05    -89.51      0.00  0  GRB                
+WIZ036   490360 Portage                          WI US     44.48    -89.50      0.00  0  GRB                
+WIZ019   490190 Langlade                         WI US     45.26    -89.07      0.00  0  GRB                
+WIZ037   490370 Waupaca                          WI US     44.47    -88.96      0.00  0  GRB                
+WIZ011   490110 Forest                           WI US     45.67    -88.77      0.00  0  GRB                
+WIZ031   490310 Shawano                          WI US     44.79    -88.77      0.00  0  GRB                
+WIZ020   490200 Menominee                        WI US     45.00    -88.71      0.00  0  GRB                
+WIZ021   490210 Northern_Oconto_County           WI US     45.20    -88.43      0.00  0  GRB                
+WIZ012   490120 Florence                         WI US     45.85    -88.40      0.00  0  GRB                
+WIZ074   490740 Southern_Oconto_County           WI US     44.88    -88.14      0.00  0  GRB                
+WIZ013   490130 Northern_Marinette_County        WI US     45.55    -88.11      0.00  0  GRB                
+WIZ073   490730 Southern_Marinette_County        WI US     45.19    -87.95      0.00  0  GRB                
+|ADV|170111/0403|170111/0515|KPBZ||0|1                                          
+MDZ001   200010 Garrett                          MD US     39.53    -79.27      0.00  0  PBZ                
+PAZ009   380090 Forest                           PA US     41.51    -79.24      0.00  0  PBZ                
+PAZ016   380160 Jefferson                        PA US     41.13    -79.00      0.00  0  PBZ                
+|ADV|170111/0449|170111/0700|KCTP||0|0                                          
+PAZ033   380330 Somerset                         PA US     39.97    -79.03      0.00  0  CTP                
+PAZ024   380240 Cambria                          PA US     40.50    -78.71      0.00  0  CTP                
+PAZ010   380100 Elk                              PA US     41.43    -78.65      0.00  0  CTP                
+PAZ005   380050 McKean                           PA US     41.81    -78.57      0.00  0  CTP                
+PAZ017   380170 Clearfield                       PA US     41.00    -78.47      0.00  0  CTP                
+|ADV|170111/0449|170111/0900|KCTP||0|0                                          
+PAZ034   380340 Bedford                          PA US     40.01    -78.49      0.00  0  CTP                
+PAZ025   380250 Blair                            PA US     40.48    -78.35      0.00  0  CTP                
+PAZ011   380110 Cameron                          PA US     41.44    -78.20      0.00  0  CTP                
+PAZ035   380350 Fulton                           PA US     39.93    -78.11      0.00  0  CTP                
+PAZ026   380260 Huntingdon                       PA US     40.42    -77.98      0.00  0  CTP                
+PAZ036   380360 Franklin                         PA US     39.93    -77.72      0.00  0  CTP                
+PAZ027   380270 Mifflin                          PA US     40.61    -77.62      0.00  0  CTP                
+PAZ028   380280 Juniata                          PA US     40.53    -77.40      0.00  0  CTP                
+PAZ063   380630 Cumberland                       PA US     40.16    -77.27      0.00  0  CTP                
+PAZ056   380560 Perry                            PA US     40.40    -77.26      0.00  0  CTP                
+PAZ064   380640 Adams                            PA US     39.87    -77.22      0.00  0  CTP                
+PAZ057   380570 Dauphin                          PA US     40.42    -76.78      0.00  0  CTP                
+PAZ065   380650 York                             PA US     39.92    -76.73      0.00  0  CTP                
+PAZ059   380590 Lebanon                          PA US     40.37    -76.46      0.00  0  CTP                
+PAZ066   380660 Lancaster                        PA US     40.04    -76.25      0.00  0  CTP                
+|ADV|170111/0449|170111/0900|KCTP||0|0                                          
+PAZ018   380180 Northern_Centre                  PA US     40.99    -78.00      0.00  0  CTP                
+PAZ006   380060 Potter                           PA US     41.74    -77.90      0.00  0  CTP                
+PAZ012   380120 Northern_Clinton                 PA US     41.29    -77.73      0.00  0  CTP                
+PAZ019   380190 Southern_Centre                  PA US     40.87    -77.70      0.00  0  CTP                
+PAZ045   380450 Southern_Clinton                 PA US     41.08    -77.38      0.00  0  CTP                
+PAZ037   380370 Tioga                            PA US     41.77    -77.25      0.00  0  CTP                
+PAZ041   380410 Northern_Lycoming                PA US     41.43    -77.17      0.00  0  CTP                
+PAZ050   380500 Snyder                           PA US     40.77    -77.07      0.00  0  CTP                
+PAZ049   380490 Union                            PA US     40.96    -77.06      0.00  0  CTP                
+PAZ046   380460 Southern_Lycoming                PA US     41.23    -76.92      0.00  0  CTP                
+PAZ052   380520 Northumberland                   PA US     40.85    -76.71      0.00  0  CTP                
+PAZ051   380510 Montour                          PA US     41.03    -76.66      0.00  0  CTP                
+PAZ042   380420 Sullivan                         PA US     41.45    -76.51      0.00  0  CTP                
+PAZ053   380530 Columbia                         PA US     41.05    -76.41      0.00  0  CTP                
+PAZ058   380580 Schuylkill                       PA US     40.71    -76.22      0.00  0  CTP                
+|ADV|170111/0450|170111/0600|KGYX|FZRA|0|1                                      
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+|ADV|170111/0450|170111/1300|KGYX||0|0                                          
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+|ADV|170111/0455|170111/0800|KPHI||0|0                                          
+PAZ060   380600 Berks                            PA US     40.42    -75.93      0.00  0  PHI                
+PAZ061   380610 Lehigh                           PA US     40.61    -75.59      0.00  0  PHI                
+PAZ062   380620 Northampton                      PA US     40.75    -75.31      0.00  0  PHI                
+NJZ007   300070 Warren                           NJ US     40.86    -75.00      0.00  0  PHI                
+NJZ001   300010 Sussex                           NJ US     41.14    -74.69      0.00  0  PHI                
+|ADV|170111/0455|170111/1000|KPHI||0|0                                          
+PAZ054   380540 Carbon                           PA US     40.92    -75.71      0.00  0  PHI                
+PAZ055   380550 Monroe                           PA US     41.06    -75.34      0.00  0  PHI                
+|ADV|170111/0500|170111/1200|KALY||0|0                                          
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+|ADV|170111/0500|170111/1200|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+|ADV|170111/0459|170111/1000|KBGM||0|0                                          
+NYZ024   320240 Chemung                          NY US     42.14    -76.76      0.00  0  BGM                
+PAZ038   380380 Bradford                         PA US     41.79    -76.52      0.00  0  BGM                
+NYZ055   320550 Tioga                            NY US     42.17    -76.31      0.00  0  BGM                
+NYZ044   320440 Cortland                         NY US     42.60    -76.07      0.00  0  BGM                
+PAZ043   380430 Wyoming                          PA US     41.52    -76.02      0.00  0  BGM                
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+NYZ056   320560 Broome                           NY US     42.16    -75.82      0.00  0  BGM                
+PAZ039   380390 Susquehanna                      PA US     41.82    -75.80      0.00  0  BGM                
+NYZ036   320360 Madison                          NY US     42.91    -75.67      0.00  0  BGM                
+NYZ045   320450 Chenango                         NY US     42.49    -75.61      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+NYZ037   320370 Southern_Oneida                  NY US     43.12    -75.41      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|170111/0459|170111/1000|KBGM||0|0                                          
+NYZ009   320090 Northern_Oneida                  NY US     43.38    -75.47      0.00  0  BGM                
+|ADV|170111/0459|170111/0700|KBGM||0|0                                          
+NYZ022   320220 Steuben                          NY US     42.27    -77.38      0.00  0  BGM                
+NYZ015   320150 Yates                            NY US     42.63    -77.11      0.00  0  BGM                
+NYZ023   320230 Schuyler                         NY US     42.39    -76.88      0.00  0  BGM                
+NYZ016   320160 Seneca                           NY US     42.78    -76.82      0.00  0  BGM                
+NYZ017   320170 Southern_Cayuga                  NY US     42.80    -76.53      0.00  0  BGM                
+NYZ025   320250 Tompkins                         NY US     42.45    -76.47      0.00  0  BGM                
+NYZ018   320180 Onondaga                         NY US     43.01    -76.19      0.00  0  BGM                
+|ADV|170111/0533|170111/0900|KLWX|FZRA|0|0                                      
+VAZ503   465030 Western_Highland                 VA US     38.43    -79.66      0.00  0  LWX                
+VAZ504   465040 Eastern_Highland                 VA US     38.33    -79.52      0.00  0  LWX                
+WVZ505   485050 Western_Pendleton                WV US     38.75    -79.47      0.00  0  LWX                
+WVZ506   485060 Eastern_Pendleton                WV US     38.64    -79.29      0.00  0  LWX                
+WVZ501   485010 Western_Grant                    WV US     39.22    -79.28      0.00  0  LWX                
+WVZ502   485020 Eastern_Grant                    WV US     39.06    -79.16      0.00  0  LWX                
+VAZ025   460250 Augusta                          VA US     38.16    -79.13      0.00  0  LWX                
+WVZ503   485030 Western_Mineral                  WV US     39.39    -79.12      0.00  0  LWX                
+MDZ501   205010 Extreme_Western_Allegany         MD US     39.60    -78.93      0.00  0  LWX                
+WVZ504   485040 Eastern_Mineral                  WV US     39.42    -78.89      0.00  0  LWX                
+VAZ026   460260 Rockingham                       VA US     38.51    -78.88      0.00  0  LWX                
+WVZ055   480550 Hardy                            WV US     39.01    -78.86      0.00  0  LWX                
+WVZ050   480500 Hampshire                        WV US     39.32    -78.61      0.00  0  LWX                
+MDZ502   205020 Central_and_Eastern_Allegany     MD US     39.63    -78.60      0.00  0  LWX                
+VAZ027   460270 Shenandoah                       VA US     38.86    -78.57      0.00  0  LWX                
+VAZ029   460290 Page                             VA US     38.62    -78.48      0.00  0  LWX                
+VAZ028   460280 Frederick                        VA US     39.20    -78.26      0.00  0  LWX                
+WVZ051   480510 Morgan                           WV US     39.56    -78.26      0.00  0  LWX                
+VAZ030   460300 Warren                           VA US     38.91    -78.21      0.00  0  LWX                
+WVZ052   480520 Berkeley                         WV US     39.46    -78.03      0.00  0  LWX                
+VAZ031   460310 Clarke                           VA US     39.11    -78.00      0.00  0  LWX                
+WVZ053   480530 Jefferson                        WV US     39.31    -77.86      0.00  0  LWX                
+MDZ003   200030 Washington                       MD US     39.60    -77.81      0.00  0  LWX                
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|170111/0600|170111/0715|KRNK|FZRA|0|1                                      
+VAZ019   460190 Alleghany                        VA US     37.79    -80.01      0.00  0  RNK                
+VAZ020   460200 Bath                             VA US     38.06    -79.74      0.00  0  RNK                
+VAZ024   460240 Rockbridge                       VA US     37.81    -79.45      0.00  0  RNK                
+VAZ035   460350 Amherst                          VA US     37.60    -79.15      0.00  0  RNK                
+|ADV|170111/0722|170111/1530|KMPX||0|0                                          
+MNZ068   230680 Carver                           MN US     44.82    -93.80      0.00  0  MPX                
+MNZ069   230690 Scott                            MN US     44.65    -93.54      0.00  0  MPX                
+MNZ060   230600 Hennepin                         MN US     45.00    -93.48      0.00  0  MPX                
+MNZ061   230610 Anoka                            MN US     45.27    -93.25      0.00  0  MPX                
+MNZ062   230620 Ramsey                           MN US     45.02    -93.10      0.00  0  MPX                
+MNZ070   230700 Dakota                           MN US     44.67    -93.07      0.00  0  MPX                
+MNZ053   230530 Chisago                          MN US     45.50    -92.91      0.00  0  MPX                
+MNZ063   230630 Washington                       MN US     45.04    -92.88      0.00  0  MPX                
+WIZ023   490230 St._Croix                        WI US     45.03    -92.45      0.00  0  MPX                
+WIZ014   490140 Polk                             WI US     45.46    -92.44      0.00  0  MPX                
+WIZ024   490240 Pierce                           WI US     44.72    -92.42      0.00  0  MPX                
+WIZ025   490250 Dunn                             WI US     44.95    -91.90      0.00  0  MPX                
+WIZ015   490150 Barron                           WI US     45.42    -91.85      0.00  0  MPX                
+WIZ028   490280 Eau_Claire                       WI US     44.73    -91.29      0.00  0  MPX                
+WIZ027   490270 Chippewa                         WI US     45.07    -91.28      0.00  0  MPX                
+WIZ016   490160 Rusk                             WI US     45.48    -91.13      0.00  0  MPX                
+|ADV|170111/0806|170111/0915|KLWX|FZRA|0|1                                      
+VAZ503   465030 Western_Highland                 VA US     38.43    -79.66      0.00  0  LWX                
+VAZ504   465040 Eastern_Highland                 VA US     38.33    -79.52      0.00  0  LWX                
+WVZ505   485050 Western_Pendleton                WV US     38.75    -79.47      0.00  0  LWX                
+WVZ506   485060 Eastern_Pendleton                WV US     38.64    -79.29      0.00  0  LWX                
+WVZ501   485010 Western_Grant                    WV US     39.22    -79.28      0.00  0  LWX                
+WVZ502   485020 Eastern_Grant                    WV US     39.06    -79.16      0.00  0  LWX                
+VAZ025   460250 Augusta                          VA US     38.16    -79.13      0.00  0  LWX                
+WVZ503   485030 Western_Mineral                  WV US     39.39    -79.12      0.00  0  LWX                
+MDZ501   205010 Extreme_Western_Allegany         MD US     39.60    -78.93      0.00  0  LWX                
+WVZ504   485040 Eastern_Mineral                  WV US     39.42    -78.89      0.00  0  LWX                
+VAZ026   460260 Rockingham                       VA US     38.51    -78.88      0.00  0  LWX                
+WVZ055   480550 Hardy                            WV US     39.01    -78.86      0.00  0  LWX                
+WVZ050   480500 Hampshire                        WV US     39.32    -78.61      0.00  0  LWX                
+MDZ502   205020 Central_and_Eastern_Allegany     MD US     39.63    -78.60      0.00  0  LWX                
+VAZ027   460270 Shenandoah                       VA US     38.86    -78.57      0.00  0  LWX                
+VAZ029   460290 Page                             VA US     38.62    -78.48      0.00  0  LWX                
+VAZ028   460280 Frederick                        VA US     39.20    -78.26      0.00  0  LWX                
+WVZ051   480510 Morgan                           WV US     39.56    -78.26      0.00  0  LWX                
+VAZ030   460300 Warren                           VA US     38.91    -78.21      0.00  0  LWX                
+WVZ052   480520 Berkeley                         WV US     39.46    -78.03      0.00  0  LWX                
+VAZ031   460310 Clarke                           VA US     39.11    -78.00      0.00  0  LWX                
+WVZ053   480530 Jefferson                        WV US     39.31    -77.86      0.00  0  LWX                
+MDZ003   200030 Washington                       MD US     39.60    -77.81      0.00  0  LWX                
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|170111/0817|170111/0930|KPHI||0|1                                          
+PAZ054   380540 Carbon                           PA US     40.92    -75.71      0.00  0  PHI                
+PAZ055   380550 Monroe                           PA US     41.06    -75.34      0.00  0  PHI                
+|ADV|170111/0817|170111/0930|KPHI||0|1                                          
+PAZ060   380600 Berks                            PA US     40.42    -75.93      0.00  0  PHI                
+PAZ061   380610 Lehigh                           PA US     40.61    -75.59      0.00  0  PHI                
+PAZ062   380620 Northampton                      PA US     40.75    -75.31      0.00  0  PHI                
+NJZ007   300070 Warren                           NJ US     40.86    -75.00      0.00  0  PHI                
+NJZ001   300010 Sussex                           NJ US     41.14    -74.69      0.00  0  PHI                
+|ADV|170111/0848|170111/1000|KALY||0|1                                          
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+|ADV|170111/0848|170111/1200|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+|ADV|170111/0850|170111/1000|KBGM||0|1                                          
+NYZ024   320240 Chemung                          NY US     42.14    -76.76      0.00  0  BGM                
+PAZ038   380380 Bradford                         PA US     41.79    -76.52      0.00  0  BGM                
+NYZ055   320550 Tioga                            NY US     42.17    -76.31      0.00  0  BGM                
+NYZ044   320440 Cortland                         NY US     42.60    -76.07      0.00  0  BGM                
+PAZ043   380430 Wyoming                          PA US     41.52    -76.02      0.00  0  BGM                
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+NYZ056   320560 Broome                           NY US     42.16    -75.82      0.00  0  BGM                
+PAZ039   380390 Susquehanna                      PA US     41.82    -75.80      0.00  0  BGM                
+NYZ036   320360 Madison                          NY US     42.91    -75.67      0.00  0  BGM                
+NYZ045   320450 Chenango                         NY US     42.49    -75.61      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+NYZ009   320090 Northern_Oneida                  NY US     43.38    -75.47      0.00  0  BGM                
+NYZ037   320370 Southern_Oneida                  NY US     43.12    -75.41      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|170111/0852|170111/1300|KGYX||0|0                                          
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+|ADV|170111/0853|170111/1500|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+|ADV|170111/0910|170111/1715|KAPX||0|0                                          
+MIZ015   220150 Mackinac                         MI US     46.08    -85.09      0.00  0  APX                
+MIZ008   220080 Chippewa                         MI US     46.30    -84.57      0.00  0  APX                
+|ADV|170111/0910|170111/1715|KAPX||0|0                                          
+MIZ020   220200 Leelanau                         MI US     44.94    -85.81      0.00  0  APX                
+MIZ021   220210 Antrim                           MI US     45.00    -85.14      0.00  0  APX                
+MIZ019   220190 Charlevoix                       MI US     45.30    -85.13      0.00  0  APX                
+MIZ016   220160 Emmet                            MI US     45.52    -84.89      0.00  0  APX                
+MIZ017   220170 Cheboygan                        MI US     45.45    -84.50      0.00  0  APX                
+|ADV|170111/0918|170111/1730|KARX||0|0                                          
+WIZ017   490170 Taylor                           WI US     45.21    -90.50      0.00  0  ARX                
+|ADV|170111/0932|170111/1800|KDLH||0|0                                          
+WIZ008   490080 Sawyer                           WI US     45.88    -91.14      0.00  0  DLH                
+WIZ009   490090 Price                            WI US     45.68    -90.36      0.00  0  DLH                
+|WTC|170111/0931|170111/2245|KLSX||0|0                                          
+MOZ047   250470 Moniteau                         MO US     38.63    -92.58      0.00  0  LSX                
+MOZ041   250410 Boone                            MO US     38.99    -92.31      0.00  0  LSX                
+MOZ048   250480 Cole                             MO US     38.51    -92.28      0.00  0  LSX                
+MOZ050   250500 Callaway                         MO US     38.84    -91.93      0.00  0  LSX                
+MOZ049   250490 Osage                            MO US     38.46    -91.86      0.00  0  LSX                
+MOZ059   250590 Gasconade                        MO US     38.44    -91.51      0.00  0  LSX                
+MOZ051   250510 Montgomery                       MO US     38.94    -91.47      0.00  0  LSX                
+MOZ072   250720 Crawford                         MO US     37.98    -91.30      0.00  0  LSX                
+MOZ060   250600 Warren                           MO US     38.76    -91.16      0.00  0  LSX                
+MOZ062   250620 Franklin                         MO US     38.41    -91.07      0.00  0  LSX                
+MOZ099   250990 Reynolds                         MO US     37.36    -90.97      0.00  0  LSX                
+MOZ073   250730 Washington                       MO US     37.96    -90.88      0.00  0  LSX                
+MOZ084   250840 Iron                             MO US     37.56    -90.77      0.00  0  LSX                
+MOZ061   250610 St._Charles                      MO US     38.78    -90.68      0.00  0  LSX                
+MOZ065   250650 Jefferson                        MO US     38.26    -90.54      0.00  0  LSX                
+MOZ074   250740 St._Francois                     MO US     37.81    -90.47      0.00  0  LSX                
+MOZ063   250630 St._Louis                        MO US     38.64    -90.44      0.00  0  LSX                
+MOZ085   250850 Madison                          MO US     37.48    -90.35      0.00  0  LSX                
+MOZ064   250640 St._Louis_City                   MO US     38.64    -90.25      0.00  0  LSX                
+MOZ075   250750 Ste._Genevieve                   MO US     37.89    -90.20      0.00  0  LSX                
+ILZ102   131020 Monroe                           IL US     38.28    -90.18      0.00  0  LSX                
+ILZ101   131010 St._Clair                        IL US     38.47    -89.93      0.00  0  LSX                
+ILZ100   131000 Madison                          IL US     38.83    -89.91      0.00  0  LSX                
+ILZ079   130790 Randolph                         IL US     38.05    -89.83      0.00  0  LSX                
+ILZ064   130640 Bond                             IL US     38.89    -89.44      0.00  0  LSX                
+ILZ069   130690 Clinton                          IL US     38.61    -89.42      0.00  0  LSX                
+ILZ074   130740 Washington                       IL US     38.35    -89.41      0.00  0  LSX                
+ILZ070   130700 Marion                           IL US     38.65    -88.92      0.00  0  LSX                
+|ADV|170111/0939|170111/1745|KGRB||0|0                                          
+WIZ018   490180 Lincoln                          WI US     45.34    -89.73      0.00  0  GRB                
+WIZ010   490100 Oneida                           WI US     45.71    -89.52      0.00  0  GRB                
+WIZ005   490050 Vilas                            WI US     46.05    -89.51      0.00  0  GRB                
+WIZ019   490190 Langlade                         WI US     45.26    -89.07      0.00  0  GRB                
+WIZ011   490110 Forest                           WI US     45.67    -88.77      0.00  0  GRB                
+WIZ021   490210 Northern_Oconto_County           WI US     45.20    -88.43      0.00  0  GRB                
+WIZ012   490120 Florence                         WI US     45.85    -88.40      0.00  0  GRB                
+WIZ013   490130 Northern_Marinette_County        WI US     45.55    -88.11      0.00  0  GRB                
+WIZ073   490730 Southern_Marinette_County        WI US     45.19    -87.95      0.00  0  GRB                
+|WTC|170111/0944|170112/0000|KSGF||0|0                                          
+MOZ077   250770 Barton                           MO US     37.50    -94.35      0.00  0  SGF                
+MOZ066   250660 Vernon                           MO US     37.85    -94.34      0.00  0  SGF                
+MOZ088   250880 Jasper                           MO US     37.20    -94.34      0.00  0  SGF                
+MOZ093   250930 Newton                           MO US     36.91    -94.34      0.00  0  SGF                
+MOZ078   250780 Cedar                            MO US     37.72    -93.86      0.00  0  SGF                
+MOZ089   250890 Dade                             MO US     37.43    -93.85      0.00  0  SGF                
+MOZ094   250940 Lawrence                         MO US     37.11    -93.83      0.00  0  SGF                
+MOZ067   250670 St._Clair                        MO US     38.04    -93.78      0.00  0  SGF                
+MOZ079   250790 Polk                             MO US     37.62    -93.40      0.00  0  SGF                
+MOZ090   250900 Greene                           MO US     37.26    -93.34      0.00  0  SGF                
+MOZ068   250680 Hickory                          MO US     37.94    -93.32      0.00  0  SGF                
+MOZ055   250550 Benton                           MO US     38.29    -93.29      0.00  0  SGF                
+MOZ095   250950 Christian                        MO US     36.97    -93.19      0.00  0  SGF                
+MOZ080   250800 Dallas                           MO US     37.68    -93.02      0.00  0  SGF                
+MOZ056   250560 Morgan                           MO US     38.42    -92.89      0.00  0  SGF                
+MOZ091   250910 Webster                          MO US     37.28    -92.88      0.00  0  SGF                
+MOZ069   250690 Camden                           MO US     38.03    -92.77      0.00  0  SGF                
+MOZ081   250810 Laclede                          MO US     37.66    -92.59      0.00  0  SGF                
+MOZ096   250960 Douglas                          MO US     36.93    -92.50      0.00  0  SGF                
+MOZ092   250920 Wright                           MO US     37.27    -92.47      0.00  0  SGF                
+MOZ057   250570 Miller                           MO US     38.21    -92.43      0.00  0  SGF                
+MOZ070   250700 Pulaski                          MO US     37.82    -92.21      0.00  0  SGF                
+MOZ082   250820 Texas                            MO US     37.32    -91.97      0.00  0  SGF                
+MOZ058   250580 Maries                           MO US     38.16    -91.92      0.00  0  SGF                
+MOZ071   250710 Phelps                           MO US     37.88    -91.79      0.00  0  SGF                
+MOZ083   250830 Dent                             MO US     37.61    -91.51      0.00  0  SGF                
+MOZ098   250980 Shannon                          MO US     37.16    -91.40      0.00  0  SGF                
+|ADV|170111/0952|170111/1100|KBUF||0|1                                          
+NYZ006   320060 Oswego                           NY US     43.43    -76.14      0.00  0  BUF                
+NYZ007   320070 Jefferson                        NY US     44.04    -75.91      0.00  0  BUF                
+NYZ008   320080 Lewis                            NY US     43.78    -75.45      0.00  0  BUF                
+|ADV|170111/0957|170111/1800|KARX||0|0                                          
+WIZ061   490610 Grant                            WI US     42.87    -90.71      0.00  0  ARX                
+|ADV|170111/0957|170111/1800|KARX||0|0                                          
+WIZ017   490170 Taylor                           WI US     45.21    -90.50      0.00  0  ARX                
+|ADV|170111/0954|170111/1800|KMKX||0|0                                          
+WIZ062   490620 Iowa                             WI US     43.00    -90.14      0.00  0  MKX                
+WIZ067   490670 Lafayette                        WI US     42.66    -90.13      0.00  0  MKX                
+WIZ056   490560 Sauk                             WI US     43.43    -89.95      0.00  0  MKX                
+WIZ068   490680 Green                            WI US     42.68    -89.60      0.00  0  MKX                
+WIZ063   490630 Dane                             WI US     43.07    -89.42      0.00  0  MKX                
+WIZ057   490570 Columbia                         WI US     43.47    -89.33      0.00  0  MKX                
+|ADV|170111/0954|170111/1800|KMKX||0|0                                          
+WIZ064   490640 Jefferson                        WI US     43.02    -88.78      0.00  0  MKX                
+WIZ058   490580 Dodge                            WI US     43.42    -88.71      0.00  0  MKX                
+WIZ051   490510 Fond_Du_Lac                      WI US     43.75    -88.49      0.00  0  MKX                
+WIZ065   490650 Waukesha                         WI US     43.02    -88.30      0.00  0  MKX                
+WIZ059   490590 Washington                       WI US     43.37    -88.23      0.00  0  MKX                
+WIZ052   490520 Sheboygan                        WI US     43.72    -87.95      0.00  0  MKX                
+WIZ060   490600 Ozaukee                          WI US     43.38    -87.95      0.00  0  MKX                
+|ADV|170111/0954|170111/1800|KMKX||0|0                                          
+WIZ069   490690 Rock                             WI US     42.67    -89.07      0.00  0  MKX                
+WIZ070   490700 Walworth                         WI US     42.67    -88.54      0.00  0  MKX                
+WIZ071   490710 Racine                           WI US     42.75    -88.06      0.00  0  MKX                
+WIZ072   490720 Kenosha                          WI US     42.58    -88.04      0.00  0  MKX                
+WIZ066   490660 Milwaukee                        WI US     43.01    -87.97      0.00  0  MKX                
+|ADV|170111/1049|170111/1200|KALY||0|1                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+|ADV|170111/1134|170111/1245|KGYX||0|1                                          
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+|ADV|170111/1326|170111/1800|KARX||0|0                                          
+WIZ017   490170 Taylor                           WI US     45.21    -90.50      0.00  0  ARX                
+|ADV|170111/1326|170111/2130|KARX||0|0                                          
+WIZ061   490610 Grant                            WI US     42.87    -90.71      0.00  0  ARX                
+|ADV|170111/1344|170111/1800|KMPX||0|0                                          
+MNZ068   230680 Carver                           MN US     44.82    -93.80      0.00  0  MPX                
+MNZ069   230690 Scott                            MN US     44.65    -93.54      0.00  0  MPX                
+MNZ060   230600 Hennepin                         MN US     45.00    -93.48      0.00  0  MPX                
+MNZ061   230610 Anoka                            MN US     45.27    -93.25      0.00  0  MPX                
+MNZ062   230620 Ramsey                           MN US     45.02    -93.10      0.00  0  MPX                
+MNZ070   230700 Dakota                           MN US     44.67    -93.07      0.00  0  MPX                
+MNZ053   230530 Chisago                          MN US     45.50    -92.91      0.00  0  MPX                
+MNZ063   230630 Washington                       MN US     45.04    -92.88      0.00  0  MPX                
+WIZ023   490230 St._Croix                        WI US     45.03    -92.45      0.00  0  MPX                
+WIZ014   490140 Polk                             WI US     45.46    -92.44      0.00  0  MPX                
+WIZ024   490240 Pierce                           WI US     44.72    -92.42      0.00  0  MPX                
+WIZ025   490250 Dunn                             WI US     44.95    -91.90      0.00  0  MPX                
+WIZ015   490150 Barron                           WI US     45.42    -91.85      0.00  0  MPX                
+WIZ028   490280 Eau_Claire                       WI US     44.73    -91.29      0.00  0  MPX                
+WIZ027   490270 Chippewa                         WI US     45.07    -91.28      0.00  0  MPX                
+WIZ016   490160 Rusk                             WI US     45.48    -91.13      0.00  0  MPX                
+|ADV|170111/1501|170111/1615|KCAR||0|1                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+|ADV|170111/1505|170111/2315|KAPX||0|0                                          
+MIZ015   220150 Mackinac                         MI US     46.08    -85.09      0.00  0  APX                
+MIZ008   220080 Chippewa                         MI US     46.30    -84.57      0.00  0  APX                
+|ADV|170111/1505|170111/2315|KAPX||0|0                                          
+MIZ020   220200 Leelanau                         MI US     44.94    -85.81      0.00  0  APX                
+MIZ021   220210 Antrim                           MI US     45.00    -85.14      0.00  0  APX                
+MIZ019   220190 Charlevoix                       MI US     45.30    -85.13      0.00  0  APX                
+MIZ016   220160 Emmet                            MI US     45.52    -84.89      0.00  0  APX                
+MIZ017   220170 Cheboygan                        MI US     45.45    -84.50      0.00  0  APX                
+|ADV|170111/1602|170112/0015|KLOT|FZRA|0|0                                      
+ILZ008   130080 Ogle                             IL US     42.04    -89.32      0.00  0  LOT                
+ILZ003   130030 Winnebago                        IL US     42.34    -89.16      0.00  0  LOT                
+ILZ004   130040 Boone                            IL US     42.32    -88.82      0.00  0  LOT                
+ILZ011   130110 De_Kalb                          IL US     41.89    -88.77      0.00  0  LOT                
+ILZ005   130050 McHenry                          IL US     42.32    -88.45      0.00  0  LOT                
+ILZ012   130120 Kane                             IL US     41.94    -88.43      0.00  0  LOT                
+ILZ006   130060 Lake                             IL US     42.32    -88.00      0.00  0  LOT                
+|ADV|170111/1607|170112/0015|KDVN|FZRA|0|0                                      
+IAZ054   150540 Jackson                          IA US     42.17    -90.57      0.00  0  DVN                
+ILZ001   130010 Jo_Daviess                       IL US     42.37    -90.21      0.00  0  DVN                
+ILZ007   130070 Carroll                          IL US     42.07    -89.93      0.00  0  DVN                
+ILZ002   130020 Stephenson                       IL US     42.35    -89.66      0.00  0  DVN                
+|ADV|170111/1608|170111/1800|KMPX||0|0                                          
+MNZ068   230680 Carver                           MN US     44.82    -93.80      0.00  0  MPX                
+MNZ069   230690 Scott                            MN US     44.65    -93.54      0.00  0  MPX                
+MNZ060   230600 Hennepin                         MN US     45.00    -93.48      0.00  0  MPX                
+MNZ061   230610 Anoka                            MN US     45.27    -93.25      0.00  0  MPX                
+MNZ062   230620 Ramsey                           MN US     45.02    -93.10      0.00  0  MPX                
+MNZ070   230700 Dakota                           MN US     44.67    -93.07      0.00  0  MPX                
+MNZ053   230530 Chisago                          MN US     45.50    -92.91      0.00  0  MPX                
+MNZ063   230630 Washington                       MN US     45.04    -92.88      0.00  0  MPX                
+WIZ023   490230 St._Croix                        WI US     45.03    -92.45      0.00  0  MPX                
+WIZ014   490140 Polk                             WI US     45.46    -92.44      0.00  0  MPX                
+WIZ024   490240 Pierce                           WI US     44.72    -92.42      0.00  0  MPX                
+WIZ025   490250 Dunn                             WI US     44.95    -91.90      0.00  0  MPX                
+WIZ015   490150 Barron                           WI US     45.42    -91.85      0.00  0  MPX                
+WIZ028   490280 Eau_Claire                       WI US     44.73    -91.29      0.00  0  MPX                
+WIZ027   490270 Chippewa                         WI US     45.07    -91.28      0.00  0  MPX                
+WIZ016   490160 Rusk                             WI US     45.48    -91.13      0.00  0  MPX                
+|ADV|170111/1622|170111/1800|KARX||0|0                                          
+WIZ017   490170 Taylor                           WI US     45.21    -90.50      0.00  0  ARX                
+|ADV|170111/1622|170112/0000|KARX||0|0                                          
+WIZ061   490610 Grant                            WI US     42.87    -90.71      0.00  0  ARX                
+|ADV|170111/1621|170111/2100|KMQT||0|0                                          
+MIZ011   220110 Dickinson                        MI US     46.01    -87.87      0.00  0  MQT                
+MIZ005   220050 Marquette                        MI US     46.43    -87.64      0.00  0  MQT                
+MIZ012   220120 Menominee                        MI US     45.58    -87.56      0.00  0  MQT                
+|ADV|170111/1621|170112/0000|KMQT||0|0                                          
+MIZ013   220130 Delta                            MI US     45.92    -86.92      0.00  0  MQT                
+MIZ006   220060 Alger                            MI US     46.41    -86.60      0.00  0  MQT                
+MIZ085   220850 Northern_Schoolcraft             MI US     46.33    -86.21      0.00  0  MQT                
+MIZ014   220140 Southern_Schoolcraft             MI US     46.05    -86.19      0.00  0  MQT                
+MIZ007   220070 Luce                             MI US     46.47    -85.54      0.00  0  MQT                
+|ADV|170111/1621|170112/0000|KMQT||0|0                                          
+MIZ002   220020 Ontonagon                        MI US     46.66    -89.31      0.00  0  MQT                
+MIZ003   220030 Houghton                         MI US     47.05    -88.62      0.00  0  MQT                
+MIZ001   220010 Keweenaw                         MI US     47.60    -88.42      0.00  0  MQT                
+|ADV|170111/1625|170111/2100|KGRB||0|0                                          
+WIZ018   490180 Lincoln                          WI US     45.34    -89.73      0.00  0  GRB                
+WIZ010   490100 Oneida                           WI US     45.71    -89.52      0.00  0  GRB                
+WIZ005   490050 Vilas                            WI US     46.05    -89.51      0.00  0  GRB                
+WIZ019   490190 Langlade                         WI US     45.26    -89.07      0.00  0  GRB                
+WIZ011   490110 Forest                           WI US     45.67    -88.77      0.00  0  GRB                
+WIZ021   490210 Northern_Oconto_County           WI US     45.20    -88.43      0.00  0  GRB                
+WIZ012   490120 Florence                         WI US     45.85    -88.40      0.00  0  GRB                
+WIZ013   490130 Northern_Marinette_County        WI US     45.55    -88.11      0.00  0  GRB                
+WIZ073   490730 Southern_Marinette_County        WI US     45.19    -87.95      0.00  0  GRB                

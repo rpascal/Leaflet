@@ -1,0 +1,127 @@
+﻿@using System.Configuration;
+
+<script>
+    /*** watch_Warn module ***/
+    var showWatchWarn = (function () {
+        
+        var winterLayerArray = [];
+
+
+        var updateWinter;
+        var active = false;
+        var isInitialized = false;
+        var isDataGood = false;
+
+
+        var initShapesWinter = function (map) {
+            $.ajax(
+            {
+                url: "@Url.Action("GetWinterData", "Home")",
+                type: "GET",
+                dataType: "json",
+                success: function (wintJsonFileList) {
+                    createWinterGroup(wintJsonFileList);
+                },
+                error: function (initWinterr1) { console.log('InitWint err1: ', initWinterr1); }
+            })
+
+            function createWinterGroup(wintJsonFileList) {
+                let promises = [];
+
+
+                for (var i = 0; i < wintJsonFileList.length; i++) {
+
+                    let ajax = $.ajax(
+                        {
+                            url: wintJsonFileList[i],
+                            type: "GET",
+                            dataType: "json",
+                            success: function (wintJsonLayer) {
+                                winterLayerArray.push(addGeoJSONToMap(wintJsonLayer));
+                            },
+                            error: function (createWinterGroupErr) { console.log('createWinterGroupErr: ', createWinterGroupErr); }
+                        })
+                    promises.push(ajax);
+                }
+
+                $.when.apply(null, promises).then(function () {
+                    pushGroupToMap(winterLayerArray)
+                })
+            }
+
+            function addGeoJSONToMap(data) {
+                var layer = L.geoJson(data, {
+                    style: function (feature) {
+                        
+                        return { color: feature.properties.PolyBorderColor };
+                    },
+                    onEachFeature: onEachFeature,
+                });
+
+                return layer;
+            }
+
+            function onEachFeature(feature, layer) {
+                var infoboxTemplateWinter = '<div class="customMapInfobox">'
+                                            + '<span style="float: right; cursor: pointer; cursor: hand"></span><br>'
+                                            + '<b>' + feature.properties.InfoboxTitle + '</b><br>'
+                                            + '<b>TYPE:  </b>' + feature.properties.type + '<br>'
+                                            + '<b>START:  </b>' + feature.properties.StartDateTime + '<br>'
+                                            + '<b>END:  </b>' + feature.properties.EndDateTime + '<br>'
+                                            + '<b>STATE:  </b>' + feature.properties.State + '<br>'
+                                            + '<b>CENTER:  </b>' + feature.properties.Center + '<br>'
+                                            + '<b>FIPS:  </b>' + feature.properties.Fips + '<br>'
+
+                layer.bindPopup(infoboxTemplateWinter);
+
+            }
+
+            var globalIndex = -1;
+
+            var isDragging = false;
+
+            map.on("move" || "zoom", function () {
+                isDragging = true;
+
+            })
+
+            map.on("moveend" || "zoomend", function () {
+                isDragging = false;
+
+            })
+
+
+            function pushGroupToMap(winterLayerArray) {
+                //var temp = WinterLayerGroup.getLayers();
+                //*** look at globalIndex = 12 and reset to 0.  this way we make sure we loop through ALL 12 canvas' since array is 0-11 ***//
+
+                setInterval(function () {
+                    if(!isDragging){
+
+                        globalIndex++;
+                        if (globalIndex == 12) { globalIndex = 0; }
+
+                        if(globalIndex == 0){
+                            winterLayerArray[11].remove();
+                        }else{
+                            winterLayerArray[globalIndex-1].remove();
+                        }
+                        winterLayerArray[globalIndex].addTo(map);
+
+                        $("#indexGlobal").text(globalIndex || isDragging);
+                    }
+                }, 1000)
+            }
+
+        }
+            var loop = function (index) {
+                updateWinter(index);
+            }
+
+
+        return {
+            init: initShapesWinter,
+            loop: loop
+        };
+    })();
+</script>

@@ -1,0 +1,32 @@
+﻿
+<script>
+
+    var companyGeoJson;
+    var showOpcoLayer = (function()
+    {
+        var initOpCos = function (map)
+        {
+            $.ajax(
+            {
+                url: "/Data/OperatingCompanyJson/operatingCompanies.json",
+                type: "GET",
+                dataType: "json",
+                success: function (companyPolygons)
+                {
+                    L.geoJSON(companyPolygons, {
+                        style: function (feature) {
+                            return { color: feature.properties.fill };
+                        }
+                    }).bindPopup(function (layer) {
+                        return layer.feature.properties.NAME;
+                    }).addTo(map);
+                }, error: function (OpCoErr) { debugger; console.log('OpCoErr: ', OpCoErr); }
+            })
+        }
+
+        return {
+            init: initOpCos
+        };
+    })();
+
+</script>

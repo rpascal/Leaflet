@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<script src="~/Scripts/leaflet/leaflet.js"></script>
+@*<script src="~/Scripts/leaflet/polyfill.min.js?features=Promise"></script>*@
+<script src="~/Scripts/leaflet/leaflet-bing-layer.js"></script>
+<link href="~/Content/leaflet.css" rel="stylesheet" />
+
+
+
+@Html.Partial("_MapScripts", "")
+@Html.Partial("LayerScripts/_opcoPolygonsScripts", "")
+@Html.Partial("LayerScripts/_Watch_WarnScripts", "")
+
+
+<div id="mapContainer" class="mapContainer">
+    <div id="map" style="height:500px">
+
+    </div>
+</div>

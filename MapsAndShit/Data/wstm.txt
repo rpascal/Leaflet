@@ -1,0 +1,1742 @@
+|WRN|180104/0001|180104/0115|KCHS||0|1                                          
+SCZ044   400440 Dorchester                       SC US     33.08    -80.41      0.00  0  CHS                
+SCZ045   400450 Inland_Berkeley                  SC US     33.22    -79.95      0.00  0  CHS                
+SCZ050   400500 Charleston                       SC US     32.84    -79.94      0.00  0  CHS                
+SCZ052   400520 Tidal_Berkeley                   SC US     32.96    -79.92      0.00  0  CHS                
+|WRN|180104/0003|180104/0115|KCAE||0|1                                          
+SCZ041   400410 Bamberg                          SC US     33.21    -81.05      0.00  0  CAE                
+SCZ036   400360 Orangeburg                       SC US     33.44    -80.80      0.00  0  CAE                
+SCZ037   400370 Calhoun                          SC US     33.67    -80.78      0.00  0  CAE                
+SCZ031   400310 Sumter                           SC US     33.92    -80.38      0.00  0  CAE                
+SCZ029   400290 Lee                              SC US     34.16    -80.25      0.00  0  CAE                
+SCZ038   400380 Clarendon                        SC US     33.67    -80.22      0.00  0  CAE                
+|ADV|180104/0003|180104/0115|KCAE||0|1                                          
+SCZ016   400160 Chesterfield                     SC US     34.64    -80.16      0.00  0  CAE                
+|ADV|180104/0009|180104/1600|KCHS||0|0                                          
+GAZ099   100990 Candler                          GA US     32.40    -82.07      0.00  0  CHS                
+GAZ114   101140 Tattnall                         GA US     32.05    -82.06      0.00  0  CHS                
+GAZ087   100870 Jenkins                          GA US     32.79    -81.96      0.00  0  CHS                
+GAZ115   101150 Evans                            GA US     32.16    -81.89      0.00  0  CHS                
+GAZ137   101370 Long                             GA US     31.75    -81.75      0.00  0  CHS                
+GAZ100   101000 Bulloch                          GA US     32.40    -81.74      0.00  0  CHS                
+GAZ088   100880 Screven                          GA US     32.75    -81.61      0.00  0  CHS                
+GAZ138   101380 Inland_Liberty                   GA US     31.85    -81.54      0.00  0  CHS                
+GAZ140   101400 Inland_McIntosh                  GA US     31.53    -81.49      0.00  0  CHS                
+GAZ116   101160 Inland_Bryan                     GA US     32.04    -81.47      0.00  0  CHS                
+SCZ040   400400 Allendale                        SC US     32.99    -81.36      0.00  0  CHS                
+GAZ101   101010 Effingham                        GA US     32.37    -81.34      0.00  0  CHS                
+GAZ141   101410 Coastal_McIntosh                 GA US     31.47    -81.32      0.00  0  CHS                
+GAZ118   101180 Inland_Chatham                   GA US     32.08    -81.23      0.00  0  CHS                
+GAZ117   101170 Coastal_Bryan                    GA US     31.81    -81.20      0.00  0  CHS                
+GAZ139   101390 Coastal_Liberty                  GA US     31.66    -81.20      0.00  0  CHS                
+SCZ042   400420 Hampton                          SC US     32.78    -81.14      0.00  0  CHS                
+SCZ047   400470 Inland_Jasper                    SC US     32.48    -81.05      0.00  0  CHS                
+GAZ119   101190 Coastal_Chatham                  GA US     31.92    -81.03      0.00  0  CHS                
+SCZ051   400510 Coastal_Jasper                   SC US     32.24    -80.96      0.00  0  CHS                
+SCZ043   400430 Inland_Colleton                  SC US     32.92    -80.70      0.00  0  CHS                
+SCZ048   400480 Beaufort                         SC US     32.36    -80.69      0.00  0  CHS                
+SCZ049   400490 Coastal_Colleton                 SC US     32.61    -80.50      0.00  0  CHS                
+SCZ044   400440 Dorchester                       SC US     33.08    -80.41      0.00  0  CHS                
+SCZ045   400450 Inland_Berkeley                  SC US     33.22    -79.95      0.00  0  CHS                
+SCZ050   400500 Charleston                       SC US     32.84    -79.94      0.00  0  CHS                
+SCZ052   400520 Tidal_Berkeley                   SC US     32.96    -79.92      0.00  0  CHS                
+|WRN|180104/0215|180104/1015|KAKQ||0|0                                          
+VAZ080   460800 Dinwiddie                        VA US     37.08    -77.63      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ|BLIZ|0|0                                      
+NCZ015   330150 Pasquotank                       NC US     36.30    -76.29      0.00  0  AKQ                
+NCZ016   330160 Camden                           NC US     36.39    -76.21      0.00  0  AKQ                
+NCZ017   330170 Western_Currituck                NC US     36.40    -76.03      0.00  0  AKQ                
+NCZ102   331020 Eastern_Currituck                NC US     36.40    -75.84      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ|BLIZ|0|0                                      
+VAZ095   460950 Norfolk/Portsmouth               VA US     36.88    -76.33      0.00  0  AKQ                
+VAZ097   460970 Chesapeake                       VA US     36.68    -76.30      0.00  0  AKQ                
+VAZ098   460980 Virginia_Beach                   VA US     36.75    -76.06      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ|BLIZ|0|0                                      
+MDZ023   200230 Somerset                         MD US     38.12    -75.74      0.00  0  AKQ                
+MDZ022   200220 Wicomico                         MD US     38.37    -75.62      0.00  0  AKQ                
+MDZ024   200240 Inland_Worcester                 MD US     38.21    -75.38      0.00  0  AKQ                
+MDZ025   200250 Maryland_Beaches                 MD US     38.25    -75.16      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ|BLIZ|0|0                                      
+VAZ086   460860 Mathews                          VA US     37.46    -76.34      0.00  0  AKQ                
+VAZ100   461000 Northampton                      VA US     37.36    -75.90      0.00  0  AKQ                
+VAZ099   460990 Accomack                         VA US     37.77    -75.65      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ||0|0                                          
+NCZ031   330310 Chowan                           NC US     36.15    -76.61      0.00  0  AKQ                
+NCZ032   330320 Perquimans                       NC US     36.21    -76.44      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ||0|0                                          
+VAZ087   460870 Greensville                      VA US     36.68    -77.56      0.00  0  AKQ                
+NCZ012   330120 Northampton                      NC US     36.42    -77.40      0.00  0  AKQ                
+VAZ088   460880 Sussex                           VA US     36.92    -77.26      0.00  0  AKQ                
+VAZ081   460810 Prince_George                    VA US     37.19    -77.24      0.00  0  AKQ                
+VAZ092   460920 Southampton                      VA US     36.72    -77.10      0.00  0  AKQ                
+NCZ013   330130 Hertford                         NC US     36.36    -76.98      0.00  0  AKQ                
+NCZ030   330300 Bertie                           NC US     36.07    -76.98      0.00  0  AKQ                
+VAZ089   460890 Surry                            VA US     37.11    -76.90      0.00  0  AKQ                
+VAZ093   460930 Isle_of_Wight                    VA US     36.89    -76.73      0.00  0  AKQ                
+NCZ014   330140 Gates                            NC US     36.45    -76.70      0.00  0  AKQ                
+VAZ096   460960 Suffolk                          VA US     36.87    -76.50      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ||0|0                                          
+VAZ076   460760 Richmond                         VA US     37.89    -76.77      0.00  0  AKQ                
+VAZ075   460750 Westmoreland                     VA US     38.14    -76.73      0.00  0  AKQ                
+VAZ085   460850 Middlesex                        VA US     37.64    -76.52      0.00  0  AKQ                
+VAZ078   460780 Lancaster                        VA US     37.74    -76.46      0.00  0  AKQ                
+VAZ077   460770 Northumberland                   VA US     37.89    -76.42      0.00  0  AKQ                
+MDZ021   200210 Dorchester                       MD US     38.48    -76.01      0.00  0  AKQ                
+|WRN|180104/0215|180104/1015|KAKQ||0|0                                          
+VAZ082   460820 Charles_City                     VA US     37.36    -77.06      0.00  0  AKQ                
+VAZ083   460830 New_Kent                         VA US     37.51    -77.00      0.00  0  AKQ                
+VAZ090   460900 James_City                       VA US     37.23    -76.83      0.00  0  AKQ                
+VAZ084   460840 Gloucester                       VA US     37.36    -76.49      0.00  0  AKQ                
+|ADV|180104/0215|180104/1015|KAKQ||0|0                                          
+VAZ067   460670 Nottoway                         VA US     37.14    -78.05      0.00  0  AKQ                
+VAZ068   460680 Amelia                           VA US     37.34    -77.98      0.00  0  AKQ                
+VAZ062   460620 Goochland                        VA US     37.72    -77.92      0.00  0  AKQ                
+VAZ069   460690 Powhatan                         VA US     37.55    -77.92      0.00  0  AKQ                
+|ADV|180104/0215|180104/1015|KAKQ||0|0                                          
+VAZ079   460790 Brunswick                        VA US     36.76    -77.86      0.00  0  AKQ                
+VAZ064   460640 Caroline                         VA US     38.03    -77.35      0.00  0  AKQ                
+|WRN|180104/0221|180104/1430|KPHI|BLIZ|0|0                                      
+DEZ003    80030 Inland_Sussex                    DE US     38.67    -75.42      0.00  0  PHI                
+DEZ004    80040 Delaware_Beaches                 DE US     38.61    -75.09      0.00  0  PHI                
+NJZ023   300230 Cape_May                         NJ US     39.18    -74.82      0.00  0  PHI                
+NJZ024   300240 Atlantic_Coastal_Cape_May        NJ US     39.10    -74.77      0.00  0  PHI                
+NJZ022   300220 Atlantic                         NJ US     39.49    -74.70      0.00  0  PHI                
+NJZ027   300270 Southeastern_Burlington          NJ US     39.75    -74.56      0.00  0  PHI                
+NJZ025   300250 Coastal_Atlantic                 NJ US     39.39    -74.44      0.00  0  PHI                
+NJZ020   300200 Ocean                            NJ US     39.92    -74.31      0.00  0  PHI                
+NJZ013   300130 Western_Monmouth                 NJ US     40.26    -74.26      0.00  0  PHI                
+NJZ026   300260 Coastal_Ocean                    NJ US     39.79    -74.16      0.00  0  PHI                
+NJZ014   300140 Eastern_Monmouth                 NJ US     40.26    -74.03      0.00  0  PHI                
+|WRN|180104/0221|180104/1430|KPHI||0|0                                          
+MDZ015   200150 Queen_Anne's                     MD US     39.00    -76.16      0.00  0  PHI                
+MDZ012   200120 Kent                             MD US     39.18    -76.12      0.00  0  PHI                
+MDZ019   200190 Talbot                           MD US     38.78    -76.09      0.00  0  PHI                
+MDZ020   200200 Caroline                         MD US     38.87    -75.83      0.00  0  PHI                
+DEZ001    80010 New_Castle                       DE US     39.58    -75.65      0.00  0  PHI                
+DEZ002    80020 Kent                             DE US     39.09    -75.57      0.00  0  PHI                
+|WRN|180104/0221|180104/1430|KPHI||0|0                                          
+PAZ070   380700 Delaware                         PA US     39.92    -75.40      0.00  0  PHI                
+NJZ016   300160 Salem                            NJ US     39.59    -75.35      0.00  0  PHI                
+PAZ104   381040 Eastern_Montgomery               PA US     40.14    -75.24      0.00  0  PHI                
+NJZ017   300170 Gloucester                       NJ US     39.72    -75.14      0.00  0  PHI                
+PAZ071   380710 Philadelphia                     PA US     40.01    -75.13      0.00  0  PHI                
+NJZ021   300210 Cumberland                       NJ US     39.37    -75.11      0.00  0  PHI                
+PAZ106   381060 Lower_Bucks                      PA US     40.23    -74.97      0.00  0  PHI                
+NJZ018   300180 Camden                           NJ US     39.80    -74.96      0.00  0  PHI                
+NJZ019   300190 Northwestern_Burlington          NJ US     39.98    -74.76      0.00  0  PHI                
+NJZ015   300150 Mercer                           NJ US     40.28    -74.70      0.00  0  PHI                
+NJZ012   300120 Middlesex                        NJ US     40.44    -74.41      0.00  0  PHI                
+|ADV|180104/0221|180104/1430|KPHI||0|0                                          
+PAZ054   380540 Carbon                           PA US     40.92    -75.71      0.00  0  PHI                
+PAZ055   380550 Monroe                           PA US     41.06    -75.34      0.00  0  PHI                
+|ADV|180104/0221|180104/1430|KPHI||0|0                                          
+MDZ008   200080 Cecil                            MD US     39.57    -75.94      0.00  0  PHI                
+PAZ060   380600 Berks                            PA US     40.42    -75.93      0.00  0  PHI                
+PAZ101   381010 Western_Chester                  PA US     40.02    -75.80      0.00  0  PHI                
+PAZ102   381020 Eastern_Chester                  PA US     39.91    -75.68      0.00  0  PHI                
+PAZ061   380610 Lehigh                           PA US     40.61    -75.59      0.00  0  PHI                
+PAZ103   381030 Western_Montgomery               PA US     40.28    -75.48      0.00  0  PHI                
+PAZ062   380620 Northampton                      PA US     40.75    -75.31      0.00  0  PHI                
+PAZ105   381050 Upper_Bucks                      PA US     40.44    -75.24      0.00  0  PHI                
+NJZ007   300070 Warren                           NJ US     40.86    -75.00      0.00  0  PHI                
+NJZ009   300090 Hunterdon                        NJ US     40.57    -74.91      0.00  0  PHI                
+NJZ001   300010 Sussex                           NJ US     41.14    -74.69      0.00  0  PHI                
+NJZ010   300100 Somerset                         NJ US     40.56    -74.62      0.00  0  PHI                
+NJZ008   300080 Morris                           NJ US     40.86    -74.54      0.00  0  PHI                
+|ADV|180104/0231|180104/1045|KLWX||0|0                                          
+MDZ017   200170 St._Marys                        MD US     38.27    -76.62      0.00  0  LWX                
+MDZ018   200180 Calvert                          MD US     38.55    -76.57      0.00  0  LWX                
+|ADV|180104/0231|180104/1045|KLWX||0|0                                          
+VAZ057   460570 King_George                      VA US     38.27    -77.16      0.00  0  LWX                
+MDZ016   200160 Charles                          MD US     38.51    -76.99      0.00  0  LWX                
+MDZ013   200130 Prince_Georges                   MD US     38.83    -76.84      0.00  0  LWX                
+MDZ014   200140 Anne_Arundel                     MD US     39.01    -76.61      0.00  0  LWX                
+MDZ011   200110 Southern_Baltimore               MD US     39.29    -76.40      0.00  0  LWX                
+|ADV|180104/0231|180104/1045|KLWX||0|0                                          
+VAZ056   460560 Spotsylvania                     VA US     38.19    -77.65      0.00  0  LWX                
+VAZ055   460550 Stafford                         VA US     38.39    -77.33      0.00  0  LWX                
+VAZ052   460520 Pr_William/Manassas/Manassas_Pk  VA US     38.54    -77.29      0.00  0  LWX                
+VAZ053   460530 Fairfax                          VA US     38.84    -77.28      0.00  0  LWX                
+VAZ054   460540 Arlington/Falls_Ch/Alexandria    VA US     38.86    -77.10      0.00  0  LWX                
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|180104/0231|180104/1045|KLWX||0|0                                          
+VAZ502   465020 Southern_Fauquier                VA US     38.60    -77.72      0.00  0  LWX                
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+|WRN|180104/0234|180104/1200|KRAH||0|0                                          
+NCZ077   330770 Harnett                          NC US     35.37    -78.87      0.00  0  RAH                
+NCZ088   330880 Cumberland                       NC US     35.05    -78.83      0.00  0  RAH                
+NCZ042   330420 Johnston                         NC US     35.52    -78.37      0.00  0  RAH                
+NCZ089   330890 Sampson                          NC US     34.99    -78.37      0.00  0  RAH                
+NCZ078   330780 Wayne                            NC US     35.36    -78.00      0.00  0  RAH                
+NCZ027   330270 Nash                             NC US     35.97    -77.99      0.00  0  RAH                
+NCZ043   330430 Wilson                           NC US     35.70    -77.92      0.00  0  RAH                
+NCZ011   330110 Halifax                          NC US     36.26    -77.65      0.00  0  RAH                
+NCZ028   330280 Edgecombe                        NC US     35.91    -77.60      0.00  0  RAH                
+|WRN|180104/0234|180104/1200|KRAH||0|0                                          
+NCZ075   330750 Moore                            NC US     35.31    -79.48      0.00  0  RAH                
+NCZ085   330850 Scotland                         NC US     34.84    -79.48      0.00  0  RAH                
+NCZ086   330860 Hoke                             NC US     35.02    -79.24      0.00  0  RAH                
+NCZ076   330760 Lee                              NC US     35.48    -79.17      0.00  0  RAH                
+|ADV|180104/0234|180104/1200|KRAH||0|0                                          
+NCZ073   330730 Stanly                           NC US     35.31    -80.25      0.00  0  RAH                
+NCZ083   330830 Anson                            NC US     34.97    -80.10      0.00  0  RAH                
+NCZ074   330740 Montgomery                       NC US     35.33    -79.91      0.00  0  RAH                
+NCZ039   330390 Randolph                         NC US     35.71    -79.81      0.00  0  RAH                
+NCZ022   330220 Guilford                         NC US     36.08    -79.79      0.00  0  RAH                
+|ADV|180104/0234|180104/1200|KRAH||0|0                                          
+NCZ084   330840 Richmond                         NC US     35.01    -79.75      0.00  0  RAH                
+|ADV|180104/0234|180104/1200|KRAH||0|0                                          
+NCZ023   330230 Alamance                         NC US     36.04    -79.40      0.00  0  RAH                
+NCZ040   330400 Chatham                          NC US     35.70    -79.26      0.00  0  RAH                
+NCZ024   330240 Orange                           NC US     36.06    -79.12      0.00  0  RAH                
+NCZ007   330070 Person                           NC US     36.39    -78.97      0.00  0  RAH                
+NCZ025   330250 Durham                           NC US     36.04    -78.88      0.00  0  RAH                
+NCZ008   330080 Granville                        NC US     36.30    -78.65      0.00  0  RAH                
+NCZ041   330410 Wake                             NC US     35.79    -78.65      0.00  0  RAH                
+NCZ009   330090 Vance                            NC US     36.36    -78.41      0.00  0  RAH                
+NCZ026   330260 Franklin                         NC US     36.08    -78.29      0.00  0  RAH                
+NCZ010   330100 Warren                           NC US     36.40    -78.11      0.00  0  RAH                
+|ADV|180104/0246|180105/0300|KBGM||0|0                                          
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|180104/0246|180105/0300|KBGM||0|0                                          
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+|WRN|180104/0246|180104/1100|KCAR|BLIZ|0|0                                      
+MEZ015   190150 Southern_Penobscot               ME US     44.94    -68.84      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ011   190110 Central_Penobscot                ME US     45.39    -68.41      0.00  0  CAR                
+MEZ029   190290 Coastal_Hancock                  ME US     44.43    -68.39      0.00  0  CAR                
+MEZ016   190160 Interior_Hancock                 ME US     44.85    -68.32      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+MEZ032   190320 Northern_Washington              ME US     45.48    -67.74      0.00  0  CAR                
+MEZ017   190170 Central_Washington               ME US     45.01    -67.63      0.00  0  CAR                
+MEZ030   190300 Coastal_Washington               ME US     44.68    -67.54      0.00  0  CAR                
+|WRN|180104/0246|180104/1100|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ031   190310 Southern_Piscataquis             ME US     45.25    -69.16      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+|WRN|180104/0252|180104/1100|KALY||0|0                                          
+CTZ001    70010 Northern_Litchfield              CT US     41.89    -73.25      0.00  0  ALY                
+MAZ025   210250 Southern_Berkshire               MA US     42.22    -73.25      0.00  0  ALY                
+MAZ001   210010 Northern_Berkshire               MA US     42.56    -73.15      0.00  0  ALY                
+|WRN|180104/0252|180104/1100|KALY||0|0                                          
+VTZ013   450130 Bennington                       VT US     43.04    -73.09      0.00  0  ALY                
+VTZ014   450140 Western_Windham                  VT US     43.00    -72.79      0.00  0  ALY                
+VTZ015   450150 Eastern_Windham                  VT US     42.97    -72.56      0.00  0  ALY                
+|WRN|180104/0252|180104/1100|KALY||0|0                                          
+CTZ013    70130 Southern_Litchfield              CT US     41.63    -73.24      0.00  0  ALY                
+|ADV|180104/0252|180104/1100|KALY||0|0                                          
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+NYZ066   320660 Eastern_Dutchess                 NY US     41.76    -73.62      0.00  0  ALY                
+NYZ061   320610 Eastern_Columbia                 NY US     42.25    -73.54      0.00  0  ALY                
+|ADV|180104/0252|180104/1100|KALY||0|0                                          
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+NYZ049   320490 Eastern_Schenectady              NY US     42.84    -73.98      0.00  0  ALY                
+NYZ050   320500 Southern_Saratoga                NY US     42.94    -73.88      0.00  0  ALY                
+NYZ052   320520 Eastern_Albany                   NY US     42.62    -73.88      0.00  0  ALY                
+NYZ053   320530 Western_Rensselaer               NY US     42.71    -73.62      0.00  0  ALY                
+NYZ054   320540 Eastern_Rensselaer               NY US     42.72    -73.41      0.00  0  ALY                
+|ADV|180104/0252|180104/1100|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ041   320410 Northern_Saratoga                NY US     43.18    -73.86      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+NYZ083   320830 Southeast_Warren                 NY US     43.35    -73.74      0.00  0  ALY                
+NYZ084   320840 Southern_Washington              NY US     43.16    -73.44      0.00  0  ALY                
+NYZ043   320430 Northern_Washington              NY US     43.52    -73.42      0.00  0  ALY                
+|ADV|180104/0252|180104/1100|KALY||0|0                                          
+NYZ064   320640 Eastern_Ulster                   NY US     41.83    -74.06      0.00  0  ALY                
+NYZ059   320590 Eastern_Greene                   NY US     42.31    -73.91      0.00  0  ALY                
+NYZ065   320650 Western_Dutchess                 NY US     41.77    -73.85      0.00  0  ALY                
+NYZ060   320600 Western_Columbia                 NY US     42.25    -73.73      0.00  0  ALY                
+|WRN|180104/0248|180104/1100|KILM||0|0                                          
+SCZ039   400390 Williamsburg                     SC US     33.62    -79.73      0.00  0  ILM                
+SCZ055   400550 Inland_Georgetown                SC US     33.49    -79.39      0.00  0  ILM                
+SCZ056   400560 Coastal_Georgetown               SC US     33.35    -79.24      0.00  0  ILM                
+SCZ054   400540 Coastal_Horry                    SC US     33.74    -78.86      0.00  0  ILM                
+|WRN|180104/0248|180104/1100|KILM||0|0                                          
+SCZ032   400320 Florence                         SC US     34.02    -79.70      0.00  0  ILM                
+SCZ024   400240 Dillon                           SC US     34.39    -79.38      0.00  0  ILM                
+SCZ033   400330 Marion                           SC US     34.08    -79.36      0.00  0  ILM                
+NCZ087   330870 Robeson                          NC US     34.64    -79.10      0.00  0  ILM                
+NCZ099   330990 Columbus                         NC US     34.27    -78.65      0.00  0  ILM                
+NCZ096   330960 Bladen                           NC US     34.61    -78.56      0.00  0  ILM                
+NCZ109   331090 Inland_Brunswick                 NC US     34.11    -78.25      0.00  0  ILM                
+NCZ110   331100 Coastal_Brunswick                NC US     33.94    -78.22      0.00  0  ILM                
+NCZ105   331050 Inland_Pender                    NC US     34.53    -77.92      0.00  0  ILM                
+NCZ107   331070 Inland_New_Hanover               NC US     34.28    -77.90      0.00  0  ILM                
+NCZ108   331080 Coastal_New_Hanover              NC US     34.15    -77.85      0.00  0  ILM                
+NCZ106   331060 Coastal_Pender                   NC US     34.38    -77.64      0.00  0  ILM                
+|ADV|180104/0248|180104/1100|KILM||0|0                                          
+SCZ023   400230 Darlington                       SC US     34.33    -79.96      0.00  0  ILM                
+SCZ017   400170 Marlboro                         SC US     34.60    -79.68      0.00  0  ILM                
+|ADV|180104/0254|180104/1200|KMQT||0|0                                          
+MIZ005   220050 Marquette                        MI US     46.43    -87.64      0.00  0  MQT                
+MIZ006   220060 Alger                            MI US     46.41    -86.60      0.00  0  MQT                
+|WRN|180104/0300|180104/1100|KGYX|BLIZ|0|0                                      
+NHZ014   290140 Coastal_Rockingham               NH US     43.00    -70.83      0.00  0  GYX                
+MEZ023   190230 Coastal_York                     ME US     43.33    -70.60      0.00  0  GYX                
+MEZ024   190240 Coastal_Cumberland               ME US     43.74    -70.19      0.00  0  GYX                
+MEZ025   190250 Sagadahoc                        ME US     43.97    -69.86      0.00  0  GYX                
+MEZ026   190260 Lincoln                          ME US     44.08    -69.54      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+MEZ027   190270 Knox                             ME US     44.15    -69.17      0.00  0  GYX                
+MEZ028   190280 Coastal_Waldo                    ME US     44.35    -69.05      0.00  0  GYX                
+|WRN|180104/0300|180104/1100|KGYX||0|0                                          
+NHZ015   290150 Wrn_And_Central_Hillsborough     NH US     42.94    -71.79      0.00  0  BOX                
+NHZ008   290080 Merrimack                        NH US     43.30    -71.68      0.00  0  GYX                
+NHZ012   290120 Eastern_Hillsborough             NH US     42.84    -71.46      0.00  0  BOX                
+NHZ009   290090 Belknap                          NH US     43.52    -71.42      0.00  0  GYX                
+NHZ006   290060 Southern_Carroll                 NH US     43.75    -71.22      0.00  0  GYX                
+NHZ004   290040 Northern_Carroll                 NH US     44.08    -71.18      0.00  0  GYX                
+NHZ013   290130 Interior_Rockingham              NH US     42.99    -71.18      0.00  0  GYX                
+NHZ010   290100 Strafford                        NH US     43.30    -71.03      0.00  0  GYX                
+MEZ007   190070 Northern_Oxford                  ME US     44.84    -70.88      0.00  0  GYX                
+MEZ018   190180 Interior_York                    ME US     43.56    -70.78      0.00  0  GYX                
+MEZ012   190120 Southern_Oxford                  ME US     44.26    -70.67      0.00  0  GYX                
+MEZ008   190080 Northern_Franklin                ME US     45.07    -70.52      0.00  0  GYX                
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+|WRN|180104/0300|180104/1100|KGYX||0|0                                          
+NHZ011   290110 Cheshire                         NH US     42.92    -72.25      0.00  0  BOX                
+NHZ007   290070 Sullivan                         NH US     43.36    -72.22      0.00  0  GYX                
+NHZ005   290050 Southern_Grafton                 NH US     43.72    -71.92      0.00  0  GYX                
+NHZ003   290030 Northern_Grafton                 NH US     44.10    -71.75      0.00  0  GYX                
+NHZ002   290020 Southern_Coos                    NH US     44.47    -71.32      0.00  0  GYX                
+NHZ001   290010 Northern_Coos                    NH US     44.98    -71.28      0.00  0  GYX                
+|ADV|180104/0306|180104/1200|KCTP||0|0                                          
+PAZ065   380650 York                             PA US     39.92    -76.73      0.00  0  CTP                
+PAZ059   380590 Lebanon                          PA US     40.37    -76.46      0.00  0  CTP                
+PAZ066   380660 Lancaster                        PA US     40.04    -76.25      0.00  0  CTP                
+PAZ058   380580 Schuylkill                       PA US     40.71    -76.22      0.00  0  CTP                
+|ADV|180104/0309|180104/1115|KAPX||0|0                                          
+MIZ032   220320 Wexford                          MI US     44.34    -85.58      0.00  0  APX                
+MIZ026   220260 Grand_Traverse                   MI US     44.67    -85.56      0.00  0  APX                
+|ADV|180104/0309|180104/1115|KAPX||0|0                                          
+MIZ031   220310 Manistee                         MI US     44.33    -86.06      0.00  0  APX                
+MIZ025   220250 Benzie                           MI US     44.64    -86.02      0.00  0  APX                
+MIZ020   220200 Leelanau                         MI US     44.94    -85.81      0.00  0  APX                
+|WRN|180104/0322|180104/1130|KBOX|BLIZ|0|0                                      
+RIZ008   390080 Block_Island                     RI US     41.18    -71.58      0.00  0  BOX                
+RIZ007   390070 Newport                          RI US     41.56    -71.24      0.00  0  BOX                
+MAZ015   210150 Suffolk                          MA US     42.33    -71.08      0.00  0  BOX                
+MAZ020   210200 Southern_Bristol                 MA US     41.67    -71.04      0.00  0  BOX                
+MAZ016   210160 Eastern_Norfolk                  MA US     42.22    -71.01      0.00  0  BOX                
+MAZ018   210180 Western_Plymouth                 MA US     41.97    -70.89      0.00  0  BOX                
+MAZ007   210070 Eastern_Essex                    MA US     42.64    -70.87      0.00  0  BOX                
+MAZ021   210210 Southern_Plymouth                MA US     41.74    -70.78      0.00  0  BOX                
+MAZ019   210190 Eastern_Plymouth                 MA US     42.03    -70.72      0.00  0  BOX                
+|WRN|180104/0322|180104/1130|KBOX||0|0                                          
+MAZ009   210090 Western_Hampden                  MA US     42.17    -72.93      0.00  0  BOX                
+MAZ008   210080 Western_Hampshire                MA US     42.39    -72.87      0.00  0  BOX                
+MAZ002   210020 Western_Franklin                 MA US     42.62    -72.79      0.00  0  BOX                
+CTZ002    70020 Hartford                         CT US     41.81    -72.73      0.00  0  BOX                
+MAZ010   210100 Eastern_Hampshire                MA US     42.30    -72.51      0.00  0  BOX                
+MAZ011   210110 Eastern_Hampden                  MA US     42.12    -72.49      0.00  0  BOX                
+MAZ003   210030 Eastern_Franklin                 MA US     42.56    -72.45      0.00  0  BOX                
+CTZ003    70030 Tolland                          CT US     41.86    -72.34      0.00  0  BOX                
+CTZ004    70040 Windham                          CT US     41.83    -71.99      0.00  0  BOX                
+MAZ004   210040 Northern_Worcester               MA US     42.45    -71.98      0.00  0  BOX                
+MAZ012   210120 Southern_Worcester               MA US     42.15    -71.77      0.00  0  BOX                
+MAZ026   210260 Northwest_Middlesex_County       MA US     42.64    -71.66      0.00  0  BOX                
+RIZ003   390030 Western_Kent                     RI US     41.66    -71.66      0.00  0  BOX                
+RIZ001   390010 Northwest_Providence             RI US     41.89    -71.62      0.00  0  BOX                
+RIZ006   390060 Washington                       RI US     41.48    -71.62      0.00  0  BOX                
+RIZ004   390040 Eastern_Kent                     RI US     41.69    -71.46      0.00  0  BOX                
+RIZ002   390020 Southeast_Providence             RI US     41.81    -71.45      0.00  0  BOX                
+MAZ005   210050 Central_Middlesex_County         MA US     42.46    -71.38      0.00  0  BOX                
+RIZ005   390050 Bristol                          RI US     41.72    -71.28      0.00  0  BOX                
+MAZ013   210130 Western_Norfolk                  MA US     42.14    -71.27      0.00  0  BOX                
+MAZ017   210170 Northern_Bristol                 MA US     41.92    -71.18      0.00  0  BOX                
+MAZ014   210140 Southeast_Middlesex              MA US     42.42    -71.16      0.00  0  BOX                
+MAZ006   210060 Western_Essex                    MA US     42.72    -71.07      0.00  0  BOX                
+|WRN|180104/0322|180104/1130|KBOX||0|0                                          
+MAZ023   210230 Dukes                            MA US     41.40    -70.66      0.00  0  BOX                
+MAZ022   210220 Barnstable                       MA US     41.73    -70.30      0.00  0  BOX                
+|WRN|180104/0319|180104/1200|KIWX||0|0                                          
+MIZ077   220770 Berrien                          MI US     41.95    -86.41      0.00  0  IWX                
+MIZ078   220780 Cass                             MI US     41.92    -85.99      0.00  0  IWX                
+|WRN|180104/0319|180104/1200|KIWX||0|0                                          
+INZ003   140030 La_Porte                         IN US     41.55    -86.74      0.00  0  IWX                
+INZ004   140040 St._Joseph                       IN US     41.62    -86.29      0.00  0  IWX                
+|ADV|180104/0319|180104/1200|KIWX||0|0                                          
+INZ005   140050 Elkhart                          IN US     41.60    -85.86      0.00  0  IWX                
+|ADV|180104/0319|180104/1200|KIWX||0|0                                          
+INZ014   140140 Marshall                         IN US     41.32    -86.26      0.00  0  IWX                
+|WRN|180104/0344|180104/1145|KGRR||0|0                                          
+MIZ071   220710 Van_Buren                        MI US     42.25    -86.02      0.00  0  GRR                
+MIZ064   220640 Allegan                          MI US     42.59    -85.89      0.00  0  GRR                
+|ADV|180104/0344|180104/1145|KGRR||0|0                                          
+MIZ043   220430 Oceana                           MI US     43.64    -86.27      0.00  0  GRR                
+MIZ037   220370 Mason                            MI US     44.00    -86.25      0.00  0  GRR                
+MIZ050   220500 Muskegon                         MI US     43.29    -86.15      0.00  0  GRR                
+MIZ056   220560 Ottawa                           MI US     42.96    -85.99      0.00  0  GRR                
+|ADV|180104/0434|180104/1245|KLOT||0|0                                          
+INZ002   140020 Porter                           IN US     41.46    -87.07      0.00  0  LOT                
+|ADV|180104/0438|180104/1245|KCHS||0|0                                          
+GAZ099   100990 Candler                          GA US     32.40    -82.07      0.00  0  CHS                
+GAZ114   101140 Tattnall                         GA US     32.05    -82.06      0.00  0  CHS                
+GAZ087   100870 Jenkins                          GA US     32.79    -81.96      0.00  0  CHS                
+GAZ115   101150 Evans                            GA US     32.16    -81.89      0.00  0  CHS                
+GAZ137   101370 Long                             GA US     31.75    -81.75      0.00  0  CHS                
+GAZ100   101000 Bulloch                          GA US     32.40    -81.74      0.00  0  CHS                
+GAZ088   100880 Screven                          GA US     32.75    -81.61      0.00  0  CHS                
+GAZ138   101380 Inland_Liberty                   GA US     31.85    -81.54      0.00  0  CHS                
+GAZ140   101400 Inland_McIntosh                  GA US     31.53    -81.49      0.00  0  CHS                
+GAZ116   101160 Inland_Bryan                     GA US     32.04    -81.47      0.00  0  CHS                
+SCZ040   400400 Allendale                        SC US     32.99    -81.36      0.00  0  CHS                
+GAZ101   101010 Effingham                        GA US     32.37    -81.34      0.00  0  CHS                
+GAZ141   101410 Coastal_McIntosh                 GA US     31.47    -81.32      0.00  0  CHS                
+GAZ118   101180 Inland_Chatham                   GA US     32.08    -81.23      0.00  0  CHS                
+GAZ117   101170 Coastal_Bryan                    GA US     31.81    -81.20      0.00  0  CHS                
+GAZ139   101390 Coastal_Liberty                  GA US     31.66    -81.20      0.00  0  CHS                
+SCZ042   400420 Hampton                          SC US     32.78    -81.14      0.00  0  CHS                
+SCZ047   400470 Inland_Jasper                    SC US     32.48    -81.05      0.00  0  CHS                
+GAZ119   101190 Coastal_Chatham                  GA US     31.92    -81.03      0.00  0  CHS                
+SCZ051   400510 Coastal_Jasper                   SC US     32.24    -80.96      0.00  0  CHS                
+SCZ043   400430 Inland_Colleton                  SC US     32.92    -80.70      0.00  0  CHS                
+SCZ048   400480 Beaufort                         SC US     32.36    -80.69      0.00  0  CHS                
+SCZ049   400490 Coastal_Colleton                 SC US     32.61    -80.50      0.00  0  CHS                
+SCZ044   400440 Dorchester                       SC US     33.08    -80.41      0.00  0  CHS                
+SCZ045   400450 Inland_Berkeley                  SC US     33.22    -79.95      0.00  0  CHS                
+SCZ050   400500 Charleston                       SC US     32.84    -79.94      0.00  0  CHS                
+SCZ052   400520 Tidal_Berkeley                   SC US     32.96    -79.92      0.00  0  CHS                
+|WRN|180104/0507|180104/1315|KLWX||0|0                                          
+MDZ017   200170 St._Marys                        MD US     38.27    -76.62      0.00  0  LWX                
+MDZ018   200180 Calvert                          MD US     38.55    -76.57      0.00  0  LWX                
+|ADV|180104/0507|180104/1315|KLWX||0|0                                          
+VAZ057   460570 King_George                      VA US     38.27    -77.16      0.00  0  LWX                
+MDZ016   200160 Charles                          MD US     38.51    -76.99      0.00  0  LWX                
+MDZ013   200130 Prince_Georges                   MD US     38.83    -76.84      0.00  0  LWX                
+MDZ014   200140 Anne_Arundel                     MD US     39.01    -76.61      0.00  0  LWX                
+MDZ011   200110 Southern_Baltimore               MD US     39.29    -76.40      0.00  0  LWX                
+|ADV|180104/0507|180104/1315|KLWX||0|0                                          
+VAZ056   460560 Spotsylvania                     VA US     38.19    -77.65      0.00  0  LWX                
+VAZ055   460550 Stafford                         VA US     38.39    -77.33      0.00  0  LWX                
+VAZ052   460520 Pr_William/Manassas/Manassas_Pk  VA US     38.54    -77.29      0.00  0  LWX                
+VAZ053   460530 Fairfax                          VA US     38.84    -77.28      0.00  0  LWX                
+VAZ054   460540 Arlington/Falls_Ch/Alexandria    VA US     38.86    -77.10      0.00  0  LWX                
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|180104/0507|180104/1315|KLWX||0|0                                          
+VAZ502   465020 Southern_Fauquier                VA US     38.60    -77.72      0.00  0  LWX                
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+|WRN|180104/0545|180104/1345|KCAR|BLIZ|0|0                                      
+MEZ015   190150 Southern_Penobscot               ME US     44.94    -68.84      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ011   190110 Central_Penobscot                ME US     45.39    -68.41      0.00  0  CAR                
+MEZ029   190290 Coastal_Hancock                  ME US     44.43    -68.39      0.00  0  CAR                
+MEZ016   190160 Interior_Hancock                 ME US     44.85    -68.32      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+MEZ032   190320 Northern_Washington              ME US     45.48    -67.74      0.00  0  CAR                
+MEZ017   190170 Central_Washington               ME US     45.01    -67.63      0.00  0  CAR                
+MEZ030   190300 Coastal_Washington               ME US     44.68    -67.54      0.00  0  CAR                
+|WRN|180104/0545|180104/1345|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ031   190310 Southern_Piscataquis             ME US     45.25    -69.16      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+|WRN|180104/0719|180104/1530|KCAR|BLIZ|0|0                                      
+MEZ015   190150 Southern_Penobscot               ME US     44.94    -68.84      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ011   190110 Central_Penobscot                ME US     45.39    -68.41      0.00  0  CAR                
+MEZ029   190290 Coastal_Hancock                  ME US     44.43    -68.39      0.00  0  CAR                
+MEZ016   190160 Interior_Hancock                 ME US     44.85    -68.32      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+MEZ032   190320 Northern_Washington              ME US     45.48    -67.74      0.00  0  CAR                
+MEZ017   190170 Central_Washington               ME US     45.01    -67.63      0.00  0  CAR                
+MEZ030   190300 Coastal_Washington               ME US     44.68    -67.54      0.00  0  CAR                
+|WRN|180104/0719|180104/1530|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ031   190310 Southern_Piscataquis             ME US     45.25    -69.16      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+|ADV|180104/0809|180104/1600|KCHS||0|0                                          
+GAZ099   100990 Candler                          GA US     32.40    -82.07      0.00  0  CHS                
+GAZ114   101140 Tattnall                         GA US     32.05    -82.06      0.00  0  CHS                
+GAZ087   100870 Jenkins                          GA US     32.79    -81.96      0.00  0  CHS                
+GAZ115   101150 Evans                            GA US     32.16    -81.89      0.00  0  CHS                
+GAZ137   101370 Long                             GA US     31.75    -81.75      0.00  0  CHS                
+GAZ100   101000 Bulloch                          GA US     32.40    -81.74      0.00  0  CHS                
+GAZ088   100880 Screven                          GA US     32.75    -81.61      0.00  0  CHS                
+GAZ138   101380 Inland_Liberty                   GA US     31.85    -81.54      0.00  0  CHS                
+GAZ140   101400 Inland_McIntosh                  GA US     31.53    -81.49      0.00  0  CHS                
+GAZ116   101160 Inland_Bryan                     GA US     32.04    -81.47      0.00  0  CHS                
+SCZ040   400400 Allendale                        SC US     32.99    -81.36      0.00  0  CHS                
+GAZ101   101010 Effingham                        GA US     32.37    -81.34      0.00  0  CHS                
+GAZ141   101410 Coastal_McIntosh                 GA US     31.47    -81.32      0.00  0  CHS                
+GAZ118   101180 Inland_Chatham                   GA US     32.08    -81.23      0.00  0  CHS                
+GAZ117   101170 Coastal_Bryan                    GA US     31.81    -81.20      0.00  0  CHS                
+GAZ139   101390 Coastal_Liberty                  GA US     31.66    -81.20      0.00  0  CHS                
+SCZ042   400420 Hampton                          SC US     32.78    -81.14      0.00  0  CHS                
+SCZ047   400470 Inland_Jasper                    SC US     32.48    -81.05      0.00  0  CHS                
+GAZ119   101190 Coastal_Chatham                  GA US     31.92    -81.03      0.00  0  CHS                
+SCZ051   400510 Coastal_Jasper                   SC US     32.24    -80.96      0.00  0  CHS                
+SCZ043   400430 Inland_Colleton                  SC US     32.92    -80.70      0.00  0  CHS                
+SCZ048   400480 Beaufort                         SC US     32.36    -80.69      0.00  0  CHS                
+SCZ049   400490 Coastal_Colleton                 SC US     32.61    -80.50      0.00  0  CHS                
+SCZ044   400440 Dorchester                       SC US     33.08    -80.41      0.00  0  CHS                
+SCZ045   400450 Inland_Berkeley                  SC US     33.22    -79.95      0.00  0  CHS                
+SCZ050   400500 Charleston                       SC US     32.84    -79.94      0.00  0  CHS                
+SCZ052   400520 Tidal_Berkeley                   SC US     32.96    -79.92      0.00  0  CHS                
+|ADV|180104/0815|180104/1615|KAPX||0|0                                          
+MIZ031   220310 Manistee                         MI US     44.33    -86.06      0.00  0  APX                
+MIZ025   220250 Benzie                           MI US     44.64    -86.02      0.00  0  APX                
+MIZ020   220200 Leelanau                         MI US     44.94    -85.81      0.00  0  APX                
+MIZ026   220260 Grand_Traverse                   MI US     44.67    -85.56      0.00  0  APX                
+|ADV|180104/0815|180104/1200|KAPX||0|0                                          
+MIZ032   220320 Wexford                          MI US     44.34    -85.58      0.00  0  APX                
+|WRN|180104/0836|180104/1645|KAKQ|BLIZ|0|0                                      
+NCZ015   330150 Pasquotank                       NC US     36.30    -76.29      0.00  0  AKQ                
+NCZ016   330160 Camden                           NC US     36.39    -76.21      0.00  0  AKQ                
+NCZ017   330170 Western_Currituck                NC US     36.40    -76.03      0.00  0  AKQ                
+NCZ102   331020 Eastern_Currituck                NC US     36.40    -75.84      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ|BLIZ|0|0                                      
+VAZ095   460950 Norfolk/Portsmouth               VA US     36.88    -76.33      0.00  0  AKQ                
+VAZ097   460970 Chesapeake                       VA US     36.68    -76.30      0.00  0  AKQ                
+VAZ098   460980 Virginia_Beach                   VA US     36.75    -76.06      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ|BLIZ|0|0                                      
+MDZ023   200230 Somerset                         MD US     38.12    -75.74      0.00  0  AKQ                
+MDZ022   200220 Wicomico                         MD US     38.37    -75.62      0.00  0  AKQ                
+MDZ024   200240 Inland_Worcester                 MD US     38.21    -75.38      0.00  0  AKQ                
+MDZ025   200250 Maryland_Beaches                 MD US     38.25    -75.16      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ|BLIZ|0|0                                      
+VAZ086   460860 Mathews                          VA US     37.46    -76.34      0.00  0  AKQ                
+VAZ100   461000 Northampton                      VA US     37.36    -75.90      0.00  0  AKQ                
+VAZ099   460990 Accomack                         VA US     37.77    -75.65      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ||0|0                                          
+NCZ031   330310 Chowan                           NC US     36.15    -76.61      0.00  0  AKQ                
+NCZ032   330320 Perquimans                       NC US     36.21    -76.44      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ||0|0                                          
+VAZ080   460800 Dinwiddie                        VA US     37.08    -77.63      0.00  0  AKQ                
+VAZ087   460870 Greensville                      VA US     36.68    -77.56      0.00  0  AKQ                
+NCZ012   330120 Northampton                      NC US     36.42    -77.40      0.00  0  AKQ                
+VAZ088   460880 Sussex                           VA US     36.92    -77.26      0.00  0  AKQ                
+VAZ081   460810 Prince_George                    VA US     37.19    -77.24      0.00  0  AKQ                
+VAZ092   460920 Southampton                      VA US     36.72    -77.10      0.00  0  AKQ                
+NCZ013   330130 Hertford                         NC US     36.36    -76.98      0.00  0  AKQ                
+NCZ030   330300 Bertie                           NC US     36.07    -76.98      0.00  0  AKQ                
+VAZ089   460890 Surry                            VA US     37.11    -76.90      0.00  0  AKQ                
+VAZ093   460930 Isle_of_Wight                    VA US     36.89    -76.73      0.00  0  AKQ                
+NCZ014   330140 Gates                            NC US     36.45    -76.70      0.00  0  AKQ                
+VAZ096   460960 Suffolk                          VA US     36.87    -76.50      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ||0|0                                          
+VAZ076   460760 Richmond                         VA US     37.89    -76.77      0.00  0  AKQ                
+VAZ075   460750 Westmoreland                     VA US     38.14    -76.73      0.00  0  AKQ                
+VAZ085   460850 Middlesex                        VA US     37.64    -76.52      0.00  0  AKQ                
+VAZ078   460780 Lancaster                        VA US     37.74    -76.46      0.00  0  AKQ                
+VAZ077   460770 Northumberland                   VA US     37.89    -76.42      0.00  0  AKQ                
+MDZ021   200210 Dorchester                       MD US     38.48    -76.01      0.00  0  AKQ                
+|WRN|180104/0836|180104/1645|KAKQ||0|0                                          
+VAZ082   460820 Charles_City                     VA US     37.36    -77.06      0.00  0  AKQ                
+VAZ083   460830 New_Kent                         VA US     37.51    -77.00      0.00  0  AKQ                
+VAZ090   460900 James_City                       VA US     37.23    -76.83      0.00  0  AKQ                
+VAZ084   460840 Gloucester                       VA US     37.36    -76.49      0.00  0  AKQ                
+|ADV|180104/0836|180104/1645|KAKQ||0|0                                          
+VAZ067   460670 Nottoway                         VA US     37.14    -78.05      0.00  0  AKQ                
+VAZ068   460680 Amelia                           VA US     37.34    -77.98      0.00  0  AKQ                
+VAZ062   460620 Goochland                        VA US     37.72    -77.92      0.00  0  AKQ                
+VAZ069   460690 Powhatan                         VA US     37.55    -77.92      0.00  0  AKQ                
+VAZ079   460790 Brunswick                        VA US     36.76    -77.86      0.00  0  AKQ                
+VAZ064   460640 Caroline                         VA US     38.03    -77.35      0.00  0  AKQ                
+|ADV|180104/0837|180105/0845|KBGM||0|0                                          
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|180104/0837|180105/0845|KBGM||0|0                                          
+NYZ016   320160 Seneca                           NY US     42.78    -76.82      0.00  0  BGM                
+NYZ017   320170 Southern_Cayuga                  NY US     42.80    -76.53      0.00  0  BGM                
+NYZ018   320180 Onondaga                         NY US     43.01    -76.19      0.00  0  BGM                
+NYZ036   320360 Madison                          NY US     42.91    -75.67      0.00  0  BGM                
+|WRN|180104/0838|180104/1645|KBUF|LESN|0|0                                      
+NYZ004   320040 Wayne                            NY US     43.16    -77.03      0.00  0  BUF                
+NYZ005   320050 Northern_Cayuga                  NY US     43.18    -76.61      0.00  0  BUF                
+NYZ006   320060 Oswego                           NY US     43.43    -76.14      0.00  0  BUF                
+|ADV|180104/0838|180104/1645|KBUF||0|0                                          
+NYZ001   320010 Niagara                          NY US     43.20    -78.74      0.00  0  BUF                
+NYZ002   320020 Orleans                          NY US     43.25    -78.23      0.00  0  BUF                
+NYZ003   320030 Monroe                           NY US     43.15    -77.70      0.00  0  BUF                
+|ADV|180104/0838|180104/1645|KBUF||0|0                                          
+NYZ019   320190 Chautauqua                       NY US     42.23    -79.37      0.00  0  BUF                
+NYZ020   320200 Cattaraugus                      NY US     42.25    -78.68      0.00  0  BUF                
+|WRN|180104/0836|180104/1645|KLWX||0|0                                          
+MDZ017   200170 St._Marys                        MD US     38.27    -76.62      0.00  0  LWX                
+MDZ018   200180 Calvert                          MD US     38.55    -76.57      0.00  0  LWX                
+|ADV|180104/0836|180104/1645|KLWX||0|0                                          
+VAZ057   460570 King_George                      VA US     38.27    -77.16      0.00  0  LWX                
+MDZ016   200160 Charles                          MD US     38.51    -76.99      0.00  0  LWX                
+MDZ013   200130 Prince_Georges                   MD US     38.83    -76.84      0.00  0  LWX                
+MDZ014   200140 Anne_Arundel                     MD US     39.01    -76.61      0.00  0  LWX                
+MDZ011   200110 Southern_Baltimore               MD US     39.29    -76.40      0.00  0  LWX                
+|ADV|180104/0836|180104/1645|KLWX||0|0                                          
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|180104/0836|180104/1645|KLWX||0|0                                          
+VAZ056   460560 Spotsylvania                     VA US     38.19    -77.65      0.00  0  LWX                
+VAZ055   460550 Stafford                         VA US     38.39    -77.33      0.00  0  LWX                
+VAZ052   460520 Pr_William/Manassas/Manassas_Pk  VA US     38.54    -77.29      0.00  0  LWX                
+VAZ053   460530 Fairfax                          VA US     38.84    -77.28      0.00  0  LWX                
+VAZ054   460540 Arlington/Falls_Ch/Alexandria    VA US     38.86    -77.10      0.00  0  LWX                
+|ADV|180104/0836|180104/1645|KLWX||0|0                                          
+VAZ502   465020 Southern_Fauquier                VA US     38.60    -77.72      0.00  0  LWX                
+|ADV|180104/0836|180104/1645|KLWX||0|0                                          
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+|WRN|180104/0838|180104/1645|KGRR||0|0                                          
+MIZ071   220710 Van_Buren                        MI US     42.25    -86.02      0.00  0  GRR                
+MIZ064   220640 Allegan                          MI US     42.59    -85.89      0.00  0  GRR                
+|ADV|180104/0838|180104/1645|KGRR||0|0                                          
+MIZ043   220430 Oceana                           MI US     43.64    -86.27      0.00  0  GRR                
+MIZ037   220370 Mason                            MI US     44.00    -86.25      0.00  0  GRR                
+MIZ050   220500 Muskegon                         MI US     43.29    -86.15      0.00  0  GRR                
+MIZ056   220560 Ottawa                           MI US     42.96    -85.99      0.00  0  GRR                
+|WRN|180104/0839|180104/2100|KBTV||0|0                                          
+VTZ003   450030 Orleans                          VT US     44.83    -72.24      0.00  0  BTV                
+VTZ007   450070 Caledonia                        VT US     44.46    -72.10      0.00  0  BTV                
+VTZ004   450040 Essex                            VT US     44.73    -71.74      0.00  0  BTV                
+|ADV|180104/0839|180104/2100|KBTV||0|0                                          
+VTZ001   450010 Grand_Isle                       VT US     44.80    -73.29      0.00  0  BTV                
+VTZ009   450090 Western_Addison                  VT US     44.02    -73.24      0.00  0  BTV                
+VTZ005   450050 Western_Chittenden               VT US     44.48    -73.16      0.00  0  BTV                
+VTZ011   450110 Western_Rutland                  VT US     43.59    -73.14      0.00  0  BTV                
+VTZ002   450020 Western_Franklin                 VT US     44.85    -73.03      0.00  0  BTV                
+VTZ018   450180 Eastern_Addison                  VT US     44.05    -72.97      0.00  0  BTV                
+VTZ017   450170 Eastern_Chittenden               VT US     44.42    -72.93      0.00  0  BTV                
+VTZ019   450190 Eastern_Rutland                  VT US     43.57    -72.87      0.00  0  BTV                
+VTZ016   450160 Eastern_Franklin                 VT US     44.87    -72.73      0.00  0  BTV                
+VTZ006   450060 Lamoille                         VT US     44.61    -72.64      0.00  0  BTV                
+VTZ008   450080 Washington                       VT US     44.27    -72.61      0.00  0  BTV                
+VTZ012   450120 Windsor                          VT US     43.58    -72.59      0.00  0  BTV                
+VTZ010   450100 Orange                           VT US     44.01    -72.38      0.00  0  BTV                
+|ADV|180104/0839|180104/1800|KMQT||0|0                                          
+MIZ005   220050 Marquette                        MI US     46.43    -87.64      0.00  0  MQT                
+MIZ006   220060 Alger                            MI US     46.41    -86.60      0.00  0  MQT                
+|WRN|180104/0846|180104/1700|KBOX|BLIZ|0|0                                      
+MAZ007   210070 Eastern_Essex                    MA US     42.64    -70.87      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX|BLIZ|0|0                                      
+RIZ007   390070 Newport                          RI US     41.56    -71.24      0.00  0  BOX                
+MAZ015   210150 Suffolk                          MA US     42.33    -71.08      0.00  0  BOX                
+MAZ020   210200 Southern_Bristol                 MA US     41.67    -71.04      0.00  0  BOX                
+MAZ016   210160 Eastern_Norfolk                  MA US     42.22    -71.01      0.00  0  BOX                
+MAZ018   210180 Western_Plymouth                 MA US     41.97    -70.89      0.00  0  BOX                
+MAZ021   210210 Southern_Plymouth                MA US     41.74    -70.78      0.00  0  BOX                
+MAZ019   210190 Eastern_Plymouth                 MA US     42.03    -70.72      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX|BLIZ|0|0                                      
+RIZ008   390080 Block_Island                     RI US     41.18    -71.58      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX||0|0                                          
+RIZ003   390030 Western_Kent                     RI US     41.66    -71.66      0.00  0  BOX                
+RIZ001   390010 Northwest_Providence             RI US     41.89    -71.62      0.00  0  BOX                
+RIZ006   390060 Washington                       RI US     41.48    -71.62      0.00  0  BOX                
+RIZ004   390040 Eastern_Kent                     RI US     41.69    -71.46      0.00  0  BOX                
+RIZ002   390020 Southeast_Providence             RI US     41.81    -71.45      0.00  0  BOX                
+RIZ005   390050 Bristol                          RI US     41.72    -71.28      0.00  0  BOX                
+MAZ013   210130 Western_Norfolk                  MA US     42.14    -71.27      0.00  0  BOX                
+MAZ017   210170 Northern_Bristol                 MA US     41.92    -71.18      0.00  0  BOX                
+MAZ014   210140 Southeast_Middlesex              MA US     42.42    -71.16      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX||0|0                                          
+MAZ009   210090 Western_Hampden                  MA US     42.17    -72.93      0.00  0  BOX                
+CTZ002    70020 Hartford                         CT US     41.81    -72.73      0.00  0  BOX                
+MAZ011   210110 Eastern_Hampden                  MA US     42.12    -72.49      0.00  0  BOX                
+CTZ003    70030 Tolland                          CT US     41.86    -72.34      0.00  0  BOX                
+CTZ004    70040 Windham                          CT US     41.83    -71.99      0.00  0  BOX                
+MAZ012   210120 Southern_Worcester               MA US     42.15    -71.77      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX||0|0                                          
+MAZ008   210080 Western_Hampshire                MA US     42.39    -72.87      0.00  0  BOX                
+MAZ002   210020 Western_Franklin                 MA US     42.62    -72.79      0.00  0  BOX                
+MAZ010   210100 Eastern_Hampshire                MA US     42.30    -72.51      0.00  0  BOX                
+MAZ003   210030 Eastern_Franklin                 MA US     42.56    -72.45      0.00  0  BOX                
+MAZ004   210040 Northern_Worcester               MA US     42.45    -71.98      0.00  0  BOX                
+MAZ026   210260 Northwest_Middlesex_County       MA US     42.64    -71.66      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX||0|0                                          
+MAZ005   210050 Central_Middlesex_County         MA US     42.46    -71.38      0.00  0  BOX                
+MAZ006   210060 Western_Essex                    MA US     42.72    -71.07      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX||0|0                                          
+MAZ022   210220 Barnstable                       MA US     41.73    -70.30      0.00  0  BOX                
+|WRN|180104/0846|180104/1700|KBOX||0|0                                          
+MAZ023   210230 Dukes                            MA US     41.40    -70.66      0.00  0  BOX                
+|ADV|180104/0846|180104/2200|KCTP||0|0                                          
+PAZ004   380040 Warren                           PA US     41.81    -79.27      0.00  0  CTP                
+|ADV|180104/0846|180104/2200|KCTP||0|0                                          
+PAZ065   380650 York                             PA US     39.92    -76.73      0.00  0  CTP                
+PAZ059   380590 Lebanon                          PA US     40.37    -76.46      0.00  0  CTP                
+PAZ066   380660 Lancaster                        PA US     40.04    -76.25      0.00  0  CTP                
+PAZ058   380580 Schuylkill                       PA US     40.71    -76.22      0.00  0  CTP                
+|ADV|180104/0848|180104/2115|KPHI||0|0                                          
+PAZ054   380540 Carbon                           PA US     40.92    -75.71      0.00  0  PHI                
+PAZ055   380550 Monroe                           PA US     41.06    -75.34      0.00  0  PHI                
+|WRN|180104/0848|180104/2115|KPHI|BLIZ|0|0                                      
+NJZ023   300230 Cape_May                         NJ US     39.18    -74.82      0.00  0  PHI                
+NJZ024   300240 Atlantic_Coastal_Cape_May        NJ US     39.10    -74.77      0.00  0  PHI                
+NJZ022   300220 Atlantic                         NJ US     39.49    -74.70      0.00  0  PHI                
+NJZ027   300270 Southeastern_Burlington          NJ US     39.75    -74.56      0.00  0  PHI                
+NJZ025   300250 Coastal_Atlantic                 NJ US     39.39    -74.44      0.00  0  PHI                
+NJZ020   300200 Ocean                            NJ US     39.92    -74.31      0.00  0  PHI                
+NJZ013   300130 Western_Monmouth                 NJ US     40.26    -74.26      0.00  0  PHI                
+NJZ026   300260 Coastal_Ocean                    NJ US     39.79    -74.16      0.00  0  PHI                
+NJZ014   300140 Eastern_Monmouth                 NJ US     40.26    -74.03      0.00  0  PHI                
+|WRN|180104/0848|180104/2115|KPHI|BLIZ|0|0                                      
+DEZ003    80030 Inland_Sussex                    DE US     38.67    -75.42      0.00  0  PHI                
+DEZ004    80040 Delaware_Beaches                 DE US     38.61    -75.09      0.00  0  PHI                
+|WRN|180104/0848|180104/2115|KPHI||0|0                                          
+MDZ012   200120 Kent                             MD US     39.18    -76.12      0.00  0  PHI                
+DEZ001    80010 New_Castle                       DE US     39.58    -75.65      0.00  0  PHI                
+|WRN|180104/0848|180104/2115|KPHI||0|0                                          
+NJZ016   300160 Salem                            NJ US     39.59    -75.35      0.00  0  PHI                
+NJZ017   300170 Gloucester                       NJ US     39.72    -75.14      0.00  0  PHI                
+NJZ021   300210 Cumberland                       NJ US     39.37    -75.11      0.00  0  PHI                
+NJZ018   300180 Camden                           NJ US     39.80    -74.96      0.00  0  PHI                
+NJZ019   300190 Northwestern_Burlington          NJ US     39.98    -74.76      0.00  0  PHI                
+NJZ015   300150 Mercer                           NJ US     40.28    -74.70      0.00  0  PHI                
+NJZ012   300120 Middlesex                        NJ US     40.44    -74.41      0.00  0  PHI                
+|WRN|180104/0848|180104/2115|KPHI||0|0                                          
+PAZ070   380700 Delaware                         PA US     39.92    -75.40      0.00  0  PHI                
+PAZ104   381040 Eastern_Montgomery               PA US     40.14    -75.24      0.00  0  PHI                
+PAZ071   380710 Philadelphia                     PA US     40.01    -75.13      0.00  0  PHI                
+PAZ106   381060 Lower_Bucks                      PA US     40.23    -74.97      0.00  0  PHI                
+|WRN|180104/0848|180104/2115|KPHI||0|0                                          
+MDZ015   200150 Queen_Anne's                     MD US     39.00    -76.16      0.00  0  PHI                
+MDZ019   200190 Talbot                           MD US     38.78    -76.09      0.00  0  PHI                
+MDZ020   200200 Caroline                         MD US     38.87    -75.83      0.00  0  PHI                
+DEZ002    80020 Kent                             DE US     39.09    -75.57      0.00  0  PHI                
+|ADV|180104/0848|180104/2115|KPHI||0|0                                          
+MDZ008   200080 Cecil                            MD US     39.57    -75.94      0.00  0  PHI                
+NJZ009   300090 Hunterdon                        NJ US     40.57    -74.91      0.00  0  PHI                
+NJZ010   300100 Somerset                         NJ US     40.56    -74.62      0.00  0  PHI                
+NJZ008   300080 Morris                           NJ US     40.86    -74.54      0.00  0  PHI                
+|ADV|180104/0848|180104/2115|KPHI||0|0                                          
+PAZ060   380600 Berks                            PA US     40.42    -75.93      0.00  0  PHI                
+PAZ101   381010 Western_Chester                  PA US     40.02    -75.80      0.00  0  PHI                
+PAZ102   381020 Eastern_Chester                  PA US     39.91    -75.68      0.00  0  PHI                
+PAZ061   380610 Lehigh                           PA US     40.61    -75.59      0.00  0  PHI                
+PAZ103   381030 Western_Montgomery               PA US     40.28    -75.48      0.00  0  PHI                
+PAZ062   380620 Northampton                      PA US     40.75    -75.31      0.00  0  PHI                
+PAZ105   381050 Upper_Bucks                      PA US     40.44    -75.24      0.00  0  PHI                
+NJZ007   300070 Warren                           NJ US     40.86    -75.00      0.00  0  PHI                
+NJZ001   300010 Sussex                           NJ US     41.14    -74.69      0.00  0  PHI                
+|WRN|180104/0859|180104/1700|KALY||0|0                                          
+CTZ001    70010 Northern_Litchfield              CT US     41.89    -73.25      0.00  0  ALY                
+MAZ025   210250 Southern_Berkshire               MA US     42.22    -73.25      0.00  0  ALY                
+MAZ001   210010 Northern_Berkshire               MA US     42.56    -73.15      0.00  0  ALY                
+|WRN|180104/0859|180104/1700|KALY||0|0                                          
+VTZ013   450130 Bennington                       VT US     43.04    -73.09      0.00  0  ALY                
+VTZ014   450140 Western_Windham                  VT US     43.00    -72.79      0.00  0  ALY                
+VTZ015   450150 Eastern_Windham                  VT US     42.97    -72.56      0.00  0  ALY                
+|ADV|180104/0859|180104/1700|KALY||0|0                                          
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+NYZ066   320660 Eastern_Dutchess                 NY US     41.76    -73.62      0.00  0  ALY                
+NYZ061   320610 Eastern_Columbia                 NY US     42.25    -73.54      0.00  0  ALY                
+|ADV|180104/0859|180104/1700|KALY||0|0                                          
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+NYZ049   320490 Eastern_Schenectady              NY US     42.84    -73.98      0.00  0  ALY                
+NYZ050   320500 Southern_Saratoga                NY US     42.94    -73.88      0.00  0  ALY                
+NYZ052   320520 Eastern_Albany                   NY US     42.62    -73.88      0.00  0  ALY                
+NYZ053   320530 Western_Rensselaer               NY US     42.71    -73.62      0.00  0  ALY                
+NYZ054   320540 Eastern_Rensselaer               NY US     42.72    -73.41      0.00  0  ALY                
+|ADV|180104/0859|180104/1700|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ041   320410 Northern_Saratoga                NY US     43.18    -73.86      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+NYZ083   320830 Southeast_Warren                 NY US     43.35    -73.74      0.00  0  ALY                
+NYZ084   320840 Southern_Washington              NY US     43.16    -73.44      0.00  0  ALY                
+NYZ043   320430 Northern_Washington              NY US     43.52    -73.42      0.00  0  ALY                
+|WRN|180104/0859|180104/1700|KALY||0|0                                          
+CTZ013    70130 Southern_Litchfield              CT US     41.63    -73.24      0.00  0  ALY                
+|ADV|180104/0859|180104/1700|KALY||0|0                                          
+NYZ064   320640 Eastern_Ulster                   NY US     41.83    -74.06      0.00  0  ALY                
+NYZ059   320590 Eastern_Greene                   NY US     42.31    -73.91      0.00  0  ALY                
+NYZ065   320650 Western_Dutchess                 NY US     41.77    -73.85      0.00  0  ALY                
+NYZ060   320600 Western_Columbia                 NY US     42.25    -73.73      0.00  0  ALY                
+|WRN|180104/0901|180105/0600|KOKX||0|0                                          
+NJZ107   301070 Western_Union                    NJ US     40.67    -74.36      0.00  0  OKX                
+NJZ105   301050 Western_Essex                    NJ US     40.80    -74.28      0.00  0  OKX                
+NJZ004   300040 Eastern_Passaic                  NJ US     40.92    -74.20      0.00  0  OKX                
+NJZ103   301030 Western_Bergen                   NJ US     41.02    -74.15      0.00  0  OKX                
+NJZ104   301040 Eastern_Bergen                   NJ US     40.92    -74.02      0.00  0  OKX                
+NYZ069   320690 Rockland                         NY US     41.15    -74.02      0.00  0  OKX                
+NYZ068   320680 Putnam                           NY US     41.43    -73.75      0.00  0  OKX                
+NYZ070   320700 Northern_Westchester             NY US     41.22    -73.75      0.00  0  OKX                
+|WRN|180104/0901|180105/0600|KOKX|BLIZ|0|0                                      
+NYZ080   320800 Southwest_Suffolk                NY US     40.75    -73.18      0.00  0  OKX                
+NYZ078   320780 Northwest_Suffolk                NY US     40.88    -73.17      0.00  0  OKX                
+NYZ079   320790 Northeast_Suffolk                NY US     40.99    -72.58      0.00  0  OKX                
+NYZ081   320810 Southeast_Suffolk                NY US     40.91    -72.46      0.00  0  OKX                
+|WRN|180104/0901|180105/0600|KOKX||0|0                                          
+CTZ006    70060 Northern_New_Haven               CT US     41.46    -73.00      0.00  0  OKX                
+CTZ010    70100 Southern_New_Haven               CT US     41.31    -72.82      0.00  0  OKX                
+CTZ007    70070 Northern_Middlesex               CT US     41.50    -72.56      0.00  0  OKX                
+CTZ011    70110 Southern_Middlesex               CT US     41.32    -72.45      0.00  0  OKX                
+CTZ008    70080 Northern_New_London              CT US     41.53    -72.10      0.00  0  OKX                
+CTZ012    70120 Southern_New_London              CT US     41.36    -72.10      0.00  0  OKX                
+|WRN|180104/0901|180105/0600|KOKX||0|0                                          
+NYZ074   320740 Richmond_(Staten_Is.)            NY US     40.58    -74.16      0.00  0  OKX                
+NYZ072   320720 New_York_(Manhattan)             NY US     40.78    -73.97      0.00  0  OKX                
+NYZ075   320750 Kings_(Brooklyn)                 NY US     40.64    -73.95      0.00  0  OKX                
+NYZ071   320710 Southern_Westchester             NY US     40.96    -73.90      0.00  0  OKX                
+NYZ073   320730 Bronx                            NY US     40.85    -73.87      0.00  0  OKX                
+NYZ176   321760 Northern_Queens                  NY US     40.75    -73.84      0.00  0  OKX                
+NYZ178   321780 Southern_Queens                  NY US     40.67    -73.79      0.00  0  OKX                
+NYZ177   321770 Northern_Nassau                  NY US     40.83    -73.60      0.00  0  OKX                
+NYZ179   321790 Southern_Nassau                  NY US     40.69    -73.58      0.00  0  OKX                
+CTZ009    70090 Southern_Fairfield               CT US     41.13    -73.44      0.00  0  OKX                
+|WRN|180104/0901|180105/0600|KOKX||0|0                                          
+NJZ108   301080 Eastern_Union                    NJ US     40.65    -74.24      0.00  0  OKX                
+NJZ106   301060 Eastern_Essex                    NJ US     40.69    -74.13      0.00  0  OKX                
+NJZ006   300060 Hudson                           NJ US     40.71    -74.08      0.00  0  OKX                
+CTZ005    70050 Northern_Fairfield               CT US     41.35    -73.36      0.00  0  OKX                
+|ADV|180104/0901|180105/0600|KOKX||0|0                                          
+NJZ002   300020 Western_Passaic                  NJ US     41.09    -74.35      0.00  0  OKX                
+NYZ067   320670 Orange                           NY US     41.40    -74.31      0.00  0  OKX                
+|ADV|180104/0905|180104/1400|KRAH||0|0                                          
+NCZ075   330750 Moore                            NC US     35.31    -79.48      0.00  0  RAH                
+NCZ085   330850 Scotland                         NC US     34.84    -79.48      0.00  0  RAH                
+NCZ086   330860 Hoke                             NC US     35.02    -79.24      0.00  0  RAH                
+NCZ076   330760 Lee                              NC US     35.48    -79.17      0.00  0  RAH                
+NCZ077   330770 Harnett                          NC US     35.37    -78.87      0.00  0  RAH                
+NCZ088   330880 Cumberland                       NC US     35.05    -78.83      0.00  0  RAH                
+NCZ042   330420 Johnston                         NC US     35.52    -78.37      0.00  0  RAH                
+NCZ089   330890 Sampson                          NC US     34.99    -78.37      0.00  0  RAH                
+|WRN|180104/0905|180104/1400|KRAH||0|1                                          
+NCZ075   330750 Moore                            NC US     35.31    -79.48      0.00  0  RAH                
+NCZ085   330850 Scotland                         NC US     34.84    -79.48      0.00  0  RAH                
+NCZ086   330860 Hoke                             NC US     35.02    -79.24      0.00  0  RAH                
+NCZ076   330760 Lee                              NC US     35.48    -79.17      0.00  0  RAH                
+NCZ077   330770 Harnett                          NC US     35.37    -78.87      0.00  0  RAH                
+NCZ088   330880 Cumberland                       NC US     35.05    -78.83      0.00  0  RAH                
+NCZ042   330420 Johnston                         NC US     35.52    -78.37      0.00  0  RAH                
+NCZ089   330890 Sampson                          NC US     34.99    -78.37      0.00  0  RAH                
+|WRN|180104/0905|180104/1400|KRAH||0|0                                          
+NCZ078   330780 Wayne                            NC US     35.36    -78.00      0.00  0  RAH                
+NCZ027   330270 Nash                             NC US     35.97    -77.99      0.00  0  RAH                
+NCZ043   330430 Wilson                           NC US     35.70    -77.92      0.00  0  RAH                
+NCZ011   330110 Halifax                          NC US     36.26    -77.65      0.00  0  RAH                
+NCZ028   330280 Edgecombe                        NC US     35.91    -77.60      0.00  0  RAH                
+|ADV|180104/0905|180104/1400|KRAH||0|0                                          
+NCZ039   330390 Randolph                         NC US     35.71    -79.81      0.00  0  RAH                
+NCZ022   330220 Guilford                         NC US     36.08    -79.79      0.00  0  RAH                
+NCZ023   330230 Alamance                         NC US     36.04    -79.40      0.00  0  RAH                
+NCZ024   330240 Orange                           NC US     36.06    -79.12      0.00  0  RAH                
+NCZ007   330070 Person                           NC US     36.39    -78.97      0.00  0  RAH                
+|ADV|180104/0905|180104/1400|KRAH||0|0                                          
+NCZ073   330730 Stanly                           NC US     35.31    -80.25      0.00  0  RAH                
+NCZ083   330830 Anson                            NC US     34.97    -80.10      0.00  0  RAH                
+NCZ074   330740 Montgomery                       NC US     35.33    -79.91      0.00  0  RAH                
+NCZ084   330840 Richmond                         NC US     35.01    -79.75      0.00  0  RAH                
+NCZ040   330400 Chatham                          NC US     35.70    -79.26      0.00  0  RAH                
+NCZ025   330250 Durham                           NC US     36.04    -78.88      0.00  0  RAH                
+NCZ008   330080 Granville                        NC US     36.30    -78.65      0.00  0  RAH                
+NCZ041   330410 Wake                             NC US     35.79    -78.65      0.00  0  RAH                
+NCZ009   330090 Vance                            NC US     36.36    -78.41      0.00  0  RAH                
+|ADV|180104/0905|180104/1400|KRAH||0|0                                          
+NCZ026   330260 Franklin                         NC US     36.08    -78.29      0.00  0  RAH                
+NCZ010   330100 Warren                           NC US     36.40    -78.11      0.00  0  RAH                
+|WRN|180104/0906|180104/1715|KIWX||0|0                                          
+MIZ077   220770 Berrien                          MI US     41.95    -86.41      0.00  0  IWX                
+MIZ078   220780 Cass                             MI US     41.92    -85.99      0.00  0  IWX                
+|WRN|180104/0906|180104/1715|KIWX||0|0                                          
+INZ003   140030 La_Porte                         IN US     41.55    -86.74      0.00  0  IWX                
+INZ004   140040 St._Joseph                       IN US     41.62    -86.29      0.00  0  IWX                
+|ADV|180104/0906|180104/1715|KIWX||0|0                                          
+INZ014   140140 Marshall                         IN US     41.32    -86.26      0.00  0  IWX                
+|ADV|180104/0906|180104/1715|KIWX||0|0                                          
+INZ005   140050 Elkhart                          IN US     41.60    -85.86      0.00  0  IWX                
+|WRN|180104/0908|180104/1715|KGYX|BLIZ|0|0                                      
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+|WRN|180104/0908|180104/1715|KGYX|BLIZ|0|0                                      
+NHZ014   290140 Coastal_Rockingham               NH US     43.00    -70.83      0.00  0  GYX                
+MEZ023   190230 Coastal_York                     ME US     43.33    -70.60      0.00  0  GYX                
+MEZ024   190240 Coastal_Cumberland               ME US     43.74    -70.19      0.00  0  GYX                
+MEZ025   190250 Sagadahoc                        ME US     43.97    -69.86      0.00  0  GYX                
+MEZ026   190260 Lincoln                          ME US     44.08    -69.54      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+MEZ027   190270 Knox                             ME US     44.15    -69.17      0.00  0  GYX                
+MEZ028   190280 Coastal_Waldo                    ME US     44.35    -69.05      0.00  0  GYX                
+|WRN|180104/0908|180104/1715|KGYX||0|0                                          
+NHZ015   290150 Wrn_And_Central_Hillsborough     NH US     42.94    -71.79      0.00  0  BOX                
+NHZ008   290080 Merrimack                        NH US     43.30    -71.68      0.00  0  GYX                
+NHZ012   290120 Eastern_Hillsborough             NH US     42.84    -71.46      0.00  0  BOX                
+NHZ009   290090 Belknap                          NH US     43.52    -71.42      0.00  0  GYX                
+NHZ006   290060 Southern_Carroll                 NH US     43.75    -71.22      0.00  0  GYX                
+NHZ004   290040 Northern_Carroll                 NH US     44.08    -71.18      0.00  0  GYX                
+NHZ013   290130 Interior_Rockingham              NH US     42.99    -71.18      0.00  0  GYX                
+NHZ010   290100 Strafford                        NH US     43.30    -71.03      0.00  0  GYX                
+MEZ007   190070 Northern_Oxford                  ME US     44.84    -70.88      0.00  0  GYX                
+MEZ018   190180 Interior_York                    ME US     43.56    -70.78      0.00  0  GYX                
+MEZ012   190120 Southern_Oxford                  ME US     44.26    -70.67      0.00  0  GYX                
+MEZ008   190080 Northern_Franklin                ME US     45.07    -70.52      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+|WRN|180104/0908|180104/1715|KGYX||0|0                                          
+NHZ011   290110 Cheshire                         NH US     42.92    -72.25      0.00  0  BOX                
+NHZ007   290070 Sullivan                         NH US     43.36    -72.22      0.00  0  GYX                
+NHZ005   290050 Southern_Grafton                 NH US     43.72    -71.92      0.00  0  GYX                
+NHZ003   290030 Northern_Grafton                 NH US     44.10    -71.75      0.00  0  GYX                
+NHZ002   290020 Southern_Coos                    NH US     44.47    -71.32      0.00  0  GYX                
+NHZ001   290010 Northern_Coos                    NH US     44.98    -71.28      0.00  0  GYX                
+|WRN|180104/0935|180104/1745|KLWX||0|0                                          
+MDZ017   200170 St._Marys                        MD US     38.27    -76.62      0.00  0  LWX                
+MDZ018   200180 Calvert                          MD US     38.55    -76.57      0.00  0  LWX                
+|ADV|180104/0935|180104/1745|KLWX||0|0                                          
+VAZ057   460570 King_George                      VA US     38.27    -77.16      0.00  0  LWX                
+MDZ016   200160 Charles                          MD US     38.51    -76.99      0.00  0  LWX                
+MDZ013   200130 Prince_Georges                   MD US     38.83    -76.84      0.00  0  LWX                
+MDZ014   200140 Anne_Arundel                     MD US     39.01    -76.61      0.00  0  LWX                
+MDZ011   200110 Southern_Baltimore               MD US     39.29    -76.40      0.00  0  LWX                
+|ADV|180104/0935|180104/1745|KLWX||0|0                                          
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|180104/0935|180104/1745|KLWX||0|0                                          
+VAZ056   460560 Spotsylvania                     VA US     38.19    -77.65      0.00  0  LWX                
+VAZ055   460550 Stafford                         VA US     38.39    -77.33      0.00  0  LWX                
+VAZ052   460520 Pr_William/Manassas/Manassas_Pk  VA US     38.54    -77.29      0.00  0  LWX                
+VAZ053   460530 Fairfax                          VA US     38.84    -77.28      0.00  0  LWX                
+VAZ054   460540 Arlington/Falls_Ch/Alexandria    VA US     38.86    -77.10      0.00  0  LWX                
+|ADV|180104/0935|180104/1745|KLWX||0|0                                          
+VAZ502   465020 Southern_Fauquier                VA US     38.60    -77.72      0.00  0  LWX                
+|ADV|180104/0935|180104/1745|KLWX||0|0                                          
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+|WRN|180104/0940|180104/1500|KMHX||0|0                                          
+NCZ029   330290 Martin                           NC US     35.84    -77.11      0.00  0  MHX                
+NCZ080   330800 Beaufort                         NC US     35.49    -76.86      0.00  0  MHX                
+NCZ045   330450 Washington                       NC US     35.82    -76.58      0.00  0  MHX                
+NCZ081   330810 Mainland_Hyde                    NC US     35.54    -76.25      0.00  0  MHX                
+NCZ046   330460 Tyrrell                          NC US     35.82    -76.21      0.00  0  MHX                
+NCZ047   330470 Western_Dare                     NC US     35.78    -75.86      0.00  0  MHX                
+|WRN|180104/0940|180104/1400|KMHX||0|0                                          
+NCZ079   330790 Greene                           NC US     35.49    -77.68      0.00  0  MHX                
+NCZ091   330910 Lenoir                           NC US     35.24    -77.64      0.00  0  MHX                
+NCZ044   330440 Pitt                             NC US     35.59    -77.37      0.00  0  MHX                
+NCZ092   330920 Jones                            NC US     35.02    -77.36      0.00  0  MHX                
+NCZ093   330930 Craven                           NC US     35.13    -77.10      0.00  0  MHX                
+NCZ094   330940 Pamlico                          NC US     35.14    -76.75      0.00  0  MHX                
+|WRN|180104/0940|180104/1200|KMHX||0|0                                          
+NCZ090   330900 Duplin                           NC US     34.94    -77.93      0.00  0  MHX                
+NCZ098   330980 Onslow                           NC US     34.74    -77.43      0.00  0  MHX                
+NCZ095   330950 Carteret                         NC US     34.83    -76.67      0.00  0  MHX                
+|WRN|180104/0940|180104/1800|KMHX||0|0                                          
+NCZ103   331030 Outer_Banks_Dare                 NC US     35.76    -75.62      0.00  0  MHX                
+|ADV|180104/0940|180104/1800|KMHX||0|0                                          
+NCZ104   331040 Outer_Banks_Hyde                 NC US     35.13    -75.91      0.00  0  MHX                
+|ADV|180104/1000|180104/1800|KLOT||0|0                                          
+INZ002   140020 Porter                           IN US     41.46    -87.07      0.00  0  LOT                
+|WRN|180104/1110|180104/1915|KGRR||0|0                                          
+MIZ071   220710 Van_Buren                        MI US     42.25    -86.02      0.00  0  GRR                
+MIZ064   220640 Allegan                          MI US     42.59    -85.89      0.00  0  GRR                
+|ADV|180104/1110|180104/1915|KGRR||0|0                                          
+MIZ043   220430 Oceana                           MI US     43.64    -86.27      0.00  0  GRR                
+MIZ037   220370 Mason                            MI US     44.00    -86.25      0.00  0  GRR                
+MIZ050   220500 Muskegon                         MI US     43.29    -86.15      0.00  0  GRR                
+MIZ056   220560 Ottawa                           MI US     42.96    -85.99      0.00  0  GRR                
+|WRN|180104/1138|180104/1945|KCAR|BLIZ|0|0                                      
+MEZ015   190150 Southern_Penobscot               ME US     44.94    -68.84      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ011   190110 Central_Penobscot                ME US     45.39    -68.41      0.00  0  CAR                
+MEZ029   190290 Coastal_Hancock                  ME US     44.43    -68.39      0.00  0  CAR                
+MEZ016   190160 Interior_Hancock                 ME US     44.85    -68.32      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+MEZ032   190320 Northern_Washington              ME US     45.48    -67.74      0.00  0  CAR                
+MEZ017   190170 Central_Washington               ME US     45.01    -67.63      0.00  0  CAR                
+MEZ030   190300 Coastal_Washington               ME US     44.68    -67.54      0.00  0  CAR                
+|WRN|180104/1138|180104/1945|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ031   190310 Southern_Piscataquis             ME US     45.25    -69.16      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+|ADV|180104/1153|180104/2000|KRAH||0|0                                          
+NCZ078   330780 Wayne                            NC US     35.36    -78.00      0.00  0  RAH                
+NCZ027   330270 Nash                             NC US     35.97    -77.99      0.00  0  RAH                
+NCZ043   330430 Wilson                           NC US     35.70    -77.92      0.00  0  RAH                
+NCZ011   330110 Halifax                          NC US     36.26    -77.65      0.00  0  RAH                
+NCZ028   330280 Edgecombe                        NC US     35.91    -77.60      0.00  0  RAH                
+|WRN|180104/1153|180104/2000|KRAH||0|1                                          
+NCZ078   330780 Wayne                            NC US     35.36    -78.00      0.00  0  RAH                
+NCZ027   330270 Nash                             NC US     35.97    -77.99      0.00  0  RAH                
+NCZ043   330430 Wilson                           NC US     35.70    -77.92      0.00  0  RAH                
+NCZ011   330110 Halifax                          NC US     36.26    -77.65      0.00  0  RAH                
+NCZ028   330280 Edgecombe                        NC US     35.91    -77.60      0.00  0  RAH                
+|ADV|180104/1153|180104/2000|KRAH||0|0                                          
+NCZ039   330390 Randolph                         NC US     35.71    -79.81      0.00  0  RAH                
+NCZ022   330220 Guilford                         NC US     36.08    -79.79      0.00  0  RAH                
+NCZ023   330230 Alamance                         NC US     36.04    -79.40      0.00  0  RAH                
+NCZ024   330240 Orange                           NC US     36.06    -79.12      0.00  0  RAH                
+NCZ007   330070 Person                           NC US     36.39    -78.97      0.00  0  RAH                
+|ADV|180104/1153|180104/2000|KRAH||0|0                                          
+NCZ073   330730 Stanly                           NC US     35.31    -80.25      0.00  0  RAH                
+NCZ083   330830 Anson                            NC US     34.97    -80.10      0.00  0  RAH                
+NCZ074   330740 Montgomery                       NC US     35.33    -79.91      0.00  0  RAH                
+NCZ084   330840 Richmond                         NC US     35.01    -79.75      0.00  0  RAH                
+NCZ075   330750 Moore                            NC US     35.31    -79.48      0.00  0  RAH                
+NCZ085   330850 Scotland                         NC US     34.84    -79.48      0.00  0  RAH                
+NCZ040   330400 Chatham                          NC US     35.70    -79.26      0.00  0  RAH                
+NCZ086   330860 Hoke                             NC US     35.02    -79.24      0.00  0  RAH                
+NCZ076   330760 Lee                              NC US     35.48    -79.17      0.00  0  RAH                
+NCZ025   330250 Durham                           NC US     36.04    -78.88      0.00  0  RAH                
+NCZ077   330770 Harnett                          NC US     35.37    -78.87      0.00  0  RAH                
+NCZ088   330880 Cumberland                       NC US     35.05    -78.83      0.00  0  RAH                
+NCZ008   330080 Granville                        NC US     36.30    -78.65      0.00  0  RAH                
+NCZ041   330410 Wake                             NC US     35.79    -78.65      0.00  0  RAH                
+NCZ009   330090 Vance                            NC US     36.36    -78.41      0.00  0  RAH                
+NCZ042   330420 Johnston                         NC US     35.52    -78.37      0.00  0  RAH                
+NCZ089   330890 Sampson                          NC US     34.99    -78.37      0.00  0  RAH                
+NCZ026   330260 Franklin                         NC US     36.08    -78.29      0.00  0  RAH                
+NCZ010   330100 Warren                           NC US     36.40    -78.11      0.00  0  RAH                
+|WRN|180104/1215|180104/1315|KMHX||0|1                                          
+NCZ079   330790 Greene                           NC US     35.49    -77.68      0.00  0  MHX                
+NCZ091   330910 Lenoir                           NC US     35.24    -77.64      0.00  0  MHX                
+NCZ044   330440 Pitt                             NC US     35.59    -77.37      0.00  0  MHX                
+NCZ092   330920 Jones                            NC US     35.02    -77.36      0.00  0  MHX                
+NCZ093   330930 Craven                           NC US     35.13    -77.10      0.00  0  MHX                
+NCZ094   330940 Pamlico                          NC US     35.14    -76.75      0.00  0  MHX                
+|WRN|180104/1215|180104/1315|KMHX||0|1                                          
+NCZ029   330290 Martin                           NC US     35.84    -77.11      0.00  0  MHX                
+NCZ080   330800 Beaufort                         NC US     35.49    -76.86      0.00  0  MHX                
+|WRN|180104/1215|180104/1315|KMHX||0|1                                          
+NCZ090   330900 Duplin                           NC US     34.94    -77.93      0.00  0  MHX                
+NCZ098   330980 Onslow                           NC US     34.74    -77.43      0.00  0  MHX                
+NCZ095   330950 Carteret                         NC US     34.83    -76.67      0.00  0  MHX                
+|WRN|180104/1215|180104/1500|KMHX||0|0                                          
+NCZ045   330450 Washington                       NC US     35.82    -76.58      0.00  0  MHX                
+NCZ081   330810 Mainland_Hyde                    NC US     35.54    -76.25      0.00  0  MHX                
+NCZ046   330460 Tyrrell                          NC US     35.82    -76.21      0.00  0  MHX                
+NCZ047   330470 Western_Dare                     NC US     35.78    -75.86      0.00  0  MHX                
+|WRN|180104/1215|180104/1800|KMHX||0|0                                          
+NCZ103   331030 Outer_Banks_Dare                 NC US     35.76    -75.62      0.00  0  MHX                
+|ADV|180104/1215|180104/1800|KMHX||0|0                                          
+NCZ104   331040 Outer_Banks_Hyde                 NC US     35.13    -75.91      0.00  0  MHX                
+|WRN|180104/1342|180104/2200|KALY||0|0                                          
+NYZ054   320540 Eastern_Rensselaer               NY US     42.72    -73.41      0.00  0  ALY                
+|WRN|180104/1342|180104/2200|KALY||0|0                                          
+CTZ001    70010 Northern_Litchfield              CT US     41.89    -73.25      0.00  0  ALY                
+MAZ025   210250 Southern_Berkshire               MA US     42.22    -73.25      0.00  0  ALY                
+MAZ001   210010 Northern_Berkshire               MA US     42.56    -73.15      0.00  0  ALY                
+|WRN|180104/1342|180104/2200|KALY||0|0                                          
+VTZ013   450130 Bennington                       VT US     43.04    -73.09      0.00  0  ALY                
+VTZ014   450140 Western_Windham                  VT US     43.00    -72.79      0.00  0  ALY                
+VTZ015   450150 Eastern_Windham                  VT US     42.97    -72.56      0.00  0  ALY                
+|ADV|180104/1342|180104/2200|KALY||0|0                                          
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+NYZ066   320660 Eastern_Dutchess                 NY US     41.76    -73.62      0.00  0  ALY                
+NYZ061   320610 Eastern_Columbia                 NY US     42.25    -73.54      0.00  0  ALY                
+|ADV|180104/1342|180104/2200|KALY||0|0                                          
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+NYZ049   320490 Eastern_Schenectady              NY US     42.84    -73.98      0.00  0  ALY                
+NYZ050   320500 Southern_Saratoga                NY US     42.94    -73.88      0.00  0  ALY                
+NYZ052   320520 Eastern_Albany                   NY US     42.62    -73.88      0.00  0  ALY                
+NYZ053   320530 Western_Rensselaer               NY US     42.71    -73.62      0.00  0  ALY                
+|ADV|180104/1342|180104/2200|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ041   320410 Northern_Saratoga                NY US     43.18    -73.86      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+NYZ083   320830 Southeast_Warren                 NY US     43.35    -73.74      0.00  0  ALY                
+NYZ084   320840 Southern_Washington              NY US     43.16    -73.44      0.00  0  ALY                
+NYZ043   320430 Northern_Washington              NY US     43.52    -73.42      0.00  0  ALY                
+|WRN|180104/1342|180104/2200|KALY||0|0                                          
+CTZ013    70130 Southern_Litchfield              CT US     41.63    -73.24      0.00  0  ALY                
+|ADV|180104/1342|180104/2200|KALY||0|0                                          
+NYZ064   320640 Eastern_Ulster                   NY US     41.83    -74.06      0.00  0  ALY                
+NYZ059   320590 Eastern_Greene                   NY US     42.31    -73.91      0.00  0  ALY                
+NYZ065   320650 Western_Dutchess                 NY US     41.77    -73.85      0.00  0  ALY                
+NYZ060   320600 Western_Columbia                 NY US     42.25    -73.73      0.00  0  ALY                
+|WRN|180104/1342|180104/2145|KBOX|BLIZ|0|0                                      
+RIZ006   390060 Washington                       RI US     41.48    -71.62      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX|BLIZ|0|0                                      
+MAZ007   210070 Eastern_Essex                    MA US     42.64    -70.87      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX|BLIZ|0|0                                      
+RIZ007   390070 Newport                          RI US     41.56    -71.24      0.00  0  BOX                
+MAZ015   210150 Suffolk                          MA US     42.33    -71.08      0.00  0  BOX                
+MAZ020   210200 Southern_Bristol                 MA US     41.67    -71.04      0.00  0  BOX                
+MAZ016   210160 Eastern_Norfolk                  MA US     42.22    -71.01      0.00  0  BOX                
+MAZ018   210180 Western_Plymouth                 MA US     41.97    -70.89      0.00  0  BOX                
+MAZ021   210210 Southern_Plymouth                MA US     41.74    -70.78      0.00  0  BOX                
+MAZ019   210190 Eastern_Plymouth                 MA US     42.03    -70.72      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX|BLIZ|0|0                                      
+RIZ008   390080 Block_Island                     RI US     41.18    -71.58      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX||0|0                                          
+RIZ003   390030 Western_Kent                     RI US     41.66    -71.66      0.00  0  BOX                
+RIZ001   390010 Northwest_Providence             RI US     41.89    -71.62      0.00  0  BOX                
+RIZ004   390040 Eastern_Kent                     RI US     41.69    -71.46      0.00  0  BOX                
+RIZ002   390020 Southeast_Providence             RI US     41.81    -71.45      0.00  0  BOX                
+RIZ005   390050 Bristol                          RI US     41.72    -71.28      0.00  0  BOX                
+MAZ013   210130 Western_Norfolk                  MA US     42.14    -71.27      0.00  0  BOX                
+MAZ017   210170 Northern_Bristol                 MA US     41.92    -71.18      0.00  0  BOX                
+MAZ014   210140 Southeast_Middlesex              MA US     42.42    -71.16      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX||0|0                                          
+MAZ009   210090 Western_Hampden                  MA US     42.17    -72.93      0.00  0  BOX                
+CTZ002    70020 Hartford                         CT US     41.81    -72.73      0.00  0  BOX                
+MAZ011   210110 Eastern_Hampden                  MA US     42.12    -72.49      0.00  0  BOX                
+CTZ003    70030 Tolland                          CT US     41.86    -72.34      0.00  0  BOX                
+CTZ004    70040 Windham                          CT US     41.83    -71.99      0.00  0  BOX                
+MAZ012   210120 Southern_Worcester               MA US     42.15    -71.77      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX||0|0                                          
+MAZ008   210080 Western_Hampshire                MA US     42.39    -72.87      0.00  0  BOX                
+MAZ002   210020 Western_Franklin                 MA US     42.62    -72.79      0.00  0  BOX                
+MAZ010   210100 Eastern_Hampshire                MA US     42.30    -72.51      0.00  0  BOX                
+MAZ003   210030 Eastern_Franklin                 MA US     42.56    -72.45      0.00  0  BOX                
+MAZ004   210040 Northern_Worcester               MA US     42.45    -71.98      0.00  0  BOX                
+MAZ026   210260 Northwest_Middlesex_County       MA US     42.64    -71.66      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX||0|0                                          
+MAZ005   210050 Central_Middlesex_County         MA US     42.46    -71.38      0.00  0  BOX                
+MAZ006   210060 Western_Essex                    MA US     42.72    -71.07      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX||0|0                                          
+MAZ022   210220 Barnstable                       MA US     41.73    -70.30      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KBOX||0|0                                          
+MAZ023   210230 Dukes                            MA US     41.40    -70.66      0.00  0  BOX                
+|WRN|180104/1342|180104/2145|KOKX|BLIZ|0|0                                      
+NYZ177   321770 Northern_Nassau                  NY US     40.83    -73.60      0.00  0  OKX                
+NYZ179   321790 Southern_Nassau                  NY US     40.69    -73.58      0.00  0  OKX                
+CTZ006    70060 Northern_New_Haven               CT US     41.46    -73.00      0.00  0  OKX                
+CTZ010    70100 Southern_New_Haven               CT US     41.31    -72.82      0.00  0  OKX                
+CTZ007    70070 Northern_Middlesex               CT US     41.50    -72.56      0.00  0  OKX                
+CTZ011    70110 Southern_Middlesex               CT US     41.32    -72.45      0.00  0  OKX                
+CTZ008    70080 Northern_New_London              CT US     41.53    -72.10      0.00  0  OKX                
+CTZ012    70120 Southern_New_London              CT US     41.36    -72.10      0.00  0  OKX                
+|WRN|180104/1342|180104/2145|KOKX|BLIZ|0|0                                      
+NYZ080   320800 Southwest_Suffolk                NY US     40.75    -73.18      0.00  0  OKX                
+NYZ078   320780 Northwest_Suffolk                NY US     40.88    -73.17      0.00  0  OKX                
+NYZ079   320790 Northeast_Suffolk                NY US     40.99    -72.58      0.00  0  OKX                
+NYZ081   320810 Southeast_Suffolk                NY US     40.91    -72.46      0.00  0  OKX                
+|WRN|180104/1342|180104/2145|KOKX||0|0                                          
+NYZ074   320740 Richmond_(Staten_Is.)            NY US     40.58    -74.16      0.00  0  OKX                
+NYZ072   320720 New_York_(Manhattan)             NY US     40.78    -73.97      0.00  0  OKX                
+NYZ075   320750 Kings_(Brooklyn)                 NY US     40.64    -73.95      0.00  0  OKX                
+NYZ071   320710 Southern_Westchester             NY US     40.96    -73.90      0.00  0  OKX                
+NYZ073   320730 Bronx                            NY US     40.85    -73.87      0.00  0  OKX                
+NYZ176   321760 Northern_Queens                  NY US     40.75    -73.84      0.00  0  OKX                
+NYZ178   321780 Southern_Queens                  NY US     40.67    -73.79      0.00  0  OKX                
+CTZ009    70090 Southern_Fairfield               CT US     41.13    -73.44      0.00  0  OKX                
+|WRN|180104/1342|180104/2145|KOKX||0|0                                          
+NJZ107   301070 Western_Union                    NJ US     40.67    -74.36      0.00  0  OKX                
+NJZ105   301050 Western_Essex                    NJ US     40.80    -74.28      0.00  0  OKX                
+NJZ108   301080 Eastern_Union                    NJ US     40.65    -74.24      0.00  0  OKX                
+NJZ004   300040 Eastern_Passaic                  NJ US     40.92    -74.20      0.00  0  OKX                
+NJZ103   301030 Western_Bergen                   NJ US     41.02    -74.15      0.00  0  OKX                
+NJZ106   301060 Eastern_Essex                    NJ US     40.69    -74.13      0.00  0  OKX                
+NJZ006   300060 Hudson                           NJ US     40.71    -74.08      0.00  0  OKX                
+NJZ104   301040 Eastern_Bergen                   NJ US     40.92    -74.02      0.00  0  OKX                
+NYZ069   320690 Rockland                         NY US     41.15    -74.02      0.00  0  OKX                
+NYZ068   320680 Putnam                           NY US     41.43    -73.75      0.00  0  OKX                
+NYZ070   320700 Northern_Westchester             NY US     41.22    -73.75      0.00  0  OKX                
+CTZ005    70050 Northern_Fairfield               CT US     41.35    -73.36      0.00  0  OKX                
+|ADV|180104/1342|180104/2145|KOKX||0|0                                          
+NJZ002   300020 Western_Passaic                  NJ US     41.09    -74.35      0.00  0  OKX                
+NYZ067   320670 Orange                           NY US     41.40    -74.31      0.00  0  OKX                
+|WRN|180104/1441|180104/2245|KBOX|BLIZ|0|0                                      
+RIZ004   390040 Eastern_Kent                     RI US     41.69    -71.46      0.00  0  BOX                
+RIZ002   390020 Southeast_Providence             RI US     41.81    -71.45      0.00  0  BOX                
+RIZ005   390050 Bristol                          RI US     41.72    -71.28      0.00  0  BOX                
+MAZ017   210170 Northern_Bristol                 MA US     41.92    -71.18      0.00  0  BOX                
+MAZ014   210140 Southeast_Middlesex              MA US     42.42    -71.16      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX|BLIZ|0|0                                      
+MAZ006   210060 Western_Essex                    MA US     42.72    -71.07      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX|BLIZ|0|0                                      
+MAZ007   210070 Eastern_Essex                    MA US     42.64    -70.87      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX|BLIZ|0|0                                      
+RIZ006   390060 Washington                       RI US     41.48    -71.62      0.00  0  BOX                
+RIZ007   390070 Newport                          RI US     41.56    -71.24      0.00  0  BOX                
+MAZ015   210150 Suffolk                          MA US     42.33    -71.08      0.00  0  BOX                
+MAZ020   210200 Southern_Bristol                 MA US     41.67    -71.04      0.00  0  BOX                
+MAZ016   210160 Eastern_Norfolk                  MA US     42.22    -71.01      0.00  0  BOX                
+MAZ018   210180 Western_Plymouth                 MA US     41.97    -70.89      0.00  0  BOX                
+MAZ021   210210 Southern_Plymouth                MA US     41.74    -70.78      0.00  0  BOX                
+MAZ019   210190 Eastern_Plymouth                 MA US     42.03    -70.72      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX|BLIZ|0|0                                      
+RIZ008   390080 Block_Island                     RI US     41.18    -71.58      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX||0|0                                          
+MAZ009   210090 Western_Hampden                  MA US     42.17    -72.93      0.00  0  BOX                
+CTZ002    70020 Hartford                         CT US     41.81    -72.73      0.00  0  BOX                
+MAZ011   210110 Eastern_Hampden                  MA US     42.12    -72.49      0.00  0  BOX                
+CTZ003    70030 Tolland                          CT US     41.86    -72.34      0.00  0  BOX                
+CTZ004    70040 Windham                          CT US     41.83    -71.99      0.00  0  BOX                
+MAZ012   210120 Southern_Worcester               MA US     42.15    -71.77      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX||0|0                                          
+MAZ008   210080 Western_Hampshire                MA US     42.39    -72.87      0.00  0  BOX                
+MAZ002   210020 Western_Franklin                 MA US     42.62    -72.79      0.00  0  BOX                
+MAZ010   210100 Eastern_Hampshire                MA US     42.30    -72.51      0.00  0  BOX                
+MAZ003   210030 Eastern_Franklin                 MA US     42.56    -72.45      0.00  0  BOX                
+MAZ004   210040 Northern_Worcester               MA US     42.45    -71.98      0.00  0  BOX                
+MAZ026   210260 Northwest_Middlesex_County       MA US     42.64    -71.66      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX||0|0                                          
+RIZ003   390030 Western_Kent                     RI US     41.66    -71.66      0.00  0  BOX                
+RIZ001   390010 Northwest_Providence             RI US     41.89    -71.62      0.00  0  BOX                
+MAZ013   210130 Western_Norfolk                  MA US     42.14    -71.27      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX||0|0                                          
+MAZ005   210050 Central_Middlesex_County         MA US     42.46    -71.38      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX||0|0                                          
+MAZ022   210220 Barnstable                       MA US     41.73    -70.30      0.00  0  BOX                
+|WRN|180104/1441|180104/2245|KBOX||0|0                                          
+MAZ023   210230 Dukes                            MA US     41.40    -70.66      0.00  0  BOX                
+|WRN|180104/1445|180104/2245|KGYX|BLIZ|0|0                                      
+NHZ012   290120 Eastern_Hillsborough             NH US     42.84    -71.46      0.00  0  BOX                
+NHZ013   290130 Interior_Rockingham              NH US     42.99    -71.18      0.00  0  GYX                
+NHZ010   290100 Strafford                        NH US     43.30    -71.03      0.00  0  GYX                
+MEZ018   190180 Interior_York                    ME US     43.56    -70.78      0.00  0  GYX                
+|WRN|180104/1445|180104/2245|KGYX|BLIZ|0|0                                      
+NHZ014   290140 Coastal_Rockingham               NH US     43.00    -70.83      0.00  0  GYX                
+MEZ023   190230 Coastal_York                     ME US     43.33    -70.60      0.00  0  GYX                
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ024   190240 Coastal_Cumberland               ME US     43.74    -70.19      0.00  0  GYX                
+MEZ025   190250 Sagadahoc                        ME US     43.97    -69.86      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+MEZ026   190260 Lincoln                          ME US     44.08    -69.54      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+MEZ027   190270 Knox                             ME US     44.15    -69.17      0.00  0  GYX                
+MEZ028   190280 Coastal_Waldo                    ME US     44.35    -69.05      0.00  0  GYX                
+|WRN|180104/1445|180104/2245|KGYX||0|0                                          
+NHZ015   290150 Wrn_And_Central_Hillsborough     NH US     42.94    -71.79      0.00  0  BOX                
+NHZ008   290080 Merrimack                        NH US     43.30    -71.68      0.00  0  GYX                
+NHZ009   290090 Belknap                          NH US     43.52    -71.42      0.00  0  GYX                
+NHZ006   290060 Southern_Carroll                 NH US     43.75    -71.22      0.00  0  GYX                
+NHZ004   290040 Northern_Carroll                 NH US     44.08    -71.18      0.00  0  GYX                
+MEZ007   190070 Northern_Oxford                  ME US     44.84    -70.88      0.00  0  GYX                
+MEZ012   190120 Southern_Oxford                  ME US     44.26    -70.67      0.00  0  GYX                
+MEZ008   190080 Northern_Franklin                ME US     45.07    -70.52      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+|WRN|180104/1445|180104/2245|KGYX||0|0                                          
+NHZ011   290110 Cheshire                         NH US     42.92    -72.25      0.00  0  BOX                
+NHZ007   290070 Sullivan                         NH US     43.36    -72.22      0.00  0  GYX                
+NHZ005   290050 Southern_Grafton                 NH US     43.72    -71.92      0.00  0  GYX                
+NHZ003   290030 Northern_Grafton                 NH US     44.10    -71.75      0.00  0  GYX                
+NHZ002   290020 Southern_Coos                    NH US     44.47    -71.32      0.00  0  GYX                
+NHZ001   290010 Northern_Coos                    NH US     44.98    -71.28      0.00  0  GYX                
+|WRN|180104/1519|180104/2330|KBUF|LESN|0|0                                      
+NYZ004   320040 Wayne                            NY US     43.16    -77.03      0.00  0  BUF                
+NYZ005   320050 Northern_Cayuga                  NY US     43.18    -76.61      0.00  0  BUF                
+NYZ006   320060 Oswego                           NY US     43.43    -76.14      0.00  0  BUF                
+|ADV|180104/1519|180104/2330|KBUF||0|0                                          
+NYZ001   320010 Niagara                          NY US     43.20    -78.74      0.00  0  BUF                
+NYZ002   320020 Orleans                          NY US     43.25    -78.23      0.00  0  BUF                
+NYZ003   320030 Monroe                           NY US     43.15    -77.70      0.00  0  BUF                
+|ADV|180104/1519|180104/2330|KBUF||0|0                                          
+NYZ019   320190 Chautauqua                       NY US     42.23    -79.37      0.00  0  BUF                
+NYZ020   320200 Cattaraugus                      NY US     42.25    -78.68      0.00  0  BUF                
+|ADV|180104/1526|180104/1630|KCHS||0|1                                          
+GAZ099   100990 Candler                          GA US     32.40    -82.07      0.00  0  CHS                
+GAZ087   100870 Jenkins                          GA US     32.79    -81.96      0.00  0  CHS                
+GAZ140   101400 Inland_McIntosh                  GA US     31.53    -81.49      0.00  0  CHS                
+GAZ141   101410 Coastal_McIntosh                 GA US     31.47    -81.32      0.00  0  CHS                
+|ADV|180104/1526|180104/2330|KCHS||0|0                                          
+GAZ114   101140 Tattnall                         GA US     32.05    -82.06      0.00  0  CHS                
+GAZ115   101150 Evans                            GA US     32.16    -81.89      0.00  0  CHS                
+GAZ100   101000 Bulloch                          GA US     32.40    -81.74      0.00  0  CHS                
+GAZ088   100880 Screven                          GA US     32.75    -81.61      0.00  0  CHS                
+SCZ040   400400 Allendale                        SC US     32.99    -81.36      0.00  0  CHS                
+GAZ101   101010 Effingham                        GA US     32.37    -81.34      0.00  0  CHS                
+SCZ042   400420 Hampton                          SC US     32.78    -81.14      0.00  0  CHS                
+SCZ047   400470 Inland_Jasper                    SC US     32.48    -81.05      0.00  0  CHS                
+SCZ043   400430 Inland_Colleton                  SC US     32.92    -80.70      0.00  0  CHS                
+SCZ044   400440 Dorchester                       SC US     33.08    -80.41      0.00  0  CHS                
+SCZ045   400450 Inland_Berkeley                  SC US     33.22    -79.95      0.00  0  CHS                
+|ADV|180104/1526|180104/2330|KCHS||0|0                                          
+GAZ137   101370 Long                             GA US     31.75    -81.75      0.00  0  CHS                
+GAZ138   101380 Inland_Liberty                   GA US     31.85    -81.54      0.00  0  CHS                
+GAZ116   101160 Inland_Bryan                     GA US     32.04    -81.47      0.00  0  CHS                
+GAZ118   101180 Inland_Chatham                   GA US     32.08    -81.23      0.00  0  CHS                
+GAZ117   101170 Coastal_Bryan                    GA US     31.81    -81.20      0.00  0  CHS                
+GAZ139   101390 Coastal_Liberty                  GA US     31.66    -81.20      0.00  0  CHS                
+GAZ119   101190 Coastal_Chatham                  GA US     31.92    -81.03      0.00  0  CHS                
+SCZ051   400510 Coastal_Jasper                   SC US     32.24    -80.96      0.00  0  CHS                
+SCZ048   400480 Beaufort                         SC US     32.36    -80.69      0.00  0  CHS                
+SCZ049   400490 Coastal_Colleton                 SC US     32.61    -80.50      0.00  0  CHS                
+SCZ050   400500 Charleston                       SC US     32.84    -79.94      0.00  0  CHS                
+SCZ052   400520 Tidal_Berkeley                   SC US     32.96    -79.92      0.00  0  CHS                
+|WRN|180104/1540|180104/2345|KLWX||0|0                                          
+MDZ017   200170 St._Marys                        MD US     38.27    -76.62      0.00  0  LWX                
+MDZ018   200180 Calvert                          MD US     38.55    -76.57      0.00  0  LWX                
+|ADV|180104/1540|180104/2345|KLWX||0|0                                          
+VAZ057   460570 King_George                      VA US     38.27    -77.16      0.00  0  LWX                
+MDZ016   200160 Charles                          MD US     38.51    -76.99      0.00  0  LWX                
+MDZ013   200130 Prince_Georges                   MD US     38.83    -76.84      0.00  0  LWX                
+MDZ014   200140 Anne_Arundel                     MD US     39.01    -76.61      0.00  0  LWX                
+MDZ011   200110 Southern_Baltimore               MD US     39.29    -76.40      0.00  0  LWX                
+|ADV|180104/1540|180104/2345|KLWX||0|0                                          
+MDZ005   200050 Carroll                          MD US     39.56    -77.02      0.00  0  LWX                
+MDZ006   200060 Northern_Baltimore               MD US     39.54    -76.67      0.00  0  LWX                
+|ADV|180104/1540|180104/2345|KLWX||0|0                                          
+VAZ056   460560 Spotsylvania                     VA US     38.19    -77.65      0.00  0  LWX                
+VAZ055   460550 Stafford                         VA US     38.39    -77.33      0.00  0  LWX                
+VAZ052   460520 Pr_William/Manassas/Manassas_Pk  VA US     38.54    -77.29      0.00  0  LWX                
+VAZ053   460530 Fairfax                          VA US     38.84    -77.28      0.00  0  LWX                
+VAZ054   460540 Arlington/Falls_Ch/Alexandria    VA US     38.86    -77.10      0.00  0  LWX                
+|ADV|180104/1540|180104/2345|KLWX||0|0                                          
+VAZ502   465020 Southern_Fauquier                VA US     38.60    -77.72      0.00  0  LWX                
+|ADV|180104/1540|180104/2345|KLWX||0|0                                          
+MDZ004   200040 Frederick                        MD US     39.47    -77.40      0.00  0  LWX                
+|ADV|180104/1547|180105/1600|KBGM||0|0                                          
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|180104/1547|180105/1600|KBGM||0|0                                          
+NYZ016   320160 Seneca                           NY US     42.78    -76.82      0.00  0  BGM                
+NYZ017   320170 Southern_Cayuga                  NY US     42.80    -76.53      0.00  0  BGM                
+NYZ018   320180 Onondaga                         NY US     43.01    -76.19      0.00  0  BGM                
+NYZ036   320360 Madison                          NY US     42.91    -75.67      0.00  0  BGM                
+|WRN|180104/1601|180105/0015|KGRR||0|0                                          
+MIZ071   220710 Van_Buren                        MI US     42.25    -86.02      0.00  0  GRR                
+MIZ064   220640 Allegan                          MI US     42.59    -85.89      0.00  0  GRR                
+|ADV|180104/1601|180105/0015|KGRR||0|0                                          
+MIZ043   220430 Oceana                           MI US     43.64    -86.27      0.00  0  GRR                
+MIZ037   220370 Mason                            MI US     44.00    -86.25      0.00  0  GRR                
+MIZ050   220500 Muskegon                         MI US     43.29    -86.15      0.00  0  GRR                
+MIZ056   220560 Ottawa                           MI US     42.96    -85.99      0.00  0  GRR                
+|WRN|180104/1610|180105/0015|KOKX|BLIZ|0|0                                      
+NYZ177   321770 Northern_Nassau                  NY US     40.83    -73.60      0.00  0  OKX                
+NYZ179   321790 Southern_Nassau                  NY US     40.69    -73.58      0.00  0  OKX                
+NYZ080   320800 Southwest_Suffolk                NY US     40.75    -73.18      0.00  0  OKX                
+NYZ078   320780 Northwest_Suffolk                NY US     40.88    -73.17      0.00  0  OKX                
+CTZ006    70060 Northern_New_Haven               CT US     41.46    -73.00      0.00  0  OKX                
+CTZ010    70100 Southern_New_Haven               CT US     41.31    -72.82      0.00  0  OKX                
+NYZ079   320790 Northeast_Suffolk                NY US     40.99    -72.58      0.00  0  OKX                
+CTZ007    70070 Northern_Middlesex               CT US     41.50    -72.56      0.00  0  OKX                
+NYZ081   320810 Southeast_Suffolk                NY US     40.91    -72.46      0.00  0  OKX                
+CTZ011    70110 Southern_Middlesex               CT US     41.32    -72.45      0.00  0  OKX                
+CTZ008    70080 Northern_New_London              CT US     41.53    -72.10      0.00  0  OKX                
+CTZ012    70120 Southern_New_London              CT US     41.36    -72.10      0.00  0  OKX                
+|WRN|180104/1610|180105/0015|KOKX||0|0                                          
+NYZ074   320740 Richmond_(Staten_Is.)            NY US     40.58    -74.16      0.00  0  OKX                
+NYZ072   320720 New_York_(Manhattan)             NY US     40.78    -73.97      0.00  0  OKX                
+NYZ075   320750 Kings_(Brooklyn)                 NY US     40.64    -73.95      0.00  0  OKX                
+NYZ071   320710 Southern_Westchester             NY US     40.96    -73.90      0.00  0  OKX                
+NYZ073   320730 Bronx                            NY US     40.85    -73.87      0.00  0  OKX                
+NYZ176   321760 Northern_Queens                  NY US     40.75    -73.84      0.00  0  OKX                
+NYZ178   321780 Southern_Queens                  NY US     40.67    -73.79      0.00  0  OKX                
+CTZ009    70090 Southern_Fairfield               CT US     41.13    -73.44      0.00  0  OKX                
+|WRN|180104/1610|180105/0015|KOKX||0|0                                          
+NJZ107   301070 Western_Union                    NJ US     40.67    -74.36      0.00  0  OKX                
+NJZ105   301050 Western_Essex                    NJ US     40.80    -74.28      0.00  0  OKX                
+NJZ108   301080 Eastern_Union                    NJ US     40.65    -74.24      0.00  0  OKX                
+NJZ004   300040 Eastern_Passaic                  NJ US     40.92    -74.20      0.00  0  OKX                
+NJZ103   301030 Western_Bergen                   NJ US     41.02    -74.15      0.00  0  OKX                
+NJZ106   301060 Eastern_Essex                    NJ US     40.69    -74.13      0.00  0  OKX                
+NJZ006   300060 Hudson                           NJ US     40.71    -74.08      0.00  0  OKX                
+NJZ104   301040 Eastern_Bergen                   NJ US     40.92    -74.02      0.00  0  OKX                
+NYZ069   320690 Rockland                         NY US     41.15    -74.02      0.00  0  OKX                
+NYZ068   320680 Putnam                           NY US     41.43    -73.75      0.00  0  OKX                
+NYZ070   320700 Northern_Westchester             NY US     41.22    -73.75      0.00  0  OKX                
+CTZ005    70050 Northern_Fairfield               CT US     41.35    -73.36      0.00  0  OKX                
+|ADV|180104/1610|180105/0015|KOKX||0|0                                          
+NJZ002   300020 Western_Passaic                  NJ US     41.09    -74.35      0.00  0  OKX                
+NYZ067   320670 Orange                           NY US     41.40    -74.31      0.00  0  OKX                
+|WRN|180104/1614|180105/0015|KALY||0|0                                          
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ066   320660 Eastern_Dutchess                 NY US     41.76    -73.62      0.00  0  ALY                
+NYZ061   320610 Eastern_Columbia                 NY US     42.25    -73.54      0.00  0  ALY                
+|WRN|180104/1614|180105/0015|KALY||0|0                                          
+NYZ064   320640 Eastern_Ulster                   NY US     41.83    -74.06      0.00  0  ALY                
+NYZ065   320650 Western_Dutchess                 NY US     41.77    -73.85      0.00  0  ALY                
+NYZ060   320600 Western_Columbia                 NY US     42.25    -73.73      0.00  0  ALY                
+|WRN|180104/1614|180105/0015|KALY||0|0                                          
+CTZ001    70010 Northern_Litchfield              CT US     41.89    -73.25      0.00  0  ALY                
+MAZ025   210250 Southern_Berkshire               MA US     42.22    -73.25      0.00  0  ALY                
+MAZ001   210010 Northern_Berkshire               MA US     42.56    -73.15      0.00  0  ALY                
+|WRN|180104/1614|180105/0015|KALY||0|0                                          
+VTZ013   450130 Bennington                       VT US     43.04    -73.09      0.00  0  ALY                
+VTZ014   450140 Western_Windham                  VT US     43.00    -72.79      0.00  0  ALY                
+VTZ015   450150 Eastern_Windham                  VT US     42.97    -72.56      0.00  0  ALY                
+|WRN|180104/1614|180105/0015|KALY||0|0                                          
+NYZ054   320540 Eastern_Rensselaer               NY US     42.72    -73.41      0.00  0  ALY                
+|ADV|180104/1614|180105/0015|KALY||0|0                                          
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+|ADV|180104/1614|180105/0015|KALY||0|0                                          
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+NYZ049   320490 Eastern_Schenectady              NY US     42.84    -73.98      0.00  0  ALY                
+NYZ050   320500 Southern_Saratoga                NY US     42.94    -73.88      0.00  0  ALY                
+NYZ052   320520 Eastern_Albany                   NY US     42.62    -73.88      0.00  0  ALY                
+NYZ053   320530 Western_Rensselaer               NY US     42.71    -73.62      0.00  0  ALY                
+|ADV|180104/1614|180105/0015|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ041   320410 Northern_Saratoga                NY US     43.18    -73.86      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+NYZ083   320830 Southeast_Warren                 NY US     43.35    -73.74      0.00  0  ALY                
+NYZ084   320840 Southern_Washington              NY US     43.16    -73.44      0.00  0  ALY                
+NYZ043   320430 Northern_Washington              NY US     43.52    -73.42      0.00  0  ALY                
+|WRN|180104/1614|180105/0015|KALY||0|0                                          
+CTZ013    70130 Southern_Litchfield              CT US     41.63    -73.24      0.00  0  ALY                
+|ADV|180104/1614|180105/0015|KALY||0|0                                          
+NYZ059   320590 Eastern_Greene                   NY US     42.31    -73.91      0.00  0  ALY                
+|ADV|180104/1616|180105/0015|KPBZ||0|0                                          
+MDZ001   200010 Garrett                          MD US     39.53    -79.27      0.00  0  PBZ                
+|WRN|180104/1626|180105/0030|KOKX||0|0                                          
+NJZ002   300020 Western_Passaic                  NJ US     41.09    -74.35      0.00  0  OKX                
+NYZ067   320670 Orange                           NY US     41.40    -74.31      0.00  0  OKX                
+|WRN|180104/1626|180105/0030|KOKX|BLIZ|0|0                                      
+NYZ177   321770 Northern_Nassau                  NY US     40.83    -73.60      0.00  0  OKX                
+NYZ179   321790 Southern_Nassau                  NY US     40.69    -73.58      0.00  0  OKX                
+NYZ080   320800 Southwest_Suffolk                NY US     40.75    -73.18      0.00  0  OKX                
+NYZ078   320780 Northwest_Suffolk                NY US     40.88    -73.17      0.00  0  OKX                
+CTZ006    70060 Northern_New_Haven               CT US     41.46    -73.00      0.00  0  OKX                
+CTZ010    70100 Southern_New_Haven               CT US     41.31    -72.82      0.00  0  OKX                
+NYZ079   320790 Northeast_Suffolk                NY US     40.99    -72.58      0.00  0  OKX                
+CTZ007    70070 Northern_Middlesex               CT US     41.50    -72.56      0.00  0  OKX                
+NYZ081   320810 Southeast_Suffolk                NY US     40.91    -72.46      0.00  0  OKX                
+CTZ011    70110 Southern_Middlesex               CT US     41.32    -72.45      0.00  0  OKX                
+CTZ008    70080 Northern_New_London              CT US     41.53    -72.10      0.00  0  OKX                
+CTZ012    70120 Southern_New_London              CT US     41.36    -72.10      0.00  0  OKX                
+|WRN|180104/1626|180105/0030|KOKX||0|0                                          
+NYZ074   320740 Richmond_(Staten_Is.)            NY US     40.58    -74.16      0.00  0  OKX                
+NYZ072   320720 New_York_(Manhattan)             NY US     40.78    -73.97      0.00  0  OKX                
+NYZ075   320750 Kings_(Brooklyn)                 NY US     40.64    -73.95      0.00  0  OKX                
+NYZ071   320710 Southern_Westchester             NY US     40.96    -73.90      0.00  0  OKX                
+NYZ073   320730 Bronx                            NY US     40.85    -73.87      0.00  0  OKX                
+NYZ176   321760 Northern_Queens                  NY US     40.75    -73.84      0.00  0  OKX                
+NYZ178   321780 Southern_Queens                  NY US     40.67    -73.79      0.00  0  OKX                
+CTZ009    70090 Southern_Fairfield               CT US     41.13    -73.44      0.00  0  OKX                
+|WRN|180104/1626|180105/0030|KOKX||0|0                                          
+NJZ107   301070 Western_Union                    NJ US     40.67    -74.36      0.00  0  OKX                
+NJZ105   301050 Western_Essex                    NJ US     40.80    -74.28      0.00  0  OKX                
+NJZ108   301080 Eastern_Union                    NJ US     40.65    -74.24      0.00  0  OKX                
+NJZ004   300040 Eastern_Passaic                  NJ US     40.92    -74.20      0.00  0  OKX                
+NJZ103   301030 Western_Bergen                   NJ US     41.02    -74.15      0.00  0  OKX                
+NJZ106   301060 Eastern_Essex                    NJ US     40.69    -74.13      0.00  0  OKX                
+NJZ006   300060 Hudson                           NJ US     40.71    -74.08      0.00  0  OKX                
+NJZ104   301040 Eastern_Bergen                   NJ US     40.92    -74.02      0.00  0  OKX                
+NYZ069   320690 Rockland                         NY US     41.15    -74.02      0.00  0  OKX                
+NYZ068   320680 Putnam                           NY US     41.43    -73.75      0.00  0  OKX                
+NYZ070   320700 Northern_Westchester             NY US     41.22    -73.75      0.00  0  OKX                
+CTZ005    70050 Northern_Fairfield               CT US     41.35    -73.36      0.00  0  OKX                
+|WRN|180104/1633|180104/1745|KAKQ||0|1                                          
+VAZ080   460800 Dinwiddie                        VA US     37.08    -77.63      0.00  0  AKQ                
+VAZ087   460870 Greensville                      VA US     36.68    -77.56      0.00  0  AKQ                
+NCZ012   330120 Northampton                      NC US     36.42    -77.40      0.00  0  AKQ                
+VAZ088   460880 Sussex                           VA US     36.92    -77.26      0.00  0  AKQ                
+VAZ081   460810 Prince_George                    VA US     37.19    -77.24      0.00  0  AKQ                
+VAZ092   460920 Southampton                      VA US     36.72    -77.10      0.00  0  AKQ                
+NCZ013   330130 Hertford                         NC US     36.36    -76.98      0.00  0  AKQ                
+NCZ030   330300 Bertie                           NC US     36.07    -76.98      0.00  0  AKQ                
+NCZ014   330140 Gates                            NC US     36.45    -76.70      0.00  0  AKQ                
+NCZ031   330310 Chowan                           NC US     36.15    -76.61      0.00  0  AKQ                
+NCZ032   330320 Perquimans                       NC US     36.21    -76.44      0.00  0  AKQ                
+|ADV|180104/1633|180104/1745|KAKQ||0|1                                          
+VAZ067   460670 Nottoway                         VA US     37.14    -78.05      0.00  0  AKQ                
+VAZ068   460680 Amelia                           VA US     37.34    -77.98      0.00  0  AKQ                
+VAZ062   460620 Goochland                        VA US     37.72    -77.92      0.00  0  AKQ                
+VAZ069   460690 Powhatan                         VA US     37.55    -77.92      0.00  0  AKQ                
+VAZ079   460790 Brunswick                        VA US     36.76    -77.86      0.00  0  AKQ                
+VAZ064   460640 Caroline                         VA US     38.03    -77.35      0.00  0  AKQ                
+|WRN|180104/1633|180104/2300|KAKQ|BLIZ|0|0                                      
+MDZ023   200230 Somerset                         MD US     38.12    -75.74      0.00  0  AKQ                
+MDZ022   200220 Wicomico                         MD US     38.37    -75.62      0.00  0  AKQ                
+MDZ024   200240 Inland_Worcester                 MD US     38.21    -75.38      0.00  0  AKQ                
+MDZ025   200250 Maryland_Beaches                 MD US     38.25    -75.16      0.00  0  AKQ                
+|WRN|180104/1633|180104/2300|KAKQ|BLIZ|0|0                                      
+VAZ086   460860 Mathews                          VA US     37.46    -76.34      0.00  0  AKQ                
+VAZ100   461000 Northampton                      VA US     37.36    -75.90      0.00  0  AKQ                
+VAZ099   460990 Accomack                         VA US     37.77    -75.65      0.00  0  AKQ                
+|WRN|180104/1633|180104/1800|KAKQ|BLIZ|0|0                                      
+NCZ015   330150 Pasquotank                       NC US     36.30    -76.29      0.00  0  AKQ                
+NCZ016   330160 Camden                           NC US     36.39    -76.21      0.00  0  AKQ                
+NCZ017   330170 Western_Currituck                NC US     36.40    -76.03      0.00  0  AKQ                
+NCZ102   331020 Eastern_Currituck                NC US     36.40    -75.84      0.00  0  AKQ                
+|WRN|180104/1633|180104/1800|KAKQ|BLIZ|0|0                                      
+VAZ095   460950 Norfolk/Portsmouth               VA US     36.88    -76.33      0.00  0  AKQ                
+VAZ097   460970 Chesapeake                       VA US     36.68    -76.30      0.00  0  AKQ                
+VAZ098   460980 Virginia_Beach                   VA US     36.75    -76.06      0.00  0  AKQ                
+|WRN|180104/1633|180104/1800|KAKQ||0|0                                          
+VAZ089   460890 Surry                            VA US     37.11    -76.90      0.00  0  AKQ                
+VAZ093   460930 Isle_of_Wight                    VA US     36.89    -76.73      0.00  0  AKQ                
+VAZ096   460960 Suffolk                          VA US     36.87    -76.50      0.00  0  AKQ                
+|WRN|180104/1633|180104/1800|KAKQ||0|0                                          
+VAZ076   460760 Richmond                         VA US     37.89    -76.77      0.00  0  AKQ                
+VAZ075   460750 Westmoreland                     VA US     38.14    -76.73      0.00  0  AKQ                
+VAZ085   460850 Middlesex                        VA US     37.64    -76.52      0.00  0  AKQ                
+VAZ078   460780 Lancaster                        VA US     37.74    -76.46      0.00  0  AKQ                
+VAZ077   460770 Northumberland                   VA US     37.89    -76.42      0.00  0  AKQ                
+MDZ021   200210 Dorchester                       MD US     38.48    -76.01      0.00  0  AKQ                
+|WRN|180104/1633|180104/1800|KAKQ||0|0                                          
+VAZ082   460820 Charles_City                     VA US     37.36    -77.06      0.00  0  AKQ                
+VAZ083   460830 New_Kent                         VA US     37.51    -77.00      0.00  0  AKQ                
+VAZ090   460900 James_City                       VA US     37.23    -76.83      0.00  0  AKQ                
+VAZ084   460840 Gloucester                       VA US     37.36    -76.49      0.00  0  AKQ                
+|WRN|180104/1639|180105/0045|KOKX|BLIZ|0|0                                      
+NYZ177   321770 Northern_Nassau                  NY US     40.83    -73.60      0.00  0  OKX                
+NYZ179   321790 Southern_Nassau                  NY US     40.69    -73.58      0.00  0  OKX                
+NYZ080   320800 Southwest_Suffolk                NY US     40.75    -73.18      0.00  0  OKX                
+NYZ078   320780 Northwest_Suffolk                NY US     40.88    -73.17      0.00  0  OKX                
+CTZ006    70060 Northern_New_Haven               CT US     41.46    -73.00      0.00  0  OKX                
+CTZ010    70100 Southern_New_Haven               CT US     41.31    -72.82      0.00  0  OKX                
+NYZ079   320790 Northeast_Suffolk                NY US     40.99    -72.58      0.00  0  OKX                
+CTZ007    70070 Northern_Middlesex               CT US     41.50    -72.56      0.00  0  OKX                
+NYZ081   320810 Southeast_Suffolk                NY US     40.91    -72.46      0.00  0  OKX                
+CTZ011    70110 Southern_Middlesex               CT US     41.32    -72.45      0.00  0  OKX                
+CTZ008    70080 Northern_New_London              CT US     41.53    -72.10      0.00  0  OKX                
+CTZ012    70120 Southern_New_London              CT US     41.36    -72.10      0.00  0  OKX                
+|WRN|180104/1639|180105/0045|KOKX||0|0                                          
+NYZ074   320740 Richmond_(Staten_Is.)            NY US     40.58    -74.16      0.00  0  OKX                
+NYZ072   320720 New_York_(Manhattan)             NY US     40.78    -73.97      0.00  0  OKX                
+NYZ075   320750 Kings_(Brooklyn)                 NY US     40.64    -73.95      0.00  0  OKX                
+NYZ071   320710 Southern_Westchester             NY US     40.96    -73.90      0.00  0  OKX                
+NYZ073   320730 Bronx                            NY US     40.85    -73.87      0.00  0  OKX                
+NYZ176   321760 Northern_Queens                  NY US     40.75    -73.84      0.00  0  OKX                
+NYZ178   321780 Southern_Queens                  NY US     40.67    -73.79      0.00  0  OKX                
+CTZ009    70090 Southern_Fairfield               CT US     41.13    -73.44      0.00  0  OKX                
+|WRN|180104/1639|180105/0045|KOKX||0|0                                          
+NJZ107   301070 Western_Union                    NJ US     40.67    -74.36      0.00  0  OKX                
+NJZ002   300020 Western_Passaic                  NJ US     41.09    -74.35      0.00  0  OKX                
+NYZ067   320670 Orange                           NY US     41.40    -74.31      0.00  0  OKX                
+NJZ105   301050 Western_Essex                    NJ US     40.80    -74.28      0.00  0  OKX                
+NJZ108   301080 Eastern_Union                    NJ US     40.65    -74.24      0.00  0  OKX                
+NJZ004   300040 Eastern_Passaic                  NJ US     40.92    -74.20      0.00  0  OKX                
+NJZ103   301030 Western_Bergen                   NJ US     41.02    -74.15      0.00  0  OKX                
+NJZ106   301060 Eastern_Essex                    NJ US     40.69    -74.13      0.00  0  OKX                
+NJZ006   300060 Hudson                           NJ US     40.71    -74.08      0.00  0  OKX                
+NJZ104   301040 Eastern_Bergen                   NJ US     40.92    -74.02      0.00  0  OKX                
+NYZ069   320690 Rockland                         NY US     41.15    -74.02      0.00  0  OKX                
+NYZ068   320680 Putnam                           NY US     41.43    -73.75      0.00  0  OKX                
+NYZ070   320700 Northern_Westchester             NY US     41.22    -73.75      0.00  0  OKX                
+CTZ005    70050 Northern_Fairfield               CT US     41.35    -73.36      0.00  0  OKX                
+|ADV|180104/1652|180105/1700|KBGM||0|0                                          
+PAZ047   380470 Luzerne                          PA US     41.18    -75.99      0.00  0  BGM                
+PAZ044   380440 Lackawanna                       PA US     41.44    -75.61      0.00  0  BGM                
+PAZ072   380720 Southern_Wayne                   PA US     41.48    -75.32      0.00  0  BGM                
+PAZ040   380400 Northern_Wayne                   PA US     41.78    -75.29      0.00  0  BGM                
+NYZ046   320460 Otsego                           NY US     42.63    -75.03      0.00  0  BGM                
+PAZ048   380480 Pike                             PA US     41.33    -75.03      0.00  0  BGM                
+NYZ057   320570 Delaware                         NY US     42.20    -74.97      0.00  0  BGM                
+NYZ062   320620 Sullivan                         NY US     41.72    -74.77      0.00  0  BGM                
+|ADV|180104/1652|180105/1700|KBGM||0|0                                          
+NYZ016   320160 Seneca                           NY US     42.78    -76.82      0.00  0  BGM                
+NYZ017   320170 Southern_Cayuga                  NY US     42.80    -76.53      0.00  0  BGM                
+NYZ018   320180 Onondaga                         NY US     43.01    -76.19      0.00  0  BGM                
+NYZ036   320360 Madison                          NY US     42.91    -75.67      0.00  0  BGM                
+|ADV|180104/1656|180105/0100|KRAH||0|0                                          
+NCZ039   330390 Randolph                         NC US     35.71    -79.81      0.00  0  RAH                
+NCZ022   330220 Guilford                         NC US     36.08    -79.79      0.00  0  RAH                
+NCZ023   330230 Alamance                         NC US     36.04    -79.40      0.00  0  RAH                
+NCZ024   330240 Orange                           NC US     36.06    -79.12      0.00  0  RAH                
+NCZ007   330070 Person                           NC US     36.39    -78.97      0.00  0  RAH                
+|ADV|180104/1656|180105/0100|KRAH||0|0                                          
+NCZ073   330730 Stanly                           NC US     35.31    -80.25      0.00  0  RAH                
+NCZ083   330830 Anson                            NC US     34.97    -80.10      0.00  0  RAH                
+NCZ074   330740 Montgomery                       NC US     35.33    -79.91      0.00  0  RAH                
+NCZ084   330840 Richmond                         NC US     35.01    -79.75      0.00  0  RAH                
+NCZ075   330750 Moore                            NC US     35.31    -79.48      0.00  0  RAH                
+NCZ085   330850 Scotland                         NC US     34.84    -79.48      0.00  0  RAH                
+NCZ040   330400 Chatham                          NC US     35.70    -79.26      0.00  0  RAH                
+NCZ086   330860 Hoke                             NC US     35.02    -79.24      0.00  0  RAH                
+NCZ076   330760 Lee                              NC US     35.48    -79.17      0.00  0  RAH                
+NCZ025   330250 Durham                           NC US     36.04    -78.88      0.00  0  RAH                
+NCZ077   330770 Harnett                          NC US     35.37    -78.87      0.00  0  RAH                
+NCZ088   330880 Cumberland                       NC US     35.05    -78.83      0.00  0  RAH                
+NCZ008   330080 Granville                        NC US     36.30    -78.65      0.00  0  RAH                
+NCZ041   330410 Wake                             NC US     35.79    -78.65      0.00  0  RAH                
+NCZ009   330090 Vance                            NC US     36.36    -78.41      0.00  0  RAH                
+NCZ042   330420 Johnston                         NC US     35.52    -78.37      0.00  0  RAH                
+NCZ089   330890 Sampson                          NC US     34.99    -78.37      0.00  0  RAH                
+NCZ026   330260 Franklin                         NC US     36.08    -78.29      0.00  0  RAH                
+NCZ010   330100 Warren                           NC US     36.40    -78.11      0.00  0  RAH                
+NCZ078   330780 Wayne                            NC US     35.36    -78.00      0.00  0  RAH                
+NCZ027   330270 Nash                             NC US     35.97    -77.99      0.00  0  RAH                
+NCZ043   330430 Wilson                           NC US     35.70    -77.92      0.00  0  RAH                
+NCZ011   330110 Halifax                          NC US     36.26    -77.65      0.00  0  RAH                
+NCZ028   330280 Edgecombe                        NC US     35.91    -77.60      0.00  0  RAH                
+|WRN|180104/1659|180105/0100|KALY||0|0                                          
+NYZ063   320630 Western_Ulster                   NY US     41.92    -74.38      0.00  0  ALY                
+NYZ066   320660 Eastern_Dutchess                 NY US     41.76    -73.62      0.00  0  ALY                
+NYZ061   320610 Eastern_Columbia                 NY US     42.25    -73.54      0.00  0  ALY                
+CTZ001    70010 Northern_Litchfield              CT US     41.89    -73.25      0.00  0  ALY                
+MAZ025   210250 Southern_Berkshire               MA US     42.22    -73.25      0.00  0  ALY                
+MAZ001   210010 Northern_Berkshire               MA US     42.56    -73.15      0.00  0  ALY                
+|WRN|180104/1659|180105/0100|KALY||0|0                                          
+VTZ013   450130 Bennington                       VT US     43.04    -73.09      0.00  0  ALY                
+VTZ014   450140 Western_Windham                  VT US     43.00    -72.79      0.00  0  ALY                
+VTZ015   450150 Eastern_Windham                  VT US     42.97    -72.56      0.00  0  ALY                
+|WRN|180104/1659|180105/0100|KALY||0|0                                          
+NYZ054   320540 Eastern_Rensselaer               NY US     42.72    -73.41      0.00  0  ALY                
+|ADV|180104/1659|180105/0100|KALY||0|0                                          
+NYZ058   320580 Western_Greene                   NY US     42.26    -74.24      0.00  0  ALY                
+|ADV|180104/1659|180105/0100|KALY||0|0                                          
+NYZ038   320380 Southern_Herkimer                NY US     43.09    -74.95      0.00  0  ALY                
+NYZ040   320400 Montgomery                       NY US     42.90    -74.44      0.00  0  ALY                
+NYZ047   320470 Schoharie                        NY US     42.59    -74.44      0.00  0  ALY                
+NYZ039   320390 Southern_Fulton                  NY US     43.04    -74.42      0.00  0  ALY                
+NYZ048   320480 Western_Schenectady              NY US     42.79    -74.16      0.00  0  ALY                
+NYZ051   320510 Western_Albany                   NY US     42.56    -74.12      0.00  0  ALY                
+NYZ049   320490 Eastern_Schenectady              NY US     42.84    -73.98      0.00  0  ALY                
+NYZ050   320500 Southern_Saratoga                NY US     42.94    -73.88      0.00  0  ALY                
+NYZ052   320520 Eastern_Albany                   NY US     42.62    -73.88      0.00  0  ALY                
+NYZ053   320530 Western_Rensselaer               NY US     42.71    -73.62      0.00  0  ALY                
+|ADV|180104/1659|180105/0100|KALY||0|0                                          
+NYZ032   320320 Northern_Herkimer                NY US     43.71    -74.97      0.00  0  ALY                
+NYZ033   320330 Hamilton                         NY US     43.66    -74.50      0.00  0  ALY                
+NYZ082   320820 Northern_Fulton                  NY US     43.16    -74.42      0.00  0  ALY                
+NYZ041   320410 Northern_Saratoga                NY US     43.18    -73.86      0.00  0  ALY                
+NYZ042   320420 Northern_Warren                  NY US     43.60    -73.86      0.00  0  ALY                
+NYZ083   320830 Southeast_Warren                 NY US     43.35    -73.74      0.00  0  ALY                
+NYZ084   320840 Southern_Washington              NY US     43.16    -73.44      0.00  0  ALY                
+NYZ043   320430 Northern_Washington              NY US     43.52    -73.42      0.00  0  ALY                
+|WRN|180104/1659|180105/0100|KALY||0|0                                          
+NYZ064   320640 Eastern_Ulster                   NY US     41.83    -74.06      0.00  0  ALY                
+NYZ065   320650 Western_Dutchess                 NY US     41.77    -73.85      0.00  0  ALY                
+NYZ060   320600 Western_Columbia                 NY US     42.25    -73.73      0.00  0  ALY                
+CTZ013    70130 Southern_Litchfield              CT US     41.63    -73.24      0.00  0  ALY                
+|ADV|180104/1659|180105/0100|KALY||0|0                                          
+NYZ059   320590 Eastern_Greene                   NY US     42.31    -73.91      0.00  0  ALY                
+|WRN|180104/1701|180105/0000|KCAR|BLIZ|0|0                                      
+MEZ015   190150 Southern_Penobscot               ME US     44.94    -68.84      0.00  0  CAR                
+MEZ005   190050 Northern_Penobscot               ME US     45.95    -68.65      0.00  0  CAR                
+MEZ011   190110 Central_Penobscot                ME US     45.39    -68.41      0.00  0  CAR                
+MEZ029   190290 Coastal_Hancock                  ME US     44.43    -68.39      0.00  0  CAR                
+MEZ016   190160 Interior_Hancock                 ME US     44.85    -68.32      0.00  0  CAR                
+MEZ002   190020 Northeast_Aroostook              ME US     46.73    -68.22      0.00  0  CAR                
+MEZ006   190060 Southeast_Aroostook              ME US     46.00    -68.12      0.00  0  CAR                
+MEZ032   190320 Northern_Washington              ME US     45.48    -67.74      0.00  0  CAR                
+MEZ017   190170 Central_Washington               ME US     45.01    -67.63      0.00  0  CAR                
+MEZ030   190300 Coastal_Washington               ME US     44.68    -67.54      0.00  0  CAR                
+|WRN|180104/1701|180105/0000|KCAR||0|0                                          
+MEZ003   190030 Northern_Somerset                ME US     46.24    -69.97      0.00  0  CAR                
+MEZ010   190100 Central_Piscataquis              ME US     45.56    -69.43      0.00  0  CAR                
+MEZ004   190040 Northern_Piscataquis             ME US     46.18    -69.24      0.00  0  CAR                
+MEZ031   190310 Southern_Piscataquis             ME US     45.25    -69.16      0.00  0  CAR                
+MEZ001   190010 Northwest_Aroostook              ME US     46.95    -69.11      0.00  0  CAR                
+|ADV|180104/1702|180105/0115|KAPX||0|0                                          
+MIZ031   220310 Manistee                         MI US     44.33    -86.06      0.00  0  APX                
+MIZ025   220250 Benzie                           MI US     44.64    -86.02      0.00  0  APX                
+MIZ020   220200 Leelanau                         MI US     44.94    -85.81      0.00  0  APX                
+MIZ026   220260 Grand_Traverse                   MI US     44.67    -85.56      0.00  0  APX                
+|WRN|180104/1706|180105/0115|KGYX|BLIZ|0|0                                      
+NHZ012   290120 Eastern_Hillsborough             NH US     42.84    -71.46      0.00  0  BOX                
+NHZ013   290130 Interior_Rockingham              NH US     42.99    -71.18      0.00  0  GYX                
+NHZ010   290100 Strafford                        NH US     43.30    -71.03      0.00  0  GYX                
+NHZ014   290140 Coastal_Rockingham               NH US     43.00    -70.83      0.00  0  GYX                
+MEZ018   190180 Interior_York                    ME US     43.56    -70.78      0.00  0  GYX                
+MEZ023   190230 Coastal_York                     ME US     43.33    -70.60      0.00  0  GYX                
+MEZ019   190190 Interior_Cumberland              ME US     43.90    -70.51      0.00  0  GYX                
+MEZ020   190200 Androscoggin                     ME US     44.17    -70.20      0.00  0  GYX                
+MEZ024   190240 Coastal_Cumberland               ME US     43.74    -70.19      0.00  0  GYX                
+MEZ025   190250 Sagadahoc                        ME US     43.97    -69.86      0.00  0  GYX                
+MEZ021   190210 Kennebec                         ME US     44.41    -69.77      0.00  0  GYX                
+MEZ026   190260 Lincoln                          ME US     44.08    -69.54      0.00  0  GYX                
+MEZ022   190220 Interior_Waldo                   ME US     44.54    -69.17      0.00  0  GYX                
+MEZ027   190270 Knox                             ME US     44.15    -69.17      0.00  0  GYX                
+MEZ028   190280 Coastal_Waldo                    ME US     44.35    -69.05      0.00  0  GYX                
+|WRN|180104/1706|180105/0115|KGYX||0|0                                          
+NHZ015   290150 Wrn_And_Central_Hillsborough     NH US     42.94    -71.79      0.00  0  BOX                
+NHZ008   290080 Merrimack                        NH US     43.30    -71.68      0.00  0  GYX                
+NHZ009   290090 Belknap                          NH US     43.52    -71.42      0.00  0  GYX                
+NHZ006   290060 Southern_Carroll                 NH US     43.75    -71.22      0.00  0  GYX                
+NHZ004   290040 Northern_Carroll                 NH US     44.08    -71.18      0.00  0  GYX                
+MEZ007   190070 Northern_Oxford                  ME US     44.84    -70.88      0.00  0  GYX                
+MEZ012   190120 Southern_Oxford                  ME US     44.26    -70.67      0.00  0  GYX                
+MEZ008   190080 Northern_Franklin                ME US     45.07    -70.52      0.00  0  GYX                
+MEZ013   190130 Southern_Franklin                ME US     44.66    -70.18      0.00  0  GYX                
+MEZ009   190090 Central_Somerset                 ME US     45.48    -70.07      0.00  0  GYX                
+MEZ014   190140 Southern_Somerset                ME US     44.84    -69.66      0.00  0  GYX                
+|WRN|180104/1706|180105/0115|KGYX||0|0                                          
+NHZ011   290110 Cheshire                         NH US     42.92    -72.25      0.00  0  BOX                
+NHZ007   290070 Sullivan                         NH US     43.36    -72.22      0.00  0  GYX                
+NHZ005   290050 Southern_Grafton                 NH US     43.72    -71.92      0.00  0  GYX                
+NHZ003   290030 Northern_Grafton                 NH US     44.10    -71.75      0.00  0  GYX                
+NHZ002   290020 Southern_Coos                    NH US     44.47    -71.32      0.00  0  GYX                
+NHZ001   290010 Northern_Coos                    NH US     44.98    -71.28      0.00  0  GYX                
+|ADV|180104/1715|180105/0115|KCLE||0|0                                          
+OHZ014   350140 Ashtabula_Inland                 OH US     41.68    -80.74      0.00  0  CLE                
+PAZ003   380030 Crawford                         PA US     41.68    -80.11      0.00  0  CLE                
+PAZ002   380020 Southern_Erie                    PA US     41.97    -80.01      0.00  0  CLE                
+|ADV|180104/1748|180104/2300|KAKQ||0|0                                          
+VAZ095   460950 Norfolk/Portsmouth               VA US     36.88    -76.33      0.00  0  AKQ                
+VAZ097   460970 Chesapeake                       VA US     36.68    -76.30      0.00  0  AKQ                
+VAZ098   460980 Virginia_Beach                   VA US     36.75    -76.06      0.00  0  AKQ                
+|WRN|180104/1748|180104/2300|KAKQ|BLIZ|0|1                                      
+VAZ095   460950 Norfolk/Portsmouth               VA US     36.88    -76.33      0.00  0  AKQ                
+VAZ097   460970 Chesapeake                       VA US     36.68    -76.30      0.00  0  AKQ                
+VAZ098   460980 Virginia_Beach                   VA US     36.75    -76.06      0.00  0  AKQ                
+|WRN|180104/1748|180104/1900|KAKQ|BLIZ|0|1                                      
+NCZ015   330150 Pasquotank                       NC US     36.30    -76.29      0.00  0  AKQ                
+NCZ016   330160 Camden                           NC US     36.39    -76.21      0.00  0  AKQ                
+NCZ017   330170 Western_Currituck                NC US     36.40    -76.03      0.00  0  AKQ                
+NCZ102   331020 Eastern_Currituck                NC US     36.40    -75.84      0.00  0  AKQ                
+|ADV|180104/1748|180104/2300|KAKQ||0|0                                          
+VAZ090   460900 James_City                       VA US     37.23    -76.83      0.00  0  AKQ                
+VAZ076   460760 Richmond                         VA US     37.89    -76.77      0.00  0  AKQ                
+VAZ075   460750 Westmoreland                     VA US     38.14    -76.73      0.00  0  AKQ                
+VAZ085   460850 Middlesex                        VA US     37.64    -76.52      0.00  0  AKQ                
+VAZ084   460840 Gloucester                       VA US     37.36    -76.49      0.00  0  AKQ                
+VAZ078   460780 Lancaster                        VA US     37.74    -76.46      0.00  0  AKQ                
+VAZ077   460770 Northumberland                   VA US     37.89    -76.42      0.00  0  AKQ                
+|WRN|180104/1748|180104/2300|KAKQ||0|1                                          
+VAZ090   460900 James_City                       VA US     37.23    -76.83      0.00  0  AKQ                
+VAZ076   460760 Richmond                         VA US     37.89    -76.77      0.00  0  AKQ                
+VAZ075   460750 Westmoreland                     VA US     38.14    -76.73      0.00  0  AKQ                
+VAZ085   460850 Middlesex                        VA US     37.64    -76.52      0.00  0  AKQ                
+VAZ084   460840 Gloucester                       VA US     37.36    -76.49      0.00  0  AKQ                
+VAZ078   460780 Lancaster                        VA US     37.74    -76.46      0.00  0  AKQ                
+VAZ077   460770 Northumberland                   VA US     37.89    -76.42      0.00  0  AKQ                
+|WRN|180104/1748|180104/1900|KAKQ||0|1                                          
+VAZ082   460820 Charles_City                     VA US     37.36    -77.06      0.00  0  AKQ                
+VAZ083   460830 New_Kent                         VA US     37.51    -77.00      0.00  0  AKQ                
+VAZ089   460890 Surry                            VA US     37.11    -76.90      0.00  0  AKQ                
+VAZ093   460930 Isle_of_Wight                    VA US     36.89    -76.73      0.00  0  AKQ                
+VAZ096   460960 Suffolk                          VA US     36.87    -76.50      0.00  0  AKQ                
+|WRN|180104/1748|180104/2300|KAKQ||0|0                                          
+MDZ021   200210 Dorchester                       MD US     38.48    -76.01      0.00  0  AKQ                
+|WRN|180104/1748|180104/2300|KAKQ|BLIZ|0|0                                      
+MDZ023   200230 Somerset                         MD US     38.12    -75.74      0.00  0  AKQ                
+MDZ022   200220 Wicomico                         MD US     38.37    -75.62      0.00  0  AKQ                
+MDZ024   200240 Inland_Worcester                 MD US     38.21    -75.38      0.00  0  AKQ                
+MDZ025   200250 Maryland_Beaches                 MD US     38.25    -75.16      0.00  0  AKQ                
+|WRN|180104/1748|180104/2300|KAKQ|BLIZ|0|0                                      
+VAZ086   460860 Mathews                          VA US     37.46    -76.34      0.00  0  AKQ                
+VAZ100   461000 Northampton                      VA US     37.36    -75.90      0.00  0  AKQ                
+VAZ099   460990 Accomack                         VA US     37.77    -75.65      0.00  0  AKQ                
