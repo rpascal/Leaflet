@@ -58,7 +58,6 @@ namespace LeafletTesting.Data.MapDataProviders
 
             if (stringData.Count > 0)
             {
-                string testingFip = "320570";
                 List<string> propertiesLineList = new List<string>();
 
                 foreach (string line in stringData)
@@ -89,7 +88,8 @@ namespace LeafletTesting.Data.MapDataProviders
                             InfoboxTitle = GetInfoboxTitle(propertiesLineList[1], types.WINTER)
                         };
 
-                        Feature<WinterDataProperties> feature = new Feature<WinterDataProperties>() {
+                        Feature<WinterDataProperties> feature = new Feature<WinterDataProperties>()
+                        {
                             properties = properties
                         };
                         Geometry geometry = new Geometry();
@@ -123,50 +123,46 @@ namespace LeafletTesting.Data.MapDataProviders
                         geometry.coordinates.Add(allCoordinates);
 
                         feature.geometry = geometry;
+
+                        if (mainListFeatures.Exists(x => x.properties.Fips.Equals(fip))) {
+                            mainListFeatures.Remove(mainListFeatures.Find(x => x.properties.Fips.Equals(fip)));
+                        }
                         mainListFeatures.Add(feature);
 
                     }
                 };
 
-                var dataTemp1 = mainListFeatures.Where(x => x.properties.Fips.Equals(testingFip)).ToList();
-
-                List<DateTime> dates = new List<DateTime>();
-                dates = getListOfDates(DataFilePath);
-
-                var dataTemp = mainListFeatures.Where(x => x.properties.Fips.Equals(testingFip) && Convert.ToDateTime(x.properties.EndDateTime) >= Convert.ToDateTime(dates[0]))
-                                            .OrderBy(x => Convert.ToDateTime(x.properties.EndDateTime)).ToList();
+                List<DateTime> dates = getListOfDates(DataFilePath);
+  
 
                 for (int i = 0; i < dates.Count; i++)
                 {
+                    DateTime currentDate = dates[i];
                     List<Feature<WinterDataProperties>> dateFilteredFeatures = new List<Feature<WinterDataProperties>>();
 
-                    dataTemp.ForEach(item =>
+                    if (i == dates.Count - 1)
                     {
-                        DateTime endDate = Convert.ToDateTime(item.properties.EndDateTime);
-                        DateTime startDate = Convert.ToDateTime(item.properties.StartDateTime);
+                        dateFilteredFeatures = mainListFeatures.Where(x =>
+                        {
+                            return Convert.ToDateTime(x.properties.EndDateTime) >= currentDate;
+                        }).ToList();
+                    }
+                    else {
+                        DateTime nextDate = dates[i + 1];
+                        dateFilteredFeatures = mainListFeatures.Where(x =>
+                        {
+                            /*
+                             Check if endDate is after or equal to current date
+                             ALSO
+                             check if startDate is BEFORE the next date
+                          
+                             */
+                            return Convert.ToDateTime(x.properties.EndDateTime) >= currentDate 
+                            && Convert.ToDateTime(x.properties.StartDateTime) < nextDate;
+                        }).ToList();
+                    }
 
-                        if (i == dates.Count - 1)
-                        {
-                            //denotes last datetime record
-                            if (endDate >= dates[i])
-                            {
-                                dateFilteredFeatures.Add(item);
-                            }
-                        }
-                        else
-                        {
-                            //  add to tempWintModel if the end date falls between 2 datetimes
-                            if (endDate >= dates[i] && endDate <= dates[i + 1])
-                            {
-                                dateFilteredFeatures.Add(item);
-                            }
-                            //  if it does not fall between 2 datetimes, check to see if it is >= current datetime and add
-                            else if (endDate >= dates[i])
-                            {
-                                dateFilteredFeatures.Add(item);
-                            }
-                        }
-                    });
+       
 
                     using (StreamWriter file = File.CreateText(winterDataFilepath + "winterWarnings_" + i + ".json"))
                     {
