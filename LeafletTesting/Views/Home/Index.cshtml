@@ -5,19 +5,46 @@
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 
 <script src="~/Scripts/leaflet/leaflet.js"></script>
-@*<script src="~/Scripts/leaflet/polyfill.min.js?features=Promise"></script>*@
 <script src="~/Scripts/leaflet/leaflet-bing-layer.js"></script>
 <link href="~/Content/leaflet.css" rel="stylesheet" />
 
+<script>
+    function isFunction(functionName) {
+        return functionName != null && typeof functionName === "function";
+    }
 
+    function triggerCallback(callback) {
+        if (isFunction(callback))
+            callback();
+    }
+
+    $(window).resize(function () {
+        resize();
+    });
+
+    function resize() {
+        var windowHeight = $(window).height();
+        var map = windowHeight - 150;
+        $("#map").height(map);
+    }
+
+</script>
 
 @Html.Partial("_MapScripts", "")
 @Html.Partial("LayerScripts/_opcoPolygonsScripts", "")
 @Html.Partial("LayerScripts/_Watch_WarnScripts", "")
 
+<input type="checkbox" onclick="WatchWarnModel.pause()" /> Pause watch warn
+<input type="checkbox" onclick="WatchWarnModel.resume()" /> Resume watch warn
+<input type="checkbox" onclick="WatchWarnModel.reinitilize()" /> reinitilize watch warn
 
-<div id="mapContainer" class="mapContainer">
-    <div id="map" style="height:500px">
+<input type="checkbox" onclick="OpcosModel.show()" /> opco show
+<input type="checkbox" onclick="OpcosModel.hide()" /> opco hide
+
+
+
+<div id="mapContainer" class="mapContainer" style="margin-top:25px">
+    <div id="map">
 
     </div>
 </div>

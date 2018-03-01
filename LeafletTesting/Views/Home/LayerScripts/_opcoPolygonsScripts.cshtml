@@ -1,31 +1,45 @@
 ﻿
 <script>
 
-    var companyGeoJson;
-    var showOpcoLayer = (function()
-    {
-        var initOpCos = function (map)
-        {
+    var OpcosModel = (function () {
+        var opcoLayer;
+
+        var init = function () {
             $.ajax(
-            {
-                url: "/Data/OperatingCompanyJson/operatingCompanies.json",
-                type: "GET",
-                dataType: "json",
-                success: function (companyPolygons)
                 {
-                    L.geoJSON(companyPolygons, {
-                        style: function (feature) {
-                            return { color: feature.properties.fill };
+                    url: "/Data/OperatingCompanyJson/operatingCompanies.json",
+                    type: "GET",
+                    dataType: "json"
+                }).done(function (companyPolygons) {
+                    opcoLayer = createGeoJsonLayer(
+                        {
+                            data: companyPolygons,
+                            newStyles: function (feature) { return { color: feature.properties.fill } },
+                            onEachFeature: function (feature, layer) {
+                                layer.bindPopup(feature.properties.NAME);
+                            }
                         }
-                    }).bindPopup(function (layer) {
-                        return layer.feature.properties.NAME;
-                    }).addTo(map);
-                }, error: function (OpCoErr) { debugger; console.log('OpCoErr: ', OpCoErr); }
-            })
+                    );
+                    show();
+                }).fail(function (err) {
+                    console.log('OpCoErr: ', err);
+                })
         }
 
+
+        var show = function () {
+            if (opcoLayer)
+                opcoLayer.addTo(getMap());
+        }
+
+        var hide = function () {
+            if (opcoLayer)
+                opcoLayer.remove();
+        }
         return {
-            init: initOpCos
+            init: init,
+            show: show,
+            hide:hide
         };
     })();
 

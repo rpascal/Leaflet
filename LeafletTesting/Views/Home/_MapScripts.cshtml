@@ -1,100 +1,111 @@
 ﻿@using System.Configuration;
 
 <script>
+
+
+    $(function () {
+        mapPageLoad();
+    });
+
+    function createGeoJsonLayer(model) {
+        var baseModel = {
+            data: {},
+            baseStyle: function (feature) { return { color: feature.properties.PolyBorderColor } },
+            newStyles: function (feature) { return {} },
+            onEachFeature: function (feature, layer) { }
+        }
+
+        Object.assign(baseModel, model);
+        var layer = L.geoJson(baseModel.data, {
+            style: function (feature) {
+                return Object.assign(baseModel.baseStyle(feature), baseModel.newStyles(feature));
+            },
+            onEachFeature: baseModel.onEachFeature,
+        });
+
+        return layer;
+    }
+
+
+    function getMap() {
+        return GlobalMapRef;
+    }
+
+    var GlobalMapRef;
+
     var myGlobalInterval;
     var manageLoop;
     var mapLoop;
 
-    $(function () {
-        mapPageLoad();
-        resize()
-    });
+   
 
-    function resize() {
-        var navbarHeight = $("#sharedLayoutNavBar").innerHeight();
-        var footerHeight = $("footer").innerHeight();
-        var windowHeight = $(window).height();
-        var map = windowHeight - footerHeight - navbarHeight - 10;
-        console.log(windowHeight, footerHeight, navbarHeight)
-        $("#map").height(map);
+
+    var globalIndex = -1;
+    var pauseGlobalLoop = false;
+
+
+
+
+    function startGlobalLoop() {
+
+        setInterval(function () {
+            if (!pauseGlobalLoop) {
+
+                globalIndex++;
+                if (globalIndex == 12) { globalIndex = 0; }
+
+                var currentIndex = globalIndex;
+                var pastIndex = globalIndex == 0 ? 11 : globalIndex - 1;
+
+                WatchWarnModel.loop(currentIndex, pastIndex);
+            }
+        }, 1000)
     }
-
-    //var getIndex;
-    //function getGlobalIndex() {
-    //    if (typeof getIndex == 'function') {
-    //        return getIndex();
-    //    } else {
-    //        return -1;
-    //    }
-    //}
-
-    //function manageGlobalLoop(flag, interTime) {
-    //    if (typeof manageLoop == 'function') {
-    //        manageLoop(flag, interTime);
-    //    } else {
-    //        return -1;
-    //    }
-    //}
-
-    //function runMapLoop(dontIncGlobalIndex) {
-    //    if (typeof mapLoop == 'function') {
-    //        mapLoop(dontIncGlobalIndex);
-    //    } else {
-    //        return -1;
-    //    }
-    //}
-
 
 
     function mapPageLoad()
     {
-        //let globalIndex = 0;
-        //getIndex = function()
-        //{
-        //    return globalIndex;
-        //}
-
-        //mapLoop = function (dontIncGlobalIndex)
-        //{
-        //    if (!dontIncGlobalIndex) { globalIndex++; }
-        //    //*** look at globalIndex = 12 and reset to 0.  this way we make sure we loop through ALL 12 canvas' since array is 0-11 ***//
-        //    if (globalIndex == 12) { globalIndex = 0; }
-
-        //    //add new layers here to make sure they stay in the same loop
-        //    showWatchWarn.loop(globalIndex)
-        //    $('#imageTimeSlider').slider('setValue', globalIndex, true);
-        //}
-
-        //manageLoop = function manageGlobalInterval (flag, interTime)
-        //{
-        //    if (flag) {
-        //        myGlobalInterval = setInterval(runMapLoop, interTime);
-        //    }
-        //    else {
-        //        clearInterval(myGlobalInterval)
-        //        $('#imageTimeSlider').slider('setValue', globalIndex, true);
-        //    }
-        //}
-
-        ////start loop
-        //manageGlobalLoop(true, 1000);
-
 
         function initializeMap ()
         {
 
+            resize();
             var mapCreds = "AkYCCqnlgQnrspLd7YPIoAXL8s7EZ-3owXijLCpBWqHoHlEoDeYMCSr1FcZm-gs5";
             var mapCenter = [@ConfigurationManager.AppSettings["CenterLatitude"], @ConfigurationManager.AppSettings["CenterLongitude"]];
 
             var map = L.map('map').setView(mapCenter, 7);
+            GlobalMapRef = map;
+
             L.tileLayer.bing(mapCreds).addTo(map);
+            bindMapEvents();
 
-            showOpcoLayer.init(map)
-            showWatchWarn.init(map)
+            OpcosModel.init();
+           
+            WatchWarnModel.init()
 
+            WatchWarnModel.reinitilize();
+            
+            startGlobalLoop();
         }
+
+
         initializeMap();
     }
+
+    function bindMapEvents() {
+        var map = getMap();
+
+        map.on("move" || "zoom", function () {
+            pauseGlobalLoop = true;
+
+        })
+
+        map.on("moveend" || "zoomend", function () {
+            pauseGlobalLoop = false;
+
+        })
+    }
+
 
 </script>
 
