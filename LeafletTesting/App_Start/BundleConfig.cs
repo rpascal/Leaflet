@@ -23,6 +23,16 @@ namespace LeafletTesting
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+
+            bundles.Add(new StyleBundle("~/Content/leaflet").Include(
+                "~/Content/leaflet/leaflet.css"));
+            bundles.Add(new ScriptBundle("~/bundles/leaflet").Include(
+                 "~/Scripts/leaflet/leaflet.js"));
+            bundles.Add(new ScriptBundle("~/bundles/leafletExtensions").Include(
+                 "~/Scripts/leaflet/LeafletExtensions/custom.js",
+                 "~/Scripts/leaflet/LeafletExtensions/leaflet-bing-layer.min.js"
+                 ));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));

@@ -4,9 +4,13 @@
 }
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 
-<script src="~/Scripts/leaflet/leaflet.js"></script>
-<script src="~/Scripts/leaflet/leaflet-bing-layer.js"></script>
-<link href="~/Content/leaflet.css" rel="stylesheet" />
+@*<script src="~/Scripts/leaflet/leaflet.js"></script>
+    <script src="~/Scripts/leaflet/leaflet-bing-layer.js"></script>*@
+@*<link href="~/Content/leaflet.css" rel="stylesheet" />*@
+@Styles.Render("~/Content/leaflet")
+@Scripts.Render("~/bundles/leaflet")
+@Scripts.Render("~/bundles/leafletExtensions")
+
 
 <script>
     function isFunction(functionName) {
