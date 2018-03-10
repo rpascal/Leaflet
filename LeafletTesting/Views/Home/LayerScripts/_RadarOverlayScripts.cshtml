@@ -1,0 +1,114 @@
+﻿@using System.Configuration;
+
+<script>
+    var RadarModel = (function () {
+
+        var radarLayerArray = [];
+        var imageFileList;
+
+
+        var imageLayer;
+
+        var isActive = false;
+
+        var sliderInit = function () {
+            //var radarSlider = $("#radarOverlaySlider").slider({ id: "radarOverlaySliderElement", min: 0, max: 10, value: 10, tooltip: "hide" });
+            //var imageSlider = $("#imageTimeSlider").slider({ id: "imageTimeSliderElement", min: 0, max: 11, value: 1, tooltip: "hide" });
+
+            //$('#radarOverlaySlider').on("change", function (slideEvtVal) { var newValue = slideEvtVal.value.newValue; radar.setOpacity(newValue); })
+            //$('#radarOverlaySliderElement').addClass("sliderElement");
+
+            //$('#imageTimeSlider').on("change", function (slideEvtVal) {
+            //    var newValue = slideEvtVal.value.newValue;
+            //    if (typeof timeSliderChange == "function") {
+            //        timeSliderChange(newValue);
+            //    }
+            //})
+            //$('#imageTimeSliderElement').addClass("sliderElement");
+        }
+
+
+        var init = function () {
+            return $.ajax({
+                url: "@Url.Action("GetRadarImages", "Home")",
+                type: "GET",
+                dataType: "json"
+            }).done(function (fileList) {
+                imageFileList = fileList;
+
+            }).fail(function (err) {
+                console.log('initradarLayer err: ', err);
+            })
+        }
+
+
+        var buildInitAttempted = false;
+
+        function buildLayers(forceShow, callback) {
+            //debugger
+            //if ((!isActive && !forceShow) || !isActive && forceShow)
+            //    return;
+            if (!buildInitAttempted && imageFileList == undefined) {
+                buildInitAttempted = true;
+                console.log("Error nothing in imageFileList - will attempt initilization")
+                $.when.apply(null, [init()]).then(function () {
+                    if (fileList != undefined)
+                        buildInitAttempted = false;
+                    console.log("Successfully initilized")
+
+                    buildLayers(forceShow);
+                })
+                return;
+            }
+
+            isActive = false;
+            removeAllLayers();
+            delete radarLayerArray;
+            radarLayerArray = [];
+
+            var imageUrl = imageFileList[0],
+                imageBounds = [[50.40, -127.62], [21.64, -66.50], { }];
+            imageLayer = L.imageOverlay(imageUrl, imageBounds).leafAddToMap();
+
+                resume();
+                triggerCallback(callback);
+        }
+
+        var loop = function (currentIndex, pastIndex) {
+            if (isActive) {
+                imageLayer.setUrl(imageFileList[currentIndex])
+            }
+        }
+
+        var pause = function () {
+            isActive = false;
+        }
+        var resume = function () {
+          //  removeAllLayers();
+            isActive = true;
+           // imageLayer.leafAddToMap();
+        }
+
+        function removeAllLayers() {
+           // imageLayer.setOpacity(0)
+          //  getMap().removeLayer(imageLayer);
+            //imageLayer.remove();
+        }
+
+
+        var hide = function () {
+            //removeAllLayers();
+            isActive = false;
+        }
+
+        return {
+            init: init,
+            loop: loop,
+            reinitialize: buildLayers,
+            pause: pause,
+            resume: resume,
+            hide: hide,
+            sliderInit: sliderInit
+        };
+    })();
+</script>

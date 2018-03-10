@@ -4,9 +4,7 @@
 }
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 
-@*<script src="~/Scripts/leaflet/leaflet.js"></script>
-    <script src="~/Scripts/leaflet/leaflet-bing-layer.js"></script>*@
-@*<link href="~/Content/leaflet.css" rel="stylesheet" />*@
+
 @Styles.Render("~/Content/leaflet")
 @Scripts.Render("~/bundles/leaflet")
 @Scripts.Render("~/bundles/leafletExtensions")
@@ -37,16 +35,22 @@
 @Html.Partial("_MapScripts", "")
 @Html.Partial("LayerScripts/_opcoPolygonsScripts", "")
 @Html.Partial("LayerScripts/_Watch_WarnScripts", "")
+@Html.Partial("LayerScripts/_RadarOverlayScripts", "")
+
 
 <input type="checkbox" onclick="WatchWarnModel.pause()" /> Pause watch warn
 <input type="checkbox" onclick="WatchWarnModel.resume()" /> Resume watch warn
 <input type="checkbox" onclick="WatchWarnModel.reinitilize()" /> reinitilize watch warn
 
-<input type="checkbox" onclick="OpcosModel.show()" /> opco show
-<input type="checkbox" onclick="OpcosModel.hide()" /> opco hide
+<input type="checkbox" onclick="RadarModel.resume()" /> opco show
+<input type="checkbox" onclick="RadarModel.hide()" /> opco hide
 
 
+<div>
 
+    <img id="radarImageTest" src="" width="100" height="100" alt="radar image here" />
+
+</div>
 <div id="mapContainer" class="mapContainer" style="margin-top:25px">
     <div id="map">
 

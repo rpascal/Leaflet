@@ -34,17 +34,17 @@
         var show = function (identifier) {
             //Using custom functions added to leaflet*************************************
             if (identifier)
-                opcoLayer.omsAddLayerToMap(identifier);
+                opcoLayer.leafAddLayerToMap(identifier);
             else
-                opcoLayer.omsAddAllLayers();
+                opcoLayer.leafAddAllLayers();
         }
 
         var hide = function (identifier) {
             //Using custom functions added to leaflet*************************************
             if (identifier)
-                opcoLayer.omsRemoveLayer(identifier);
+                opcoLayer.leafRemoveLayer(identifier);
             else
-                opcoLayer.omsRemoveAllInnerLayers();
+                opcoLayer.leafRemoveAllInnerLayers();
         }
         return {
             init: init,

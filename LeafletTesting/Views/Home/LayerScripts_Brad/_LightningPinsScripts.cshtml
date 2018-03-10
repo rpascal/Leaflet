@@ -1,0 +1,263 @@
+﻿<script>
+    /*** Lightning module ***/
+    var lightning = (function () {
+        var promise;
+        var active = false;
+        var overlay;
+        var update;
+        var lightningLayers = [];
+        const allExitsingCanvas = [];
+        //var dataLightningEntities;
+
+        var xTranslation = 40;
+        var yTranslation = 40;
+
+        var isInitialized = false;
+        var isDataGood = false;
+
+        var createMapEntitiesForLightningData = function (lightningData) {
+
+            var offScreenCanvasLightning = document.createElement('canvas');
+            offScreenCanvasLightning.width = 80;
+            offScreenCanvasLightning.height = 80;
+            var offCtxLightning = offScreenCanvasLightning.getContext('2d');
+
+            var tempLocArray = [];
+            var id;
+            var orderby;
+            var polarity;
+
+            lightningData.forEach(function (curDataElement) {
+                try {
+                    //add polarity and lat/log of EACH strike to array
+                    tempLocArray.push({
+                        polarity: curDataElement.Polarity,
+                        location: new Microsoft.Maps.Location(curDataElement.Latitude, curDataElement.Longitude)
+                    });
+
+                    //set order by and polarity to the following paramaeters for use later
+                    id = 'Lightning_' + curDataElement.OrderBy;
+                    orderby = Number(curDataElement.OrderBy)
+                    polarity = curDataElement.Polarity;
+                }
+                catch (err) {
+                    console.log(err)
+                }
+            });
+
+            //Implement the new custom overlay class.
+            overlay = new CanvasOverlay(
+                {
+                    id: id,
+                    tempLocArray: tempLocArray,
+                    orderBy: orderby,
+                    zIndex: 19,
+                    Class: 'CanvasLayerRefresh',
+                    drawCallback: function (canvas) {
+
+                        if (this._tempLocArray.length > 0 && isActive()) {
+
+                            var newCanvas = document.createElement('canvas');
+                            newCanvas.width = map.getWidth();
+                            newCanvas.height = map.getHeight();
+
+                            //Get the context of the main canvas.
+                            var ctx = newCanvas.getContext("2d");
+
+                            //Calculate pixel coordinates of locations.
+                            //var points = map.tryLocationToPixel(this._tempLocArray, Microsoft.Maps.PixelReference.control);
+
+                            //Buffer map dimensions to account for radius of points.
+                            var mapWidth = map.getWidth();
+                            var mapHeight = map.getHeight();
+
+                            this._tempLocArray.filter(filterElementsBySlider).forEach(function (item) {
+                                var point = map.tryLocationToPixel(item.location, Microsoft.Maps.PixelReference.control);
+                                var pointX = roundNumbers(point.x, 2);
+                                var pointY = roundNumbers(point.y, 2);
+
+                                //Don't draw the point if it is not in view. This greatly improves performance when zoomed in.
+                                if (pointX <= mapWidth && pointY <= mapHeight) {
+
+                                    function getTextCanvas(polarity) {
+                                        for (var i = 0; i < allExitsingCanvas.length; i++) {
+                                            if (allExitsingCanvas[i].polarity === polarity) {
+                                                return allExitsingCanvas[i].canvas;
+                                            }
+                                        }
+
+                                        //*** create fill styles for points. ***//
+                                        var offScreenCanvasLightning = document.createElement('canvas');
+                                        offScreenCanvasLightning.width = 80;
+                                        offScreenCanvasLightning.height = 80;
+                                        var offCtxLightning = offScreenCanvasLightning.getContext('2d');
+                                        offCtxLightning.font = "normal 900 30px Arial";;
+                                        offCtxLightning.fillStyle = 'white';
+                                        offCtxLightning.strokeStyle = 'black';
+                                        offCtxLightning.lineWidth = 2;
+
+                                        if (Number(item.polarity) > 0) {
+                                            offCtxLightning.fillText('+', (offScreenCanvasLightning.width / 2), (offScreenCanvasLightning.height / 2));
+                                            offCtxLightning.strokeText('+', (offScreenCanvasLightning.width / 2), (offScreenCanvasLightning.height / 2));
+                                        }
+                                        else {
+                                            offCtxLightning.fillText('-', (offScreenCanvasLightning.width / 2), (offScreenCanvasLightning.height / 2));
+                                            offCtxLightning.strokeText('-', (offScreenCanvasLightning.width / 2), (offScreenCanvasLightning.height / 2));
+                                        }
+
+                                        allExitsingCanvas.push({ canvas: offScreenCanvasLightning, polarity: polarity })
+                                        return offScreenCanvasLightning;
+                                    }
+
+                                    ctx.drawImage(getTextCanvas(item.polarity), pointX - (xTranslation), pointY - (yTranslation));
+                                }
+                            });
+                            this.resetCanvas(newCanvas);
+                        }
+                    }
+                });
+
+            return overlay;
+        };
+
+        var initLightningInit = function (globalIndex) {
+
+            if (!isInitialized || !isDataGood) {
+
+                initLightningDisplay(function () {
+                    lightning.show(getGlobalIndex());
+
+                    isDataGood = true;
+                });
+                isInitialized = true;
+            }
+            else {
+                lightning.show(globalIndex);
+            }
+        }
+
+        var initLightningDisplay = function (callBackLightning) {
+            $.ajax(
+                {
+                    url: "@Url.Action("GetLightning", "Home")",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (strikes) {
+                        if (strikes.length > 0) {
+                            strikes.forEach(function (dataStrike) {
+                                //prep 'pins'
+                                var dataLightningEntities = createMapEntitiesForLightningData(dataStrike);
+
+                                map.layers.insert(dataLightningEntities);
+                                //set the default visibiity of the ltg layers to hide
+                                $(dataLightningEntities.canvas).hide();
+                                //push the canvas to the map
+                                lightningLayers.push(dataLightningEntities)
+                            })
+
+                            //shows the layers
+                            update = function (index) {
+                                $(lightningLayers[index == 0 ? (lightningLayers.length - 1) : (index - 1)].canvas).hide();
+                                $(lightningLayers[index].canvas).show()
+                            }
+
+                            if (typeof callBackLightning == 'function') {
+                                callBackLightning();
+                            }
+                            if (promise) {
+                                promise.resolve();
+                            }
+                        }
+                    }, error: function (lightningErr) { console.log('lightningErr: ', lightningErr) }
+                });
+        };
+
+        var rerender = (function () {
+            if (isInitialized && isActive()) {
+                lightningLayers.forEach(function (item) {
+                    item._redraw();
+                })
+                $(lightningLayers[getGlobalIndex()].canvas.show)
+            }
+            else {
+                hideLightningLayers();
+            }
+        })
+
+        //hide loop
+        var disableLightningData = function () {
+            active = false;
+            hideLightningLayers();
+        };
+
+        var hideLightningLayers = function () {
+            lightningLayers.forEach(function (item) {
+                $(item.canvas).hide();
+            })
+        }
+
+        //pause the animation
+        var pause = function () {
+            active = false;
+        }
+
+        //play the animation
+        var play = function () {
+            lightningLayers.forEach(function (item) {
+                $(item.canvas).hide();
+            })
+            active = true;
+        }
+
+        //show loop
+        var showLightningData = function (globalIndex) {
+            active = true;
+
+            $(lightningLayers[globalIndex].canvas).show();
+            rerender();
+        };
+
+        //sets loop active flag
+        var isActive = function () {
+            return active;
+        }
+
+        var loop = function (index) {
+            if (update && isActive()) {
+                update(index);
+            }
+        }
+
+        var refreshLightning = function () {
+            delete promise;
+            promise = $.Deferred();
+            isDataGood = false;
+
+            if (isInitialized && isActive()) {
+                hideLightningLayers();
+
+                lightningLayers.length = 0;
+
+                initLightningDisplay(function () {
+                    isDataGood = true;
+                });
+            } else {
+                promise.resolve();
+            }
+
+            return promise;
+        }
+
+        return {
+            init: initLightningInit,
+            disable: disableLightningData,
+            show: showLightningData,
+            loop: loop,
+            pause: pause,
+            play: play,
+            hide: hideLightningLayers,
+            refresh: refreshLightning,
+            rerender: rerender
+        };
+    })();
+</script>

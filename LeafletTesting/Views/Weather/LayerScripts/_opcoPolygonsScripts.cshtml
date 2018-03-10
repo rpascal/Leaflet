@@ -1,0 +1,75 @@
+﻿
+<script>
+
+    var OpcosModel = (function () {
+        var opcoLayer;
+
+        var init = function () {
+            $.ajax(
+                {
+                    url: "/Data/OperatingCompanyJson/operatingCompanies.json",
+                    type: "GET",
+                    dataType: "json"
+                }).done(function (companyPolygons) {
+                    opcoLayer = createGeoJsonLayer(
+                        {
+                            data: companyPolygons,
+                            newStyles: function (feature) { return { color: feature.properties.fill } },
+                            onEachFeature: function (feature, layer) {
+                                layer.id = feature.properties.Identifier;
+                                layer.bindPopup(feature.properties.Identifier);
+                            }
+                        }
+                    );
+                    show();
+                }).fail(function (err) {
+                    console.log('OpCoErr: ', err);
+                })
+        }
+
+        
+        var showHide = function (visible, identifier) {
+            for (var property in opcoLayer._layers) {
+                if (opcoLayer._layers.hasOwnProperty(property) && property != "_proto") {
+
+                    var layer = opcoLayer._layers[property];
+                    var geo = layer.toGeoJSON();
+
+                    if (geo.properties.Identifier == identifier || identifier == undefined) {
+                        if (visible) {
+                            show(identifier);
+                        }
+                        else {
+                            hide(identifier);
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        var show = function (identifier) {
+            //Using custom functions added to leaflet*************************************
+            if (identifier)
+                opcoLayer.leafAddLayerToMap(identifier);
+            else
+                opcoLayer.leafAddAllLayers();
+        }
+
+        var hide = function (identifier) {
+            //Using custom functions added to leaflet*************************************
+            if (identifier)
+                opcoLayer.leafRemoveLayer(identifier);
+            else
+                opcoLayer.leafRemoveAllInnerLayers();
+        }
+
+        return {
+            init: init,
+            show: show,
+            hide: hide,
+            showHide: showHide
+        };
+    })();
+
+</script>

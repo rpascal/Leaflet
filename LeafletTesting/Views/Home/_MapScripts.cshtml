@@ -56,7 +56,7 @@
 
                 var currentIndex = globalIndex;
                 var pastIndex = globalIndex == 0 ? 11 : globalIndex - 1;
-
+                RadarModel.loop(currentIndex, pastIndex);
                 WatchWarnModel.loop(currentIndex, pastIndex);
             }
         }, 1000)
@@ -73,7 +73,7 @@
             var mapCreds = "AkYCCqnlgQnrspLd7YPIoAXL8s7EZ-3owXijLCpBWqHoHlEoDeYMCSr1FcZm-gs5";
             var mapCenter = [@ConfigurationManager.AppSettings["CenterLatitude"], @ConfigurationManager.AppSettings["CenterLongitude"]];
 
-            var map = L.map('map').setView(mapCenter, 7);
+            var map = L.map('map').setView(mapCenter, 4);
             GlobalMapRef = map;
 
             L.tileLayer.bing(mapCreds).addTo(map);
@@ -84,7 +84,12 @@
             WatchWarnModel.init()
 
             WatchWarnModel.reinitilize();
-            
+
+            $.when.apply(null, [RadarModel.init()]).then(function () {
+                RadarModel.reinitialize()
+    
+            })
+
             startGlobalLoop();
         }
 

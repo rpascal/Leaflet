@@ -1,0 +1,330 @@
+﻿<script>
+
+    var stormProjections = (function ()
+    {
+        var point;
+        var stormDateTimeStart;
+        var stormDateTimeEnd;
+        var stormStartGlobalIndex;
+        var endStartGlobalIndex;
+        var stormPinsCollection = new Microsoft.Maps.Layer('StormPins');
+        var stormLineArray = [];
+
+        function initStormMenu(e)
+        {
+            if (e.targetType == "map")
+            {
+                point = new Microsoft.Maps.Point(e.getX(), e.getY());
+
+                $('.menu-storm').css({
+                    left: e.pageX,
+                    top: e.pageY - 50
+                });
+
+                // Makes sure the dropdown is hidden before showing it to avoid inconsistency
+                $('.menu-storm').hide();
+
+                //Slides down the dropdown
+                $('.menu-storm').slideDown(300);
+
+                // When left click occurs, hide the contextmenu
+                $("html, #map-div").click(function (e) {
+                    $('.menu-storm').slideUp(300);
+                });
+            }
+        }
+
+        function stormStartPoint ()
+        {
+                stormDateTimeStart = $('#timeStampBox').text();
+                stormStartGlobalIndex = getGlobalIndex();
+                var startLoc = map.tryPixelToLocation(point);
+                stormLineArray.push({
+                    "startLat": startLoc.latitude,
+                    "startLong": startLoc.longitude,
+                    "startDateTime": stormDateTimeStart
+                })
+                //Create a pushpin to display the start point on the map
+                startPin = new Microsoft.Maps.Pushpin(startLoc, {
+                    text: 'S' ,
+                    title: stormDateTimeStart
+                });
+
+                stormPinsCollection.add(startPin)
+
+                map.layers.insert(stormPinsCollection);
+
+                $("#stormEndLi").removeClass("disabled");
+                $("#stormClearLi").removeClass("disabled");
+                $("#stormStartLi").addClass("disabled");
+        }
+
+        function stormEndPoint()
+        {
+                stormDateTimeEnd = $('#timeStampBox').text();
+                endStartGlobalIndex = getGlobalIndex();
+                if (stormStartGlobalIndex >= endStartGlobalIndex)
+                {
+                    toastr.error("Please advance the map at least one frame.  Ending Storm Point must be later than Starting Storm point.", "Storm Track Tool Error",
+                        {
+                            "closeButton": true,
+                            "debug": false,
+                            "newestOnTop": false,
+                            "progressBar": false,
+                            "positionClass": "toast-top-center",
+                            "preventDuplicates": true,
+                            "onclick": null,
+                            "showDuration": "300",
+                            "hideDuration": "1000",
+                            "timeOut": 0,
+                            "extendedTimeOut": 0,
+                            "showEasing": "swing",
+                            "hideEasing": "linear",
+                            "showMethod": "fadeIn",
+                            "hideMethod": "fadeOut",
+                            "tapToDismiss": true
+                        })
+                }
+                else if (stormStartGlobalIndex < endStartGlobalIndex)
+                {
+                    var endLoc = map.tryPixelToLocation(point);
+                    stormLineArray.push({
+                        "endLat": endLoc.latitude,
+                        "endLong": endLoc.longitude,
+                        "endDateTime": stormDateTimeEnd
+                    })
+                    //Create a pushpin to display the end point on the map
+                    endPin = new Microsoft.Maps.Pushpin(endLoc, {
+                        text: 'E' ,
+                        title: stormDateTimeEnd
+                    });
+
+                    stormPinsCollection.add(endPin)
+
+                    map.layers.insert(stormPinsCollection);
+
+                    $("#stormEndLi").addClass("disabled");
+
+                    plotStormLine(stormLineArray);
+                }
+        }
+
+        function stormClearPoints()
+        {
+            stormPinsCollection.clear();
+            stormLineArray = [];
+            $("#stormStartLi").removeClass("disabled");
+            $("#stormEndLi").addClass("disabled");
+            $("#stormClearLi").addClass("disabled");
+        }
+
+        function plotStormLine(stormLineArray)
+        {
+            var radius = 6371e3; // km of earth
+
+            var deltaIndex = endStartGlobalIndex - stormStartGlobalIndex;
+            var startLat = stormLineArray[0].startLat;
+            var startLon = stormLineArray[0].startLong;
+            var endLat = stormLineArray[1].endLat;
+            var endLon = stormLineArray[1].endLong;
+            var deltaLat = endLat - startLat;
+            var deltaLon = endLon - startLon;
+            var distanceTrav;
+            var distance60;
+            var newPointLat;
+            var newPointLon;
+            var newPinPoint;
+
+            var startPoint = new Microsoft.Maps.Location(startLat, startLon);
+            var endPoint = new Microsoft.Maps.Location(endLat, endLon);
+
+            function toRadians(x) {
+                return Number(x) * Math.PI / 180;
+            }
+
+            function toDegrees(x) {
+                return Number(x) * 180 / Math.PI;
+            };
+
+            //    if (Number.prototype.toRadians === undefined) {
+            //        Number.prototype.toRadians = function () { return this * Math.PI / 180; };
+            //    }
+
+            ///** Extend Number object with method to convert radians to numeric (signed) degrees */
+            //    if (Number.prototype.toDegrees === undefined) {
+            //        Number.prototype.toDegrees = function () { return this * 180 / Math.PI; };
+            //    }
+
+
+
+            Microsoft.Maps.Location.prototype.distanceTo = function (point, radius)
+            {
+                // a = sin²(Δφ/2) + cos(φ1)⋅cos(φ2)⋅sin²(Δλ/2)
+                // tanδ = √(a) / √(1−a)
+                // see mathforum.org/library/drmath/view/51879.html
+
+                var R = radius;
+                var φ1 = (toRadians(this.latitude));
+                var λ1 = (toRadians(this.longitude))
+                var φ2 = (toRadians(point.latitude));
+                var λ2 = (toRadians(point.longitude));
+                var Δφ = φ2 - φ1;
+                var Δλ = λ2 - λ1;
+
+                var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+                var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                var d = R * c;
+
+                return d;
+            };
+
+            Microsoft.Maps.Location.prototype.bearingTo = function (point)
+            {
+                //if (!(point instanceof LatLon)) throw new TypeError('point is not LatLon object');
+
+                // tanθ = sinΔλ⋅cosφ2 / cosφ1⋅sinφ2 − sinφ1⋅cosφ2⋅cosΔλ
+                // see mathforum.org/library/drmath/view/55417.html for derivation
+
+                var φ1 =  toRadians(this.latitude), φ2 =  toRadians(point.latitude);
+                var Δλ =  toRadians((Number(point.longitude) - Number(this.longitude)));
+                var y = Math.sin(Δλ) * Math.cos(φ2);
+                var x = Math.cos(φ1) * Math.sin(φ2) -
+                        Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+                var θ = Math.atan2(y, x);
+
+                return (toDegrees(θ) + 360) % 360;
+            };
+
+            Microsoft.Maps.Location.prototype.finalBearingTo = function (point) {
+                //if (!(point instanceof LatLon)) throw new TypeError('point is not LatLon object');
+
+                // get initial bearing from destination point to this point & reverse it by adding 180°
+                return (point.bearingTo(this) + 180) % 360;
+            };
+
+
+            Microsoft.Maps.Location.prototype.destinationPoint = function (distance, bearing, radius)
+            {
+                radius = (radius === undefined) ? 6371e3 : Number(radius);
+
+                // sinφ2 = sinφ1⋅cosδ + cosφ1⋅sinδ⋅cosθ
+                // tanΔλ = sinθ⋅sinδ⋅cosφ1 / cosδ−sinφ1⋅sinφ2
+                // see mathforum.org/library/drmath/view/52049.html for derivation
+
+                var δ = Number(distance) / radius; // angular distance in radians
+                var θ =  toRadians(Number(bearing));
+
+                var φ1 =  toRadians(this.latitude);
+                var λ1 =  toRadians(this.longitude);
+
+                var sinφ1 = Math.sin(φ1), cosφ1 = Math.cos(φ1);
+                var sinδ = Math.sin(δ), cosδ = Math.cos(δ);
+                var sinθ = Math.sin(θ), cosθ = Math.cos(θ);
+
+                var sinφ2 = sinφ1 * cosδ + cosφ1 * sinδ * cosθ;
+                var φ2 = Math.asin(sinφ2);
+                var y = sinθ * sinδ * cosφ1;
+                var x = cosδ - sinφ1 * sinφ2;
+                var λ2 = λ1 + Math.atan2(y, x);
+
+                return new Microsoft.Maps.Location(toDegrees(φ2), (toDegrees(λ2) + 540) % 360 - 180);
+
+                //return new LatLon(φ2.toDegrees(), (λ2.toDegrees() + 540) % 360 - 180); // normalise to −180..+180°
+            };
+
+            var distanceBetweenPoints = startPoint.distanceTo(endPoint, radius);
+            var distance60 = (distanceBetweenPoints / deltaIndex) * 6;
+            var bearing = startPoint.bearingTo(endPoint)
+
+            var i = 1;
+
+
+            var polyCoords = [startPoint, endPoint];
+
+            function nextPoint(oldPoint)
+            {
+                var newPoint = oldPoint.destinationPoint((distance60), bearing, radius);
+                var tempStormTime = (stormDateTimeEnd.split(" "))[0];
+                var tempStormTimeHrMin = (tempStormTime.split(":"));
+                var newStormTimeHour = (parseInt(tempStormTimeHrMin[0]) + parseInt(i));
+                var stormTimeHour = newStormTimeHour + ":" + tempStormTimeHrMin[1];
+                
+                polyCoords.push(newPoint);
+
+                linePin = new Microsoft.Maps.Pushpin(newPoint, {
+					text: i,
+					title: stormTimeHour
+				});
+
+				stormPinsCollection.add(linePin)
+                if (i < 12) {
+                    i++;
+                    nextPoint(newPoint)
+                } else {
+                    return;
+                }
+            }
+
+            nextPoint(endPoint)
+
+
+            //var polyLinePoints = [polyCoords[0], polyCoords[polyCoords.length - 1]];
+            //var bearing = startPoint.bearingTo(endPoint)
+            ////var newPoint = startPoint.destinationPoint((distanceBetweenPoints + distance60), bearing, radius);
+            //var newPoint = endPoint.destinationPoint((distance60), bearing, radius);
+            //polyCoords.push(startPoint);
+            //polyCoords.push(newPoint);
+            //debugger
+
+
+            //function destinationPoint(distance, bearing, radius)
+            //{
+            //    // sinφ2 = sinφ1⋅cosδ + cosφ1⋅sinδ⋅cosθ
+            //    // tanΔλ = sinθ⋅sinδ⋅cosφ1 / cosδ−sinφ1⋅sinφ2
+            //    // see mathforum.org/library/drmath/view/52049.html
+
+            //    var δ = Number(distance) / radius;
+            //    var θ = toRadians(Number(bearing));
+
+            //    var φ1 = toRadians(stormLineArray[0].startLat);
+            //    var λ1 = toRadians(stormLineArray[1].endLat);
+
+            //    var sinφ1 = Math.sin(φ1);
+            //    var cosφ1 = Math.cos(φ1);
+            //    var sinδ = Math.sin(δ);
+            //    var cosδ = Math.cos(δ);
+            //    var sinθ = Math.sin(θ);
+            //    var cosθ = Math.cos(θ);
+
+            //    var sinφ2 = sinφ1 * cosδ + cosφ1 * sinδ * cosθ;
+            //    var φ2 = Math.asin(sinφ2);
+            //    var y = sinθ * sinδ * cosφ1;
+            //    var x = cosδ - sinφ1 * sinφ2;
+            //    var λ2 = λ1 + Math.atan2(y, x);
+
+            //    return new LatLon( toDegrees( φ2 ), (toDegrees( λ2 ) + 540) % 360 - 180); // normalise to −180..+180°
+            //};
+
+
+            var stormLine = new Microsoft.Maps.Polyline(polyCoords, {
+                strokeColor: 'red',
+                strokeThickness: 3//,
+                //title: distanceBetweenPoints + " Miles"
+            });
+
+            stormPinsCollection.add(stormLine)
+
+            map.layers.insert(stormPinsCollection);
+        }
+
+        return {
+            init: initStormMenu,
+            stormStart: stormStartPoint,
+            stormEnd: stormEndPoint,
+            stormClear: stormClearPoints
+        };
+
+    //********** end storm menu functions **********//
+    })();
+
+</script>

@@ -1,0 +1,128 @@
+﻿@using System.Configuration;
+
+<script>
+    var WatchWarnModel = (function () {
+
+        var winterLayerArray = [];
+        var jsonFileList;
+
+        var isActive = false;
+
+
+        var init = function () {
+            return $.ajax({
+                url: "@Url.Action("GetWinterData", "Home")",
+                type: "GET",
+                dataType: "json"
+            }).done(function (wintJsonFileList) {
+                jsonFileList = wintJsonFileList;
+            }).fail(function (err) {
+                console.log('initShapesWinter err: ', err);
+            })
+
+        }
+
+        var buildInitAttempted = false;
+
+        function buildLayers(forceShow, callback) {
+           // debugger
+            if (!isActive && !forceShow)
+                return;
+            if (!buildInitAttempted && jsonFileList == undefined) {
+                buildInitAttempted = true;
+                console.log("Error nothing in jsonFileList - will attempt initilization")
+                $.when.apply(null, [init()]).then(function () {
+                    if (jsonFileList != undefined)
+                        buildInitAttempted = false;
+                    console.log("Successfully initilized")
+                    buildLayers(forceShow);
+                })
+                return;
+            }
+
+            isActive = false;
+
+            removeAllLayers();
+            delete winterLayerArray;
+            winterLayerArray = [];
+
+            function popUp(feature, layer) {
+
+                //switch(feature.properties.type)
+
+
+                var infoboxTemplateWinter = '<div class="customMapInfobox">'
+                    + '<span style="float: right; cursor: pointer; cursor: hand"></span><br>'
+                    + '<b>' + feature.properties.InfoboxTitle + '</b><br>'
+                    + '<b>TYPE:  </b>' + feature.properties.type + '<br>'
+                    + '<b>START:  </b>' + feature.properties.StartDateTime + '<br>'
+                    + '<b>END:  </b>' + feature.properties.EndDateTime + '<br>'
+                    + '<b>STATE:  </b>' + feature.properties.State + '<br>'
+                    + '<b>CENTER:  </b>' + feature.properties.Center + '<br>'
+                    + '<b>FIPS:  </b>' + feature.properties.Fips + '<br>'
+
+                layer.bindPopup(infoboxTemplateWinter);
+
+            }
+
+            let promises = jsonFileList.map(function (item) {
+                return $.ajax(
+                    {
+                        url: item,
+                        type: "GET",
+                        dataType: "json"
+                    }).done(function (wintJsonLayer) {
+                        winterLayerArray.push(createGeoJsonLayer(
+                            {
+                                data: wintJsonLayer,
+                                onEachFeature: popUp
+                            }
+                        ));
+                    }).fail(function (err) {
+                        console.log('createWinterGroupErr: ', err);
+                    })
+            })
+
+            $.when.apply(null, promises).then(function () {
+                resume();
+                triggerCallback(callback);
+            })
+        }
+
+        var loop = function (currentIndex, pastIndex) {
+            if (isActive) {
+                winterLayerArray[pastIndex].remove();
+                winterLayerArray[currentIndex].addTo(getMap());
+            }
+        }
+
+        var pause = function () {
+            isActive = false;
+        }
+        var resume = function () {
+            removeAllLayers();
+            isActive = true;
+            winterLayerArray[getGlobalIndex()].addTo(getMap());
+        }
+
+        function removeAllLayers() {
+            winterLayerArray.forEach(function (item) {
+                item.remove();
+            })
+        }
+
+        var hide = function () {
+            removeAllLayers();
+            isActive = false;
+        }
+
+        return {
+            init: init,
+            loop: loop,
+            reinitialize: buildLayers,
+            pause: pause,
+            resume: resume,
+            hide :hide
+        };
+    })();
+</script>

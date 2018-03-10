@@ -10,6 +10,19 @@
 
 
         var init = function () {
+
+
+            $.ajax({
+                url: "@Url.Action("GetRadarImages", "Home")",
+                type: "GET",
+                dataType: "json"
+            }).done(function (wintJsonFileList) {
+               //debugger
+            }).fail(function (err) {
+                console.log('initShapesWinter err: ', err);
+            })
+
+
             return $.ajax({
                 url: "@Url.Action("GetWinterData", "Home")",
                 type: "GET",
@@ -85,11 +98,11 @@
 
 
 
-      
+
         var loop = function (currentIndex, pastIndex) {
             if (isActive) {
                 winterLayerArray[pastIndex].remove();
-                winterLayerArray[currentIndex].omsAddToMap();
+                winterLayerArray[currentIndex].leafAddToMap();
             }
         }
 

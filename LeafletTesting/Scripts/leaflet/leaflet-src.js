@@ -3063,13 +3063,13 @@ var Map = Evented.extend({
 		transform3DLimit: 8388608, // Precision limit of a 32-bit float
 
 		// @section Interaction Options
-		// @option zoomSnap: Number = 1
+		// @option zoleafnap: Number = 1
 		// Forces the map's zoom level to always be a multiple of this, particularly
 		// right after a [`fitBounds()`](#map-fitbounds) or a pinch-zoom.
 		// By default, the zoom level snaps to the nearest integer; lower values
 		// (e.g. `0.5` or `0.1`) allow for greater granularity. A value of `0`
 		// means the zoom level will not be snapped after `fitBounds` or a pinch-zoom.
-		zoomSnap: 1,
+		zoleafnap: 1,
 
 		// @option zoomDelta: Number = 1
 		// Controls how much the map's zoom level will change after a
@@ -3191,13 +3191,13 @@ var Map = Evented.extend({
 	},
 
 	// @method setZoomAround(latlng: LatLng, zoom: Number, options: Zoom options): this
-	// Zooms the map while keeping a specified geographical point on the map
+	// Zoleaf the map while keeping a specified geographical point on the map
 	// stationary (e.g. used internally for scroll zoom and double-click zoom).
 	// @alternative
 	// @method setZoomAround(offset: Point, zoom: Number, options: Zoom options): this
-	// Zooms the map while keeping a specified pixel on the map (relative to the top-left corner) stationary.
+	// Zoleaf the map while keeping a specified pixel on the map (relative to the top-left corner) stationary.
 	setZoomAround: function (latlng, zoom, options) {
-		var scale = this.getZoomScale(zoom),
+		var scale = this.getZoleafcale(zoom),
 		    viewHalf = this.getSize().divideBy(2),
 		    containerPoint = latlng instanceof Point ? latlng : this.latLngToContainerPoint(latlng),
 
@@ -3331,7 +3331,7 @@ var Map = Evented.extend({
 		targetZoom = targetZoom === undefined ? startZoom : targetZoom;
 
 		var w0 = Math.max(size.x, size.y),
-		    w1 = w0 * this.getZoomScale(startZoom, targetZoom),
+		    w1 = w0 * this.getZoleafcale(startZoom, targetZoom),
 		    u1 = (to.distanceTo(from)) || 1,
 		    rho = 1.42,
 		    rho2 = rho * rho;
@@ -3533,7 +3533,7 @@ var Map = Evented.extend({
 	// Stops the currently running `panTo` or `flyTo` animation, if any.
 	stop: function () {
 		this.setZoom(this._limitZoom(this._zoom));
-		if (!this.options.zoomSnap) {
+		if (!this.options.zoleafnap) {
 			this.fire('viewreset');
 		}
 		return this._stop();
@@ -3792,7 +3792,7 @@ var Map = Evented.extend({
 		    se = bounds.getSouthEast(),
 		    size = this.getSize().subtract(padding),
 		    boundsSize = toBounds(this.project(se, zoom), this.project(nw, zoom)).getSize(),
-		    snap = any3d ? this.options.zoomSnap : 1,
+		    snap = any3d ? this.options.zoleafnap : 1,
 		    scalex = size.x / boundsSize.x,
 		    scaley = size.y / boundsSize.y,
 		    scale = inside ? Math.max(scalex, scaley) : Math.min(scalex, scaley);
@@ -3870,10 +3870,10 @@ var Map = Evented.extend({
 
 	// @section Conversion Methods
 
-	// @method getZoomScale(toZoom: Number, fromZoom: Number): Number
+	// @method getZoleafcale(toZoom: Number, fromZoom: Number): Number
 	// Returns the scale factor to be applied to a map transition from zoom level
 	// `fromZoom` to `toZoom`. Used internally to help with zoom animations.
-	getZoomScale: function (toZoom, fromZoom) {
+	getZoleafcale: function (toZoom, fromZoom) {
 		// TODO replace with universal implementation after refactoring projections
 		var crs = this.options.crs;
 		fromZoom = fromZoom === undefined ? this._zoom : fromZoom;
@@ -3883,7 +3883,7 @@ var Map = Evented.extend({
 	// @method getScaleZoom(scale: Number, fromZoom: Number): Number
 	// Returns the zoom level that the map would end up at, if it is at `fromZoom`
 	// level and everything is scaled by a factor of `scale`. Inverse of
-	// [`getZoomScale`](#map-getZoomScale).
+	// [`getZoleafcale`](#map-getZoleafcale).
 	getScaleZoom: function (scale, fromZoom) {
 		var crs = this.options.crs;
 		fromZoom = fromZoom === undefined ? this._zoom : fromZoom;
@@ -4119,12 +4119,12 @@ var Map = Evented.extend({
 	},
 
 	_moveStart: function (zoomChanged, noMoveStart) {
-		// @event zoomstart: Event
+		// @event zoleaftart: Event
 		// Fired when the map zoom is about to change (e.g. before zoom animation).
 		// @event movestart: Event
 		// Fired when the view of the map starts changing (e.g. user starts dragging the map).
 		if (zoomChanged) {
-			this.fire('zoomstart');
+			this.fire('zoleaftart');
 		}
 		if (!noMoveStart) {
 			this.fire('movestart');
@@ -4180,7 +4180,7 @@ var Map = Evented.extend({
 		setPosition(this._mapPane, this._getMapPanePos().subtract(offset));
 	},
 
-	_getZoomSpan: function () {
+	_getZoleafpan: function () {
 		return this.getMaxZoom() - this.getMinZoom();
 	},
 
@@ -4474,7 +4474,7 @@ var Map = Evented.extend({
 	_limitZoom: function (zoom) {
 		var min = this.getMinZoom(),
 		    max = this.getMaxZoom(),
-		    snap = any3d ? this.options.zoomSnap : 1;
+		    snap = any3d ? this.options.zoleafnap : 1;
 		if (snap) {
 			zoom = Math.round(zoom / snap) * snap;
 		}
@@ -4511,7 +4511,7 @@ var Map = Evented.extend({
 			var prop = TRANSFORM,
 			    transform = this._proxy.style[prop];
 
-			setTransform(this._proxy, this.project(e.center, e.zoom), this.getZoomScale(e.zoom, 1));
+			setTransform(this._proxy, this.project(e.center, e.zoom), this.getZoleafcale(e.zoom, 1));
 
 			// workaround for case when transform is the same and so transitionend event is not fired
 			if (transform === this._proxy.style[prop] && this._animatingZoom) {
@@ -4522,7 +4522,7 @@ var Map = Evented.extend({
 		this.on('load moveend', function () {
 			var c = this.getCenter(),
 			    z = this.getZoom();
-			setTransform(this._proxy, this.project(c, z), this.getZoomScale(z, 1));
+			setTransform(this._proxy, this.project(c, z), this.getZoleafcale(z, 1));
 		}, this);
 
 		this._on('unload', this._destroyAnimProxy, this);
@@ -4554,7 +4554,7 @@ var Map = Evented.extend({
 		        Math.abs(zoom - this._zoom) > this.options.zoomAnimationThreshold) { return false; }
 
 		// offset is the pixel coords of the zoom origin relative to the current center
-		var scale = this.getZoomScale(zoom),
+		var scale = this.getZoleafcale(zoom),
 		    offset = this._getCenterOffset(center)._divideBy(1 - 1 / scale);
 
 		// don't animate if the zoom origin isn't within one screen from the current center, unless forced
@@ -6626,7 +6626,7 @@ Map.include({
 	_updateZoomLevels: function () {
 		var minZoom = Infinity,
 		    maxZoom = -Infinity,
-		    oldZoomSpan = this._getZoomSpan();
+		    oldZoleafpan = this._getZoleafpan();
 
 		for (var i in this._zoomBoundLayers) {
 			var options = this._zoomBoundLayers[i].options;
@@ -6642,7 +6642,7 @@ Map.include({
 		// @event zoomlevelschange: Event
 		// Fired when the number of zoomlevels on the map is changed due
 		// to adding or removing a layer.
-		if (oldZoomSpan !== this._getZoomSpan()) {
+		if (oldZoleafpan !== this._getZoleafpan()) {
 			this.fire('zoomlevelschange');
 		}
 
@@ -9087,7 +9087,7 @@ var ImageOverlay = Layer.extend({
 	},
 
 	_animateZoom: function (e) {
-		var scale = this._map.getZoomScale(e.zoom),
+		var scale = this._map.getZoleafcale(e.zoom),
 		    offset = this._map._latLngBoundsToNewLayerBounds(this._bounds, e.zoom, e.center).min;
 
 		setTransform(this._image, offset, scale);
@@ -10996,7 +10996,7 @@ var GridLayer = Layer.extend({
 	},
 
 	_setZoomTransform: function (level, center, zoom) {
-		var scale = this._map.getZoomScale(zoom, level.zoom),
+		var scale = this._map.getZoleafcale(zoom, level.zoom),
 		    translate = level.origin.multiplyBy(scale)
 		        .subtract(this._map._getNewPixelOrigin(center, zoom)).round();
 
@@ -11037,7 +11037,7 @@ var GridLayer = Layer.extend({
 	_getTiledPixelBounds: function (center) {
 		var map = this._map,
 		    mapZoom = map._animatingZoom ? Math.max(map._animateToZoom, map.getZoom()) : map.getZoom(),
-		    scale = map.getZoomScale(mapZoom, this._tileZoom),
+		    scale = map.getZoleafcale(mapZoom, this._tileZoom),
 		    pixelCenter = map.project(center, this._tileZoom).floor(),
 		    halfSize = map.getSize().divideBy(scale * 2);
 
@@ -11795,7 +11795,7 @@ var Renderer = Layer.extend({
 	},
 
 	_updateTransform: function (center, zoom) {
-		var scale = this._map.getZoomScale(zoom, this._zoom),
+		var scale = this._map.getZoleafcale(zoom, this._zoom),
 		    position = getPosition(this._container),
 		    viewHalf = this._map.getSize().multiplyBy(0.5 + this.options.padding),
 		    currentCenterPoint = this._map.project(this._center, zoom),
@@ -12487,7 +12487,7 @@ var SVG = Renderer.extend({
 
 	getEvents: function () {
 		var events = Renderer.prototype.getEvents.call(this);
-		events.zoomstart = this._onZoomStart;
+		events.zoleaftart = this._onZoleaftart;
 		return events;
 	},
 
@@ -12509,7 +12509,7 @@ var SVG = Renderer.extend({
 		delete this._svgSize;
 	},
 
-	_onZoomStart: function () {
+	_onZoleaftart: function () {
 		// Drag-then-pinch interactions might mess up the center and zoom.
 		// In this case, the easiest way to prevent this is re-do the renderer
 		//   bounds and padding when the zooming starts.
@@ -12841,7 +12841,7 @@ var BoxZoom = Handler.extend({
 			this._box = create$1('div', 'leaflet-zoom-box', this._container);
 			addClass(this._container, 'leaflet-crosshair');
 
-			this._map.fire('boxzoomstart');
+			this._map.fire('boxzoleaftart');
 		}
 
 		this._point = this._map.mouseEventToContainerPoint(e);
@@ -13419,7 +13419,7 @@ var ScrollWheelZoom = Handler.extend({
 	_performZoom: function () {
 		var map = this._map,
 		    zoom = map.getZoom(),
-		    snap = this._map.options.zoomSnap || 0;
+		    snap = this._map.options.zoleafnap || 0;
 
 		map._stop(); // stop panning and fly animations if any
 
@@ -13685,9 +13685,9 @@ var TouchZoom = Handler.extend({
 		off(document, 'touchmove', this._onTouchMove);
 		off(document, 'touchend', this._onTouchEnd);
 
-		// Pinch updates GridLayers' levels only when zoomSnap is off, so zoomSnap becomes noUpdate.
+		// Pinch updates GridLayers' levels only when zoleafnap is off, so zoleafnap becomes noUpdate.
 		if (this._map.options.zoomAnimation) {
-			this._map._animateZoom(this._center, this._map._limitZoom(this._zoom), true, this._map.options.zoomSnap);
+			this._map._animateZoom(this._center, this._map._limitZoom(this._zoom), true, this._map.options.zoleafnap);
 		} else {
 			this._map._resetView(this._center, this._map._limitZoom(this._zoom));
 		}

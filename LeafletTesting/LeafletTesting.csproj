@@ -148,6 +148,7 @@
     <Compile Include="Controllers\BoundsJsonModel.cs" />
     <Compile Include="Controllers\GeoJsonModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="DataProviders\CreateBoundsJsonProvider.cs" />
     <Compile Include="DataProviders\WinterDataProvider.cs" />
     <Compile Include="Global.asax.cs">
@@ -200,6 +201,18 @@
     <Content Include="Data\precip_10.gif" />
     <Content Include="Data\precip_11.gif" />
     <Content Include="Data\precip_12.gif" />
+    <Content Include="Data\Radar\precip_01.gif" />
+    <Content Include="Data\Radar\precip_02.gif" />
+    <Content Include="Data\Radar\precip_03.gif" />
+    <Content Include="Data\Radar\precip_04.gif" />
+    <Content Include="Data\Radar\precip_05.gif" />
+    <Content Include="Data\Radar\precip_06.gif" />
+    <Content Include="Data\Radar\precip_07.gif" />
+    <Content Include="Data\Radar\precip_08.gif" />
+    <Content Include="Data\Radar\precip_09.gif" />
+    <Content Include="Data\Radar\precip_10.gif" />
+    <Content Include="Data\Radar\precip_11.gif" />
+    <Content Include="Data\Radar\precip_12.gif" />
     <Content Include="Data\warn.txt" />
     <Content Include="Data\watch.txt" />
     <Content Include="Data\wstm.txt" />
@@ -207,6 +220,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\BootSideMenu.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -253,6 +267,10 @@
     <Content Include="Scripts\leaflet\leaflet-src.js" />
     <Content Include="Content\leaflet\leaflet.css" />
     <Content Include="Scripts\leaflet\leaflet.js" />
+    <Content Include="Scripts\leaflet\LeafletExtensions\LeafletExtensions.js" />
+    <Content Include="Scripts\leaflet\LeafletExtensions\MapControls.js" />
+    <Content Include="Scripts\leaflet\LeafletExtensions\ObjectAssignPolyfill.js" />
+    <Content Include="Scripts\leaflet\LeafletExtensions\PromisesPolyfill.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -275,6 +293,29 @@
     <Content Include="Views\Home\_MapScripts.cshtml" />
     <Content Include="Scripts\leaflet\leaflet-src.js.map" />
     <Content Include="Scripts\leaflet\leaflet.js.map" />
+    <Content Include="Views\Home\LayerScripts_Brad\_CurCondPointsScript.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_FrontsScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_LightningPinsScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_LightningRegionScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_opcoPolygonsScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_RadarOverlayScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_StormProjectionsScript.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_TimeStampScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts_Brad\_Watch_WarnScripts.cshtml" />
+    <Content Include="Views\Weather\Index.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_CurCondPointsScript.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_FrontsScripts.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_LightningPinsScripts.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_LightningRegionScripts.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_opcoPolygonsScripts.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_RadarOverlayScripts.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_StormProjectionsScript.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_TimeStampScripts.cshtml" />
+    <Content Include="Views\Weather\LayerScripts\_Watch_WarnScripts.cshtml" />
+    <Content Include="Views\Weather\MapScripts\_LoopScripts.cshtml" />
+    <Content Include="Views\Weather\MapScripts\_MapControlScripts.cshtml" />
+    <Content Include="Views\Weather\_MapScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts\_RadarOverlayScripts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

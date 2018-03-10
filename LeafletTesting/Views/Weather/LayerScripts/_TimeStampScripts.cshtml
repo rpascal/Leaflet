@@ -1,0 +1,127 @@
+﻿<script>
+    var timeStamps = (function ()
+    {
+        var promise;
+        var active = true;
+        var isInitialized = false;
+        var isDataGood = false;
+        var update;
+        var dateTimeList = [];
+
+        
+
+        var initTimeStampsInit = function () {
+
+            if (!isInitialized || !isDataGood) {
+                //console.log('Initializing  TimeDate...', 'isInitialized...', isInitialized, 'isDataGood...', isDataGood)
+
+                initTimeStampsDisplay(function () {
+                    timeStamps.show();
+                    isDataGood = true;
+                });
+                isInitialized = true;
+            }
+            else {
+                //console.log('Showing  TimeDate...');
+                timeStamps.show();
+            }
+        }
+
+        var initTimeStampsDisplay = (function (callBackDateTime)
+        {
+            $.ajax(
+                {
+                    //this ajax call gets all the data with in each file from previous ajax call
+                    url: "@Url.Action("GetDateTimeStamps", "Home")",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (dateTimeStamp)
+                    {
+                        dateTimeList = dateTimeStamp;
+
+                        //***** Loop through the above list to populate the time stamps on the weather layer slider *****//
+                        for (var i = 0; i < 12; i++)
+                        {
+                            $('#time-' + i).text(dateTimeStamp[i].split(' ')[0])
+                        }
+
+                        if (typeof callBackDateTime == 'function') {
+                            callBackDateTime();
+                        }
+                        if (promise) {
+                            promise.resolve();
+                        }
+                    }, error: function (timeStampErr) { console.log('timeStampErr: ', timeStampErr) }
+                })
+        })
+
+        update = function (index) {
+            if (isActive())
+            {
+                var timeStamp = dateTimeList[index];
+
+                //changes the timestampbox on top left of map according to the current globalindex
+                $('#timeStampBox').text(timeStamp);
+            }
+        };
+
+        var rerender = (function () {
+            if (isInitialized && isActive()) {
+                //console.log('Rerendering  TimeDate...' ,'isInitialized...', isInitialized, 'isActive...', isActive());
+                showTimeDate();
+            }
+            else {
+                hideTimeDate();
+            }
+        })
+
+        var hideTimeDate = function () {
+            //hides time date
+            $('#timeStampBox').hide();
+        }
+
+        var showTimeDate = function () {
+            //shows time date
+            $('#timeStampBox').show();
+        }
+
+        var isActive = function () { return active; };
+
+        //pause the animation
+        var pause = function () { active = false; }
+
+        //play the animation
+        var play = function () { active = true; }
+
+        var refreshTimeDate = function () {
+            delete promise;
+            promise = $.Deferred();
+            isDataGood = false;
+
+            if (isInitialized && isActive()) {
+                //console.log('Refreshing  TimeDate ...', 'isInitialized...', isInitialized, 'isActive...', isActive());
+
+                hideTimeDate();
+                dateTimeList = [];
+
+                initTimeStampsDisplay(function () {
+                    isDataGood = true;
+                    showTimeDate();
+                });
+            } else {
+                //console.log('Resolving TimeDate...', 'isInitialized...', isInitialized, 'isActive...', isActive());
+                promise.resolve();
+            }
+
+            return promise;
+        }
+
+        return {
+            init: initTimeStampsInit,
+            show: initTimeStampsDisplay,
+            loop: update,
+            refresh: refreshTimeDate
+        };
+
+    })();
+</script>

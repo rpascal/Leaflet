@@ -1,0 +1,487 @@
+﻿<script>
+
+    /*** Dewpoint module ***/
+    var curConditions = (function ()
+    {
+        var promise;
+
+
+        var active = false;
+        var dewpointActive = false;
+        var temperatureActive = false;
+        var windActive = false;
+        var anyCurCondActive = false;
+
+        var overlay;
+        var update;
+
+        var dewpointColor = '#DFB50D';      //orange
+        var temperatureColor = '#FFFF00';   //yellow
+        var susWindColor = '#76A9FE';       //blue
+        var maxWindColor = '#FF0000';       //red
+
+        var dataEntitiesCurCondLayers = [];
+        const allExitsingCanvas = [];
+        var dataEntitiesCurCond;
+
+        //var defaultFontSize = 15;
+        var defaultScaleSize = 1;
+        var dewScaleSize = defaultScaleSize;
+        var temperatureScaleSize = defaultScaleSize;
+        var maxWindScaleSize = defaultScaleSize;
+        var susWindScaleSize = defaultScaleSize;
+
+        var xTranslation = 40;
+        var yTranslation = 40;
+
+        var isInitialized = false;
+        var isDataGood = false;
+
+        function updateScale(e, setNewScale) {
+            var scaleSizeMult;
+
+            if (!e) { scaleSizeMult = 1 } else { scaleSizeMult = e.target.value };
+            var tempScaleSize = 1;
+
+            switch (scaleSizeMult) {
+                case "1": newMultiplier = 1; break;
+                case "2": newMultiplier = 1.25; break;
+                case "3": newMultiplier = 1.5; break;
+                case "4": newMultiplier = 1.75; break;
+                default: newMultiplier = 1; break
+            }
+
+            setNewScale(newMultiplier)
+
+            rerender(getGlobalIndex());
+        }
+
+        var createMapEntitiesCurCond = function (currentCondData)
+        {
+            //*** create fill styles for each point. ***//
+            var offScreenCanvasCurCond = document.createElement('canvas');
+            offScreenCanvasCurCond.width = 100;
+            offScreenCanvasCurCond.height = 100;
+            var offCtxCurCond = offScreenCanvasCurCond.getContext('2d');
+
+            var tempLocArray = [];
+            var id;
+            var orderby;
+            var dewpoint;
+            var temperature;
+            var maxWind;
+            var susWind;
+            
+            currentCondData.forEach(function (curDataElement)
+            {
+                try {
+                    var location = new Microsoft.Maps.Location(curDataElement.Latitude, curDataElement.Longitude);
+
+                    tempLocArray.push({
+                        datetime: curDataElement.DateTimeCurCond,
+                        dewpoint: curDataElement.Dewpoint,
+                        temperature: curDataElement.Temperature,
+                        maxwind: curDataElement.MaxWind,
+                        suswind: curDataElement.SusWind,
+                        gustWind: curDataElement.GustWind,
+                        locationId: curDataElement.Id,
+                        location: location
+                    });
+
+                    //set order by and dewpoint to the following parameters for use later
+                    id = 'CurConditions_' + curDataElement.OrderBy;
+                    orderby = Number(curDataElement.OrderBy)
+                    dewpoint = Number(curDataElement.Dewpoint);
+                    temperature = Number(curDataElement.Temperature);
+                    maxWind = Number(curDataElement.MaxWind);
+                    susWind = Number(curDataElement.SusWind);
+                }
+                catch (currentConditionError) {
+                    console.log('currentConditionError: ', currentConditionError)
+                }
+            });
+            
+            var defaultOffCtxFont = "normal 900 18px Arial";
+
+            //Implement the new custom overlay class.
+            overlay = new CanvasOverlay(
+                {
+                    id: id,
+                    tempLocArray: tempLocArray,
+                    orderBy: orderby,
+                    zIndex: 22,
+                    Class: 'CanvasLayerRefresh',
+                    drawCallback: function (canvas) {
+                        if (this._tempLocArray.length > 0 && isAnyActive()) {
+                            var newCanvas = document.createElement('canvas');
+                            newCanvas.width = map.getWidth();
+                            newCanvas.height = map.getHeight();
+
+                            //Get the context of the main canvas.
+                            var ctx = newCanvas.getContext("2d");
+
+                            //Buffer map dimensions to account for radius of points.
+                            var mapWidth = map.getWidth();
+                            var mapHeight = map.getHeight();
+
+                            this._tempCanvasOverlayArray = this._tempLocArray.filter(filterElementsBySlider);
+
+                            this._tempCanvasOverlayArray.forEach(function (item) {
+                                var point = map.tryLocationToPixel(item.location, Microsoft.Maps.PixelReference.control);
+
+                                var pointX = roundNumbers(point.x, 2);
+                                var pointY = roundNumbers(point.y, 2);
+
+                                //Don't draw the point if it is not in view. This greatly improves performance when zoomed in.
+                                if (pointX <= mapWidth && pointY <= mapHeight) {
+                                    //***** draws individual plotted points *****//
+                                    offCtxCurCond.clearRect(0, 0, (offScreenCanvasCurCond.width), (offScreenCanvasCurCond.height));
+                                    offCtxCurCond.beginPath();
+                                    offCtxCurCond.arc((offScreenCanvasCurCond.width / 2), (offScreenCanvasCurCond.height / 2), 2, 0, 2 * Math.PI);
+                                    offCtxCurCond.closePath();
+                                    offCtxCurCond.fill();
+                                    ctx.drawImage(offScreenCanvasCurCond, pointX - (offScreenCanvasCurCond.width / 2), pointY - (offScreenCanvasCurCond.height / 2));
+
+                                    function getTextCanvas(number, color, scaleSize) {
+                                        
+                                        for (var i = 0; i < allExitsingCanvas.length; i++) {
+                                            if (allExitsingCanvas[i].num === number && allExitsingCanvas[i].color === color && allExitsingCanvas[i].scaleSize === scaleSize) {
+                                                return allExitsingCanvas[i].canvas;
+                                            }
+                                        }
+
+                                        //*** create fill styles for points. ***//
+                                        var offScreenCanvasCurCond = document.createElement('canvas');
+                                        offScreenCanvasCurCond.width = 100;
+                                        offScreenCanvasCurCond.height = 100;
+                                        var offCtxCurCond = offScreenCanvasCurCond.getContext('2d');
+                                        //offCtxCurCond.font = "normal 900 " + fontSize + "px Arial";;
+                                        offCtxCurCond.font = "normal 900 18px Arial";;
+                                        offCtxCurCond.fillStyle = color;
+                                        offCtxCurCond.strokeStyle = 'black';
+                                        offCtxCurCond.lineWidth = 1;
+                                        offCtxCurCond.scale(scaleSize, scaleSize);
+                                        offCtxCurCond.fillText(number, (offScreenCanvasCurCond.width / (2 * scaleSize)), (offScreenCanvasCurCond.height / (2 * scaleSize)));
+                                        offCtxCurCond.strokeText(number, (offScreenCanvasCurCond.width / (2 * scaleSize)), (offScreenCanvasCurCond.height / (2 * scaleSize)));
+
+                                        if (color === maxWindColor || susWindColor) {
+                                            offCtxCurCond.textAlign = 'center';
+                                        }
+                                        else if (color === dewpointColor) {
+                                            offCtxCurCond.textAlign = 'right';
+                                        }
+                                        else if (color === temperatureColor) {
+                                            offCtxCurCond.textAlign = 'left';
+                                        }
+
+                                        allExitsingCanvas.push({ canvas: offScreenCanvasCurCond, num: number, color: color, scaleSize: scaleSize })
+                                        return offScreenCanvasCurCond;
+
+                                    }
+
+                                    if (isActive("dewpoint")) {
+                                        if (pointX <= mapWidth && pointY <= mapHeight) {
+                                            ctx.drawImage(getTextCanvas(item.dewpoint, dewpointColor, dewScaleSize), pointX + 15 - (xTranslation), pointY - (yTranslation));
+                                        }
+                                    }
+
+                                    if (isActive("temperature")) {
+                                        if (pointX <= mapWidth && pointY <= mapHeight) {
+                                            ctx.drawImage(getTextCanvas(item.temperature, temperatureColor, temperatureScaleSize), pointX - 35 - (xTranslation), pointY - (yTranslation));
+                                        }
+                                    }
+
+                                    if (isActive("wind")) {
+                                        //***** draws individual max winds above*****//
+                                        if (Number(item.maxwind) > 0) {
+                                            //Don't draw the point if it is not in view. This greatly improves performance when zoomed in.
+                                            if (pointX <= mapWidth && pointY <= mapHeight) {
+                                                //create maxwind text ABOVE point
+                                                ctx.drawImage(getTextCanvas(item.maxwind, maxWindColor, maxWindScaleSize), pointX - 15 - (xTranslation), pointY - 20 - (yTranslation));
+                                            }
+                                        }
+                                        //***** draws individual sustained winds below *****//
+                                        //Don't draw the point if it is not in view. This greatly improves performance when zoomed in.
+                                        if (pointX <= mapWidth && pointY <= mapHeight) {
+                                            ctx.drawImage(getTextCanvas(item.suswind, susWindColor, susWindScaleSize), pointX - 15 - (xTranslation), pointY + 30 - (yTranslation));
+                                        }
+                                    }
+                                }
+                            });
+                            this.resetCanvas(newCanvas);
+                        };
+                    }
+                });
+            return overlay;
+        };
+
+
+        function curCondClickEvent() {
+            if (!isInitialized) {
+                Microsoft.Maps.Events.addHandler(map, 'click', function (e) {
+                    if (isAnyActive()) {
+                        var setClickedGlobalindex = getGlobalIndex();
+                        var locations = $.map(dataEntitiesCurCondLayers[setClickedGlobalindex]._tempCanvasOverlayArray, function (n) {
+                            return n.location
+                        });
+
+                        //Get the pixel coordinates of the locations.
+                        var points = map.tryLocationToPixel(locations, Microsoft.Maps.PixelReference.control);
+
+                        //Reverse  the array as the top most circle will intersect the mouse first.
+                        points.reverse();
+
+                        //Calculate the square of the radius. As r^2 = x^2 + y^2.
+                        var r = 25;
+                        var dx, dy;
+                        var selectedIdx = -1;
+
+                        //Loop through the pixel coordinates until we find one that is within 5 pixel distance of the mouse location.
+                        for (var i = 0, len = points.length; i < len; i++) {
+                            dx = roundNumbers(points[i].x, 2) - roundNumbers(e.point.x, 2);
+                            dy = roundNumbers(points[i].y, 2) - roundNumbers(e.point.y, 2);
+
+                            //Check to see if the mouse location is within radial distance of the point.
+                            if (Math.sqrt((dx * dx) + (dy * dy)) < r) {
+                                //Calculate the index of the point in the un-reversed array
+                                selectedIdx = len - i - 1;
+                                break;
+                            }
+                        }
+
+                        if (selectedIdx >= 0) {
+                            curCondClicked(dataEntitiesCurCondLayers[setClickedGlobalindex]._tempCanvasOverlayArray[selectedIdx]);
+                        }
+                    }
+
+                });
+            }
+        }
+
+        var initCurCondInit = function (globalIndex, type) {
+
+            if (!isInitialized || !isDataGood) {
+                
+                initCurCondDisplay(function () {
+                    curConditions.show(getGlobalIndex(), type);
+                    isDataGood = true;
+                });
+
+                curCondClickEvent();
+                
+               
+
+                isInitialized = true;
+            }
+            else {
+                curConditions.show(globalIndex, type);
+            }
+        }
+
+        var sliderInit = function () {
+            var windSlider = $("#windOverlaySlider").slider({ id: "windOverlaySliderElement", min: 1, max: 4, value: 1, tooltip: "hide" });
+            var tempSlider = $("#tempOverlaySlider").slider({ id: "tempOverlaySliderElement", min: 1, max: 4, value: 1, tooltip: "hide" });
+            var dewpointSlider = $("#dewpointOverlaySlider").slider({ id: "dewpointOverlaySliderElement", min: 1, max: 4, value: 1, tooltip: "hide" });
+
+            $('#windOverlaySliderElement').addClass("sliderElement");
+            $('#tempOverlaySliderElement').addClass("sliderElement");
+            $('#dewpointOverlaySliderElement').addClass("sliderElement");
+
+            $('#windOverlaySlider').on("change", function (slideEvtVal) {
+                var newValue = slideEvtVal.value.newValue;
+                updateScale(slideEvtVal, function (setNewScale) {
+                    maxWindScaleSize = setNewScale;
+                    susWindScaleSize = setNewScale;
+                });
+            })
+
+            $('#dewpointOverlaySlider').on("change", function (slideEvtVal) {
+                updateScale(slideEvtVal, function (setNewScale) {
+                    dewScaleSize = setNewScale;
+                });
+            })
+
+            $('#tempOverlaySlider').on("change", function (slideEvtVal) {
+                updateScale(slideEvtVal, function (setNewScale) {
+                    temperatureScaleSize = setNewScale;
+                });
+            })
+        }
+
+        var initCurCondDisplay = function (callBackCurCond)
+        {
+            $.ajax(
+                {
+                    //this ajax call gets all the data with in each file from previous ajax call
+                    url: "@Url.Action("GetCurCondData", "Home")",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (curCondPoint)
+                    {
+                        curCondPoint.forEach(function (item)
+                        {
+                            //prep 'pins'
+                            dataEntitiesCurCond = createMapEntitiesCurCond(item);
+
+                            map.layers.insert(dataEntitiesCurCond);
+
+                            //set the default visibiity of the dewpoint layers to hide
+                            $(dataEntitiesCurCond.canvas).hide();
+
+                            //push the canvas to the map
+                            dataEntitiesCurCondLayers.push(dataEntitiesCurCond)
+                        });
+
+                        //shows the layers
+                        update = function (index)
+                        {
+                            $(dataEntitiesCurCondLayers[index == 0 ? (dataEntitiesCurCondLayers.length - 1) : (index - 1)].canvas).hide();
+                            $(dataEntitiesCurCondLayers[index].canvas).show();
+                        }
+
+                        if (typeof callBackCurCond == 'function') {
+                            callBackCurCond();
+                        }
+                        if (promise) {
+                            promise.resolve();
+                        }
+
+                        
+                    }, error: function (curCondErr) { console.log('curCondErr: ', curCondErr, 'item: ', item) }
+                });
+        };
+
+        var rerender = (function ()
+        {
+            if (isInitialized && isAnyActive()) {
+                dataEntitiesCurCondLayers.forEach(function (item)
+                {
+                    item._redraw();
+                })
+                $(dataEntitiesCurCondLayers[getGlobalIndex()].canvas).show();
+            }
+            else {
+                hideLayers();
+            }
+        })
+    
+
+        //hide loop
+        var disableCurCondData = function (layer)
+        {
+            if (layer == "wind") {
+                windActive = false;
+            }
+            else if (layer == "temperature") {
+                temperatureActive = false;
+            }
+            else if (layer == "dewpoint") {
+                dewpointActive = false;
+            }
+            rerender();
+        };
+
+        var hideLayers = function ()
+        {
+            dataEntitiesCurCondLayers.forEach(function (item)
+            {
+                $(item.canvas).hide();
+            })
+        };
+
+        //pause the animation
+        var pause = function () { active = false; }
+
+        //play the animation
+        var play = function ()
+        {
+            dataEntitiesCurCondLayers.forEach(function (item)
+            {
+                $(item.canvas).hide();
+            })
+            active = true;
+        }
+
+        //sho loop
+        var showCurCondData = function (globalIndex, layer)
+        {
+            active = true;
+            if (layer == "wind")
+            {
+                windActive = true;
+            }
+            else if (layer == "temperature")
+            {
+                temperatureActive = true;
+            }
+            else if (layer == "dewpoint")
+            {
+                dewpointActive = true;
+            }
+
+            $(dataEntitiesCurCondLayers[globalIndex].canvas).show();
+            rerender();
+        };
+
+        //sets loop active flag
+        var isActive = function (layer) 
+        { 
+            if (layer == "wind")
+            {
+                return windActive; 
+            }
+            else if (layer == "temperature")
+            {
+                return temperatureActive;
+            }
+            else if (layer == "dewpoint")
+            {
+                return dewpointActive;
+            }
+        }
+
+        var isAnyActive = function () { return windActive || temperatureActive || dewpointActive; }
+
+        var loop = function (index)
+        {
+            if (update && isAnyActive())
+            {
+                update(index);
+            }
+        }
+
+        var refreshCurCond = function () {
+            delete promise;
+            promise = $.Deferred();
+            isDataGood = false;
+
+            if (isInitialized && isAnyActive()) {
+                hideLayers();
+
+                dataEntitiesCurCondLayers = [];
+                const allExitsingCanvas = [];
+
+                initCurCondDisplay(function () {
+                    isDataGood = true;
+                });
+            } else {
+                promise.resolve();
+            }
+            return promise;
+        }
+
+        return {
+            init: initCurCondInit,
+            disable: disableCurCondData,
+            show: showCurCondData,
+            loop: loop,
+            pause: pause,
+            play: play,
+            hide: hideLayers,
+            rerender: rerender,
+            refresh: refreshCurCond,
+            sliderInit: sliderInit
+        };
+    })();
+
+</script>

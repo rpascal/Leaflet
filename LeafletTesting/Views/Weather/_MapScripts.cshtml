@@ -1,0 +1,381 @@
+﻿@using System.Configuration;
+
+
+<script>
+    $(document).bind("mobileinit", function () {
+        $.mobile.ajaxEnabled = false;
+        $.mobile.ignoreContentEnabled = true;
+    });
+</script>
+
+<script>
+
+    var timeSliderChange;
+    var speedSliderChange;
+
+    function initSliders() {
+        //radar.sliderInit();
+        var stationSlider = $("#stationDataFilter").slider({ id: "stationDataFilterElement", min: 1, max: 4, value: 4, tooltip: "hide" });
+        var speedSlider = $("#speedSlider").slider({ id: "speedSliderElement", min: 0, max: 7, value: 0, tooltip: "hide" });
+
+        $('#stationDataFilter').on("change", function (slideEvtVal) { curConditions.rerender(); lightning.rerender(); })
+        $('#stationDataFilterElement').addClass("sliderElement");
+
+        $('#speedSlider').on("change", function (slideEvtVal)
+        {
+            var newValue = slideEvtVal.value.newValue;
+            if (typeof speedSliderChange == "function")
+            {
+                speedSliderChange(newValue);
+            }
+        })
+        $('#speedSliderElement').addClass("sliderElement");
+
+        //curConditions.sliderInit();
+        RadarModel.sliderInit();
+
+    }
+
+
+    var animationFlag = 1;
+
+    @*if(@ViewBag.RefreshRate >= 1)
+    {
+        setInterval(refresh, @ViewBag.RefreshRate * 60000);
+    }*@
+    //setInterval(refresh, 5000);
+    //function refresh()
+    //{
+    //    $('#timeStampBox').text('Loading...');
+    //    WatchWarnModel.reinitialize();
+    //    RadarModel.reinitialize();
+    //    timeStamps.refresh()
+    //}
+
+
+    //determines how much data is returned for wind, ltg, temp, dew
+    function filterElementsBySlider(element, index, array )
+    {
+        var tempFilter;
+        if ($('#stationDataFilter').val() == 1) { tempFilter = 4; }
+        else if ($('#stationDataFilter').val() == 2) { tempFilter = 3; }
+        else if ($('#stationDataFilter').val() == 3) { tempFilter = 2; }
+        else if ($('#stationDataFilter').val() == 4) { tempFilter = 1; }
+
+        return index % tempFilter == 0;
+    }
+
+
+    var colors;
+    var map;
+
+    var searchManager;
+    var img;
+
+    $(function ()
+    {
+        var f = $("#hfPosition");
+        window.onscroll = function ()
+        {
+            var position = $(window).scrollTop();
+            f.val(position);
+        };
+    });
+
+    var zoom = 6;
+    if($(window).width() < 540) { zoom = 5; }
+
+
+    //********** Calls mapPageLoad()  ************************************************************************************************************//
+    $(document).ready(function ()
+    {
+        mapPageLoad();
+        resizeDiv();
+        initSliders();
+    })
+
+    //********** initializes the map and layers  ************************************************************************************************************//
+
+    function getMap() {
+        return GlobalMapRef;
+    }
+
+    var GlobalMapRef;
+
+    function mapPageLoad()
+    {
+        //*** Set interval speed of layers ***//
+        speedSliderChange = function ()
+        {
+            manageGlobalLoop();
+            manageGlobalLoop (true, 1000 - ($("#speedSlider").slider('getValue') * 100));
+        };
+
+        //*** start global index here to control the loops ***//
+        let globalIndex = 0;
+        getIndex = function()
+        {
+            return globalIndex;
+        }
+
+        mapLoop = function (dontIncGlobalIndex)
+        {
+            if (!dontIncGlobalIndex) { globalIndex++; }
+            //*** look at globalIndex = 12 and reset to 0.  this way we make sure we loop through ALL 12 canvas' since array is 0-11 ***//
+            if (globalIndex == 12) { globalIndex = 0; }
+
+            var currentIndex = globalIndex;
+            var pastIndex = globalIndex == 0 ? 11 : globalIndex - 1;
+
+            //add new layers here to make sure they stay in the same loop
+            timeStamps.loop(globalIndex);
+            WatchWarnModel.loop(currentIndex, pastIndex)
+            RadarModel.loop(currentIndex, pastIndex)
+            $('#imageTimeSlider').slider('setValue', globalIndex, true);
+        }
+
+        manageLoop = function manageGlobalInterval (flag, interTime)
+        {
+            if (flag) {
+                myGlobalInterval = setInterval(runMapLoop, interTime);
+            }
+            else {
+                clearInterval(myGlobalInterval)
+                $('#imageTimeSlider').slider('setValue', globalIndex, true);
+            }
+        }
+        //***********************************************************//
+
+        var locator = false;
+
+        function initializeMap ()
+        {
+            var mapDiv = $('#map-div').get(0);
+
+            if (!mapDiv) { return; }
+
+            //if using on an iPad or iPhone turn the locator On
+            if (navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)) { locator = true; }
+
+            resize();
+            var mapCreds = "@ViewBag.BingMapKey";
+            var mapCenter = [@ViewBag.MapCenterLat, @ViewBag.MapCenterLong];
+
+            var map = L.map('map').setView(mapCenter, 7);
+            var winterPane = map.createPane('winterPane');
+            var radarPane = map.createPane('radarPane');
+            radarPane.style.zIndex = 450;
+            GlobalMapRef = map;
+
+            L.tileLayer.bing(mapCreds).addTo(map);
+            resize();
+            bindMapEvents();
+
+
+            //show or hide the OpCo Layers
+            $('.opcoVisibleLayer').change(function () {
+                if ($(this).data("company") == undefined) {
+                    $('.opcoVisibleLayer').prop('checked', $(this).prop('checked'))
+                }
+                OpcosModel.showHide($(this).prop('checked'), $(this).data("company"));
+            })
+
+            //*** Checks for current show/hide state ***//
+            $('.weatherDataLayer').change(function ()
+            {
+                var checkState = ($(this).prop('checked'));
+                switch ($(this).data("weather"))
+                {
+                    case "Radar":
+                        if (checkState) { RadarModel.reinitialize(true) } else { RadarModel.hide();  }
+                        break;
+                    //case "Lightning":
+                    //    if (checkState) { lightning.init(globalIndex); } else { lightning.disable(); }
+                    //    break;
+                    //case "LightningRegion":
+                    //    if (checkState) { createLightningRegion.show(); } else { createLightningRegion.hide(); }
+                    //    break;
+                    //case "Wind":
+                    //    if (checkState) { curConditions.init(globalIndex, "wind"); } else { curConditions.disable("wind"); }
+                    //    break;
+                    //case "Temperature":
+                    //    if (checkState) { curConditions.init(globalIndex, "temperature"); } else { curConditions.disable("temperature"); }
+                    //    break;
+                    //case "Dewpoint":
+                    //    if (checkState) { curConditions.init(globalIndex, "dewpoint"); } else { curConditions.disable("dewpoint"); }
+                    //    break;
+                    case "WatchWarn":
+                        if (checkState) { WatchWarnModel.reinitialize(true) } else { WatchWarnModel.hide(); }
+                        break;
+                        //case "Fronts":
+                        //    if (checkState) { front.init(); } else { front.hide(); }
+                        //    break;
+                }
+            })
+
+            //*****  Initialize the map layers *****//
+            timeStamps.init();
+            RadarModel.init();
+            //createLightningRegion.init();
+            OpcosModel.init();
+            WatchWarnModel.init()
+
+            manageGlobalLoop();
+
+
+            function hideAll()
+            {
+                //lightning.hide();
+                //curConditions.hide();
+                WatchWarnModel.hide();
+            }
+
+            timeSliderChange = function (value)
+            {
+                hideAll();
+                globalIndex = value;
+                runMapLoop(true);
+                pauseAnimation();
+            };
+
+            //*** Pause/Play image animation ***//
+            $('#pauseButton').click(function ()
+            {
+                if ($('#pauseButton').val() == "Stop") { pauseAnimation(); }
+                else { playAnimation(); }
+            });
+
+            function pauseAnimation ()
+            {
+                $('#pauseButton').val("Start")
+                $('#pauseButtonText').addClass('fa-play').removeClass('fa-stop');
+                animationFlag = 0;
+                stopLoop()
+                //  mapPause = true;
+                //clearInterval(myGlobalInterval)
+            }
+
+            function playAnimation ()
+            {
+                //hideAll();
+                $('#pauseButton').val("Stop")
+                $('#pauseButtonText').addClass('fa-stop').removeClass('fa-play');
+                animationFlag = 1;
+                startLoop()
+                //manageGlobalLoop (true, 1000);
+            }
+
+            //*** go to beginning of loop ***//
+            $('#begButton').click(function ()
+            {
+                pauseAnimation();
+                beginButtonAnimation();
+            });
+
+            function beginButtonAnimation()
+            {
+                hideAll();
+                globalIndex = 0;
+                runMapLoop(true);
+                animationFlag = 0;
+            }
+
+            //*** go to back one step in loop ***//
+            $('#backButton').click(function ()
+            {
+                pauseAnimation();
+                backButtonAnimation();
+            });
+
+            function backButtonAnimation()
+            {
+                if (globalIndex != 0)
+                {
+                    hideAll();
+                    globalIndex--;
+                    runMapLoop(true);
+                    animationFlag = 0;
+                }
+            }
+
+            //*** go forward one step in loop ***//
+            $('#forwardButton').click(function ()
+            {
+                pauseAnimation();
+                forwardButtonAnimation();
+            });
+
+            function forwardButtonAnimation()
+            {
+                if (globalIndex != 11)
+                {
+                    hideAll();
+                    globalIndex++;
+                    runMapLoop(true);
+                    animationFlag = 0;
+                }
+            }
+
+            //*** go to end of loop ***//
+            $('#endButton').click(function ()
+            {
+                pauseAnimation();
+                endButtonAnimation();
+            });
+
+            function endButtonAnimation()
+            {
+                hideAll();
+                globalIndex = 11;
+                runMapLoop(true);
+                animationFlag = 0;
+            }
+
+            /***** handles the storm menu selections  *****/
+            $("#StormStart").click(function()
+            {
+                pauseAnimation();
+                stormProjections.stormStart();
+            });
+
+            $("#StormEnd").click(function()
+            {
+                stormProjections.stormEnd();
+            });
+
+            $("#StormClear").click(function()
+            {
+                stormProjections.stormClear();
+            });
+
+            $("#CenterClock").click(function()
+            {
+                $("#timeStampBox").css('top', '60px');
+                $("#timeStampBox").css('left', '40%');
+            });
+
+            /**********************************************/
+
+            manageGlobalLoop(true, 1000);
+
+        };
+        initializeMap();
+    }
+
+    function bindMapEvents() {
+        // debugger
+        var map = getMap();
+
+        map.on("move" || "zoom", function () {
+            // pauseGlobalLoop = true;
+
+            stopLoop();
+        })
+
+        map.on("moveend" || "zoomend", function () {
+            //pauseGlobalLoop = false;
+            startLoop();
+        })
+    }
+
+</script>

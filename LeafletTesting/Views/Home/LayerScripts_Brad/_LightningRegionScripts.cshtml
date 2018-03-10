@@ -1,0 +1,43 @@
+﻿<script>
+
+    var createLightningRegion = (function ()
+    {
+        var ltgRegionPolygon;
+
+        var initLightningRegion = (function ()
+        {
+            var ltgRegionBox =
+                [
+                    new Microsoft.Maps.Location(43.00, -87.50), //top left
+                    new Microsoft.Maps.Location(35.50, -87.50), //bottom left
+                    new Microsoft.Maps.Location(35.50, -72.50), //bottom right
+                    new Microsoft.Maps.Location(43.00, -72.50)  //top right
+                ];
+
+            //Create a polygon
+            ltgRegionPolygon = new Microsoft.Maps.Polygon(ltgRegionBox,
+            {
+                fillColor: 'rgba(0, 0, 0, 0)',
+                strokeColor: 'black',
+                strokeThickness: 3,
+                visible: false
+            });
+
+            //Add the polygon to map
+            map.entities.push(ltgRegionPolygon);
+
+        });
+
+        var hideLightningRegion = function () { ltgRegionPolygon.setOptions({ visible: false }) };
+
+        var showLightningRegion = function () { ltgRegionPolygon.setOptions({ visible: true }) };
+
+        return {
+            init: initLightningRegion,
+            hide: hideLightningRegion,
+            show: showLightningRegion
+        }
+
+    })();
+
+</script>

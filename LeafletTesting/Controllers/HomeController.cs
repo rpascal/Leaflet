@@ -60,5 +60,18 @@ namespace LeafletTesting.Web.Controllers
             }
         }
 
+        [HttpGet]
+        public ActionResult GetRadarImages()
+        {
+            //var radarDataFilePath = Server.MapPath(ConfigurationManager.AppSettings["DataFilePath"]);
+            var radarDataFilePath = Server.MapPath(ConfigurationManager.AppSettings["RadarDataFilePath"]);
+            var radarFileNames = ConfigurationManager.AppSettings["RadarImageFileNames"];
+            List<string> FileList = Directory.GetFiles(radarDataFilePath)
+                                    .Select(file => ConfigurationManager.AppSettings["DataFilePath"] + Path.GetFileName(file))
+                                    .OrderBy(x => Regex.Replace(x, "[0-9]+", match => match.Value.PadLeft(10, '0'))).ToList();
+
+            return Json(FileList, JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

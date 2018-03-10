@@ -1,0 +1,408 @@
+﻿
+<script src="~/Scripts/BootSideMenu.js"></script>
+
+<script>
+    
+        $(document).ready(function ()
+        {
+            //shows refresh button ONLY on the map page
+            if ("@ViewContext.RouteData.Values["controller"].ToString()" == "Home"){
+                $("#refreshIcon").show();
+            }
+
+            $('#data-container-menu-active').addClass('active');
+
+            $('#mapMenu').BootSideMenu(
+            {
+                side: "right",
+                pushBody: false,
+                remember: true
+            });
+
+            $("#mapMenu").show();
+            $("customNavSelector").show();
+            $("timeStampBox").show();
+            $('#contentContainer').css({ 'width': '100%' });
+        });
+
+        var defaultMapColors =
+            {
+                "version": "1.0",
+                "settings":
+                    {
+                        "landColor": "#686868"
+                    },
+                "elements":
+                    {
+                        "mapElement": { "labelVisible": false },
+                        "area": { "visible": false },
+                        "transportation": { "visible": false },
+                        "countryRegion": {                          //country
+                            "borderStrokeColor": "#444444",
+                            "borderOutlineColor": "#00000000",
+                            "borderWidthScale": 3,
+                            "fillColor": "#888888",
+                            "visible": true
+                        },
+                        "adminDistrict": {                          //states
+                            "borderVisible": true,
+                            "borderStrokeColor": "#444444",
+                            "borderOutlineColor": "#00000000",
+                            "borderWidthScale": 3,
+                            "fillColor": "#888888",
+                        },
+                        "water": { "fillColor": "#4E5E6D" },
+                        "point": { "visible": false }
+                    }
+            };
+
+        var defaultMapColorsWithRoads =
+            {
+                "version": "1.0",
+                "settings":
+                    {
+                        "landColor": "#686868"
+                    },
+                "elements":
+                    {
+                        "mapElement": { "labelVisible": false },
+                        "area": { "visible": false },
+                        "transportation": {
+                            "visible": true,
+                            "strokeColor": "#ffffff",
+                        },
+                        "countryRegion": {                          //country
+                            "borderStrokeColor": "#444444",
+                            "borderOutlineColor": "#00000000",
+                            "borderWidthScale": 3,
+                            "fillColor": "#888888",
+                            "visible": true
+                        },
+                        "adminDistrict": {                          //states
+                            "borderVisible": true,
+                            "borderStrokeColor": "#444444",
+                            "borderOutlineColor": "#00000000",
+                            "borderWidthScale": 3,
+                            "fillColor": "#888888",
+                        },
+                        "water": { "fillColor": "#4E5E6D" },
+                        "point": { "visible": false }
+                    }
+            };
+
+</script>
+@*@Styles.Render("~/Content/leaflet")
+@Scripts.Render("~/bundles/leaflet")
+@Scripts.Render("~/bundles/leafletExtensions")*@
+
+
+@Styles.Render("~/Content/leaflet")
+@Scripts.Render("~/bundles/leaflet")
+@Scripts.Render("~/bundles/leafletExtensions")
+
+<script>
+    function isFunction(functionName) {
+        return functionName != null && typeof functionName === "function";
+    }
+
+    function triggerCallback(callback) {
+        if (isFunction(callback))
+            callback();
+    }
+
+    $(window).resize(function () {
+        resize();
+    });
+
+    function resize() {
+        var windowHeight = $(window).height();
+        var map = windowHeight - 150;
+        $("#map").height(map);
+    }
+
+</script>
+
+@Html.Partial("_MapScripts", "")
+@*@Html.Partial("LayerScripts/_RadarOverlayScripts", "")
+    @Html.Partial("LayerScripts/_LightningPinsScripts", "")
+    @Html.Partial("LayerScripts/_FrontsScripts", "")
+    @Html.Partial("LayerScripts/_StormProjectionsScript", "")
+    @Html.Partial("LayerScripts/_LightningRegionScripts", "")
+    @Html.Partial("LayerScripts/_CurCondPointsScript", "")*@
+
+@Html.Partial("LayerScripts/_TimeStampScripts", "")
+@Html.Partial("LayerScripts/_opcoPolygonsScripts", "")
+@Html.Partial("LayerScripts/_RadarOverlayScripts", "")
+@Html.Partial("LayerScripts/_Watch_WarnScripts", "")
+
+<script>
+    //*****  Resize map Div Window *****//
+    window.onresize = function (event) {
+        resizeDiv();
+    }
+
+    function resizeDiv() {
+        vpw = $(window).width();
+        vph = $(window).height() - 100;
+        $('#map-div').css({ 'height': vph + 'px' });
+    }
+
+    dragElement(document.getElementById(("timeStampBox")));
+
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            /* if present, the header is where you move the DIV from:*/
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+            /* otherwise, move the DIV from anywhere inside the DIV:*/
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            /* stop moving when mouse button is released:*/
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+
+</script>
+
+
+<div id="contentholder">
+
+    <div id="map" class="">
+        <div id="map-div" data-toggle="context" data-target="#context-menu-storm"></div>
+
+        <span id="timeStampBox" style="z-index:1000">&nbsp;</span>
+
+        <!-- Storm right click menu -->
+        <ul id="stormMenu" class="dropdown-menu menu-storm">
+            <li id="stormStartLi" class="stormMenu"><a href="#" id="StormStart">Storm Start</a></li>
+            <li id="stormEndLi" class="stormMenu disabled"><a href="#" id="StormEnd">Storm End</a></li>
+            <li class="divider"></li>
+            <li id="stormClearLi" class="stormMenu disabled"><a href="#" id="StormClear">Clear Storm Track</a></li>
+            <li class="divider"></li>
+            <li id="centerClock" class="stormMenu"><a href="#" id="CenterClock">Center Clock On Map</a></li>
+        </ul>
+
+        <div class="form-group">
+
+            <div class="dropdown" id="customNavSelector">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Map Type
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.road, customMapStyle: defaultMapColors });">Default</a></li>
+                    @*<li><a href="#" onclick="map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.road, customMapStyle: ''});">Road</a></li>*@
+                    <li><a href="#" onclick="map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.aerial, customMapStyle: '' });">Aerial</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mapMenu" hidden>
+        <div class="list-group">
+            <a href="#item-1" style="background-color: #1A3E5E !important; color: white" class="list-group-item" data-toggle="collapse">Operating Companies</a>
+            <div class="list-group collapse filterCheckbox" id="item-1">
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="JCP&L" />&nbsp;&nbsp;<b>Jersey Central Power &amp; Light</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="ME" />&nbsp;&nbsp;<b>Met Ed</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="MP" />&nbsp;&nbsp;<b>Mon Power</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="OE" />&nbsp;&nbsp;<b>Ohio Edison</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="PN" />&nbsp;&nbsp;<b>Penelec</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="PP" />&nbsp;&nbsp;<b>Penn Power</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="PE" />&nbsp;&nbsp;<b>Potomac Edison</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="CEI" />&nbsp;&nbsp;<b>The Illuminating Company</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="TE" />&nbsp;&nbsp;<b>Toledo Edison</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" data-company="WPP" />&nbsp;&nbsp;<b>West Penn Power</b></div></div>
+                <div class="row"><div class="col-xs-12"><input type="checkbox" value="" checked="checked" class="opcoVisibleLayer" />&nbsp;&nbsp;<b>FirstEnergy</b></div></div>
+                @*FirstEnergy does not have a data-company defined.  This is to pass "undefined" into the functions and turn ALL opcos on/off*@
+                <div class="row"><div class="col-xs-12">&nbsp;&nbsp;</div></div>
+            </div>
+            <a href="#item-2" style="background-color: #1A3E5E !important; color: white" class="list-group-item" data-toggle="collapse">Weather Layers</a>
+            <div class="list-group collapse filterCheckbox" id="item-2">
+                <div class="row">
+                    <div class="col-xs-5"><input type="checkbox" id="radar-visibility-control" value="" checked="checked" class="weatherDataLayer" data-weather="Radar" />&nbsp;&nbsp;<b>Radar</b></div>
+                    <div class="col-xs-7"><input id="radarOverlaySlider" data-slider-id='radarOverlaySliderElement' type="text" data-slider-step="1" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><input type="checkbox" id="lightning-visibility-control" value="" class="weatherDataLayer" data-weather="Lightning" />&nbsp;&nbsp;<b>Lightning</b> (Pos + and Neg - kA)</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><input type="checkbox" id="lightningRegion-visibility-control" value="" class="weatherDataLayer" data-weather="LightningRegion" />&nbsp;&nbsp;<b>Lightning Region</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><input type="checkbox" value="" class="weatherDataLayer" data-weather="WatchWarn" />&nbsp;&nbsp;<b>Watches / Warnings</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5"><input type="checkbox" id="wind-visibility-control" value="" class="weatherDataLayer" data-weather="Wind" />&nbsp;&nbsp;<b>Wind</b></div>
+                    <div class="col-xs-7"><input id="windOverlaySlider" data-slider-id='windOverlaySliderElement' type="text" data-slider-step="1" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><input type="checkbox" value="" class="weatherDataLayer" data-weather="Fronts" />&nbsp;&nbsp;<b>Fronts</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5"><input type="checkbox" id="temp-visibility-control" value="" class="weatherDataLayer" data-weather="Temperature" />&nbsp;&nbsp;<b>Temp</b></div>
+                    <div class="col-xs-7"><input id="tempOverlaySlider" data-slider-id='tempOverlaySliderElement' type="text" data-slider-step="1" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5"><input type="checkbox" id="dew-visibility-control" value="" class="weatherDataLayer" data-weather="Dewpoint" />&nbsp;&nbsp;<b>Dewpoint</b></div>
+                    <div class="col-xs-7"><input id="dewpointOverlaySlider" data-slider-id='dewpointOverlaySliderElement' type="text" data-slider-step="1" /></div>
+                </div>
+
+                <div><span>&nbsp;</span></div>
+
+                <div class="row">
+                    <div class="col-xs-5"><b>Station Data Filter:</b></div>
+                    <div class="col-xs-7"><input id="stationDataFilter" data-slider-id='stationDataFilterElement' type="text" data-slider-step="1" /></div>
+                    <div class="col-xs-5"></div>
+                    <div class="col-xs-3 sliderLabels"><small>Less Data</small></div>
+                    <div class="col-xs-3 sliderLabels"><small>More Data</small></div>
+                </div>
+
+                <div><span>&nbsp;</span></div>
+
+                <div class="row">
+                    <div class="col-xs-7"><b>Tornado Watch:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:3px solid #ff0000;"></div><span>&nbsp;(larger boxes)</span>  @*red*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Svr T-Tstm Watch:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:3px solid #ffff00;"></div><span>&nbsp;(larger boxes)</span>  @*yellow*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Tornado Warning:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:1px solid #ff0000;"></div>    @*red*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Svr T-Tstm Warning:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:1px solid #ffff00;"></div>    @*yellow*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Flash Flood Warning:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:1px solid #00ff21;"></div>    @*lime green*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Winter Weather Warning:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:1px solid #ffffff;"></div>    @*white*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Winter Weather Watch:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:1px solid #00ffff;"></div>    @*aqua*@
+                </div>
+                <div class="row">
+                    <div class="col-xs-7"><b>Winter Weather Adv:</b></div>
+                    <div class="col-xs-5" style="width:10px; height:15px; border:1px solid #b200ff;"></div>   @*electric purple*@
+                </div>
+
+                <div><span>&nbsp;</span></div>
+
+                <div class="row">
+                    <div class="col-xs-12"><b>Loop Controls</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div><b>Image Time:</b></div>
+                        <div><input id="imageTimeSlider" data-slider-id='imageTimeSliderElement' type="text" data-slider-step="1" /></div>
+                        <div class="col-xs-12" style="width: 100%; padding-left: 0px !important;">
+                            <div class="col-xs-1 mapImageControl" id="time-0">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-1">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-2">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-3">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-4">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-5">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-6">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-7">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-8">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-9">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-10">1200</div>
+                            <div class="col-xs-1 mapImageControl" id="time-11">1200</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div><span>&nbsp;</span></div>
+
+                <div class="row">
+                    <div class="col-xs-12"><b>Speed:</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><input id="speedSlider" data-slider-id='speedSliderElement' type="text" data-slider-step="1" /></div>
+                </div>
+
+                <div><span>&nbsp;</span></div>
+
+                <div class="row" style="margin: auto;">
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-primary" id="begButton" data-toggle="tooltip" data-placement="top" title="Beginning" value="Beginning">
+                            <i class="fa fa-fast-backward" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-primary" id="backButton" data-toggle="tooltip" data-placement="top" title="Back" value="Back">
+                            <i class="fa fa-step-backward" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-primary" id="pauseButton" data-toggle="tooltip" data-placement="top" title="Play/Stop" value="Stop">
+                            <i class="fa fa-stop" aria-hidden="true" id="pauseButtonText"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-primary" id="forwardButton" data-toggle="tooltip" data-placement="top" title="Forward" value="Forward">
+                            <i class="fa fa-step-forward" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-primary" id="endButton" data-toggle="tooltip" data-placement="top" title="End" value="End">
+                            <i class="fa fa-fast-forward" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div><span>&nbsp;</span></div>
+
+            </div>
+
+            <a href="#item-3" style="background-color: #1A3E5E !important; color: white" class="list-group-item" data-toggle="collapse">Search</a>
+            <div class="list-group collapse" id="item-3">
+                <div id='searchBoxContainer'>
+                    @Html.TextBox("searchBox", "",
+                         new
+                         {
+                             @class = "form-control formElements",
+                             @id = "searchBox",
+                             @name = "searchBox",
+                             @style = "width: 100% !important",
+                             @placeholder = "Search"
+                         })
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

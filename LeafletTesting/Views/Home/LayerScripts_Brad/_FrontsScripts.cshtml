@@ -1,0 +1,320 @@
+﻿
+<script>
+/*** Front module ***/
+    var front = (function ()
+    {
+        var promise;
+        var active = false;
+        var isInitialized = false;
+        var isDataGood = false;
+
+        var overlay;
+        var update;
+        var iterator = 0;
+        var frontShapeLayerCollection;
+        var frontPinLayer;
+        var pushPinArray = [];
+
+        var createMapEntitiesForFrontPinData = function (dataFront, item)
+        {
+            //*** create fill styles for fronts ***//
+            var offScreenCanvasFront = document.createElement('canvas');
+
+            offScreenCanvasFront.width = 100;
+            offScreenCanvasFront.height = 100;
+
+            //Draw fill color.
+            var offCtx = offScreenCanvasFront.getContext('2d');
+
+            var tempLocArray = dataFront;
+            var id;
+            var orderby;
+            var pintext;
+            var image = new Image(50, 50);
+
+            image.src = "Content/images/HurricaneSymbol.png";
+
+            var offScreenCanvasFrontStormLabel = document.createElement('canvas');
+            offScreenCanvasFrontStormLabel.width = 200;
+            offScreenCanvasFrontStormLabel.height = 500;
+            var offCtxStormLabel = offScreenCanvasFrontStormLabel.getContext('2d');
+
+            id = 'FrontPins';
+            pintext = tempLocArray.Text;
+            orderby = 500;
+
+
+            overlay = new CanvasOverlay(
+                {
+                    id: id,
+                    tempLocArray: tempLocArray,
+                    orderBy: orderby,
+                    zIndex: 19,
+                    Class: 'CanvasLayerRefresh',
+                    drawCallback : function (canvas)
+                    {
+                        if (this._tempLocArray.length > 0 && isActive())
+                        {
+                            //Get the context of the main canvas.
+                            var ctx = canvas.getContext("2d");
+
+                            //Buffer map dimensions to account for radius of points.
+                            var mapWidth = map.getWidth();
+                            var mapHeight = map.getHeight();
+                            var tempItem = [];
+
+                            this._tempLocArray.forEach(function (item)
+                            {
+                                if (item.Num_LatLongPairs == 1) {
+                                    var point = map.tryLocationToPixel(new Microsoft.Maps.Location(item.Lat_Long_PairsFronts[0].latitude, item.Lat_Long_PairsFronts[0].longitude), Microsoft.Maps.PixelReference.control);
+                                    var pointX = roundNumbers(point.x, 2);
+                                    var pointY = roundNumbers(point.y, 2);
+
+                                    /* function to wrap text when needed for the tropical storm notifications */
+                                    function wrapText(context, text, x, y, maxWidth, lineHeight)
+                                    {
+                                        var words = text.split('\n');
+                                        var line = '';
+
+                                        for (var n = 0; n < words.length; n++)
+                                        {
+                                            var testLine = line + words[n] + ' ';
+                                            var metrics = context.measureText(testLine);
+                                            var testWidth = metrics.width;
+
+                                            if (testWidth > maxWidth && n > 0)
+                                            {
+                                                context.fillText(line, x, y);
+                                                line = words[n] + ' ';
+                                                y += lineHeight;
+                                            }
+                                            else
+                                            {
+                                                line = testLine;
+                                            }
+                                        }
+                                        context.fillText(line, x, y);
+                                    }
+
+                                    //clear the previous text as a 'just in case'.  issues have been seen where the previous txt remains
+                                    //and becomes blurry when overlaid with new text
+                                    offCtx.clearRect(0, 0, (offScreenCanvasFront.width), (offScreenCanvasFront.height));
+                                    offCtx.font = "normal 700 " + (20 * item.ObjectSize) + "px Arial";
+                                    offCtx.fillStyle = item.Color;
+                                    offCtx.fillText(item.Text, (offScreenCanvasFront.width / 2), (offScreenCanvasFront.height / 2));
+
+                                    offCtxStormLabel.clearRect(0, 0, (offScreenCanvasFrontStormLabel.width), (offScreenCanvasFrontStormLabel.height));
+                                    offCtxStormLabel.font = "normal 700 " + (20 * item.ObjectSize) + "px Arial";
+                                    offCtxStormLabel.fillStyle = item.Color;
+
+                                    wrapText(offCtxStormLabel, item.Text, 0, (offScreenCanvasFrontStormLabel.height / 2), 500, 25);
+
+                                    //Don't draw the point if it is not in view. This greatly improves performance when zoomed in.
+                                    if (pointX <= mapWidth && pointY <= mapHeight) {
+                            
+                                        //determine if the object type is a tropicalstorm/hurricane
+                                        if (item.ObjectType === "symbol_tsnh" || item.ObjectType === "symbol_hrnh") {
+                                            ctx.drawImage(image, pointX - 20, pointY - 20, 40, 40);
+                                        }
+
+                                        if (item.Text.length > 10) {
+                                            ctx.drawImage(offScreenCanvasFrontStormLabel, pointX- 100, pointY - 250, 200, 500);
+                                        }
+                                        else {
+                                            ctx.drawImage(offScreenCanvasFront, pointX - 50, pointY - 50, 100, 100);
+                                        }
+                                    }
+                                }
+                                else {
+                                    ctx.lineWidth = item.Width;
+                                    ctx.strokeStyle = item.Color;
+                                    if (typeof item.StrokeDash != "undefined" && item.StrokeDash != null && item.StrokeDash.length > 0) {
+                                        ctx.setLineDash(item.StrokeDash)
+                                    }
+                                    else {
+                                        ctx.setLineDash(1, 0);
+                                    }
+
+                                    ctx.beginPath();
+
+                                    for (var i = 0; i < item.Lat_Long_PairsFronts.length; i++) {
+                                        var pointLine = map.tryLocationToPixel(new Microsoft.Maps.Location(item.Lat_Long_PairsFronts[i].latitude, item.Lat_Long_PairsFronts[i].longitude), Microsoft.Maps.PixelReference.control);
+
+                                        var x = roundNumbers(pointLine.x, 2);
+                                        var y = roundNumbers(pointLine.y, 2);
+
+                                        ctx.lineTo(x, y);
+                                    }
+
+                                    ctx.stroke();
+
+                                    //in order to create a dashed line for the below types of fronts we create a "normal" line from above then
+                                    //overlay a dashed blue line on top so we see the red/blue effect
+                                    if (item.ObjectType == 'front_stny_strng') {
+                                        ctx.beginPath();
+                                        ctx.strokeStyle = '#0000ff';   //blue
+                                        ctx.setLineDash([10,10])  //red is "10, 5".  this allows a red/blue dash
+
+                                        for (var i = 0; i < item.Lat_Long_PairsFronts.length; i++) {
+                                            var pointLine = map.tryLocationToPixel(new Microsoft.Maps.Location(item.Lat_Long_PairsFronts[i].latitude, item.Lat_Long_PairsFronts[i].longitude), Microsoft.Maps.PixelReference.control);
+
+                                            var x = roundNumbers(pointLine.x, 2);
+                                            var y = roundNumbers(pointLine.y, 2);
+
+                                            ctx.lineTo(x, y);
+                                        }
+                                        ctx.stroke();
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+                return overlay;
+            };
+
+
+        var initFrontsInit = function () {
+
+            if (!isInitialized || !isDataGood) {
+                //console.log('Initializing Fronts...', 'isInitialized...', isInitialized, 'isDataGood...', isDataGood)
+
+                initFrontDisplay(function () {
+                    front.show();
+                    isDataGood = true;
+                });
+                isInitialized = true;
+            }
+            else {
+                //console.log('Showing...');
+                front.show();
+            }
+        }
+
+        var initFrontDisplay = function (callBackFronts)
+        {
+            $.ajax(
+            {
+                url: "@Url.Action("GetFrontData", "Home")",
+                type: "GET",
+                dataType: "json",
+                success: function (dataFront)
+                {
+                    frontShapeLayerCollection = new Microsoft.Maps.Layer("FrontLayer");
+                    frontShapePinLayerCollection = new Microsoft.Maps.Layer("FrontPinLayer");
+
+                    //*** build dataFront push pin layer ***//
+                    dataFront.forEach(function (dataFront)
+                    {
+                        pushPinArray.push(dataFront);
+                    })
+
+                    var dataEntitiesPinFronts = createMapEntitiesForFrontPinData(pushPinArray, item);
+                    map.layers.insert(dataEntitiesPinFronts);
+
+                    //set the default visibiity of the dataFrontPins layers to hide
+                    $(dataEntitiesPinFronts.canvas).hide();
+
+                    frontPinLayer = dataEntitiesPinFronts;
+
+                    map.layers.insert(frontShapeLayerCollection);
+                    frontShapeLayerCollection.setVisible(false);
+                    //*********************************//
+
+                    if (typeof callBackFronts == 'function') {
+                        callBackFronts();
+                    }
+                    if (promise) {
+                        promise.resolve();
+                    }
+
+                }, error: function (frontsErr) { console.log('frontsErr: ', frontsErr, 'item: ', item) }
+            })
+        };
+
+        var rerender = (function ()
+        {
+            if (isInitialized && isActive()) {
+                //console.log('Rerendering Fronts...' ,'isInitialized...', isInitialized, 'isActive...', isActive());
+                frontPinLayer._redraw();
+                $(frontPinLayer.canvas).show();
+                frontShapeLayerCollection.setVisible(true);
+            }
+            else {
+                hideFrontData();
+            }
+        })
+
+        //hide loop
+        var hideFrontData = function (){
+        
+            //console.log('Hidding Fronts...' );
+            active = false;
+            $(frontPinLayer._canvas).hide();
+            //frontShapeLayerCollection.setVisible(false);
+        };
+
+        //pause the loop
+        var pause = function ()
+        {
+            active = false;
+        }
+
+        //show loop
+        var showFrontData = function ()
+        {
+            active = true;
+            rerender();
+        };
+
+        //sets loop active flag
+        var isActive = function ()
+        {
+            return active;
+        }
+
+        var loop = function (index)
+        {
+            if (update)
+            {
+                update(index);
+            }
+        }
+
+        var refreshFronts = function () {
+            delete promise;
+            promise = $.Deferred();
+            isDataGood = false;
+
+            if (isInitialized && isActive()) {
+                //console.log('Refreshing Fronts ...', 'isInitialized...', isInitialized, 'isActive...', isActive());
+
+                hideFrontData();
+                frontShapePinLayerCollection = [];
+
+                initFrontDisplay(function () {
+                    isDataGood = true;
+                    showFrontData();
+                });
+            } else {
+                //console.log('Resolving Fronts...', 'isInitialized...', isInitialized, 'isActive...', isActive());
+                promise.resolve();
+            }
+
+            return promise;
+        }
+
+        return {
+            init: initFrontsInit,
+            //update: initFrontDisplay,
+            hide: hideFrontData,
+            show: showFrontData,
+            isActive: isActive,
+            loop: loop,
+            rerender: rerender,
+            refresh: refreshFronts
+        };
+
+    })();
+
+</script>

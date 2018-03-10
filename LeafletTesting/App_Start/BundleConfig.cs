@@ -9,7 +9,7 @@ namespace LeafletTesting
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                       "~/Scripts/jquery-3.3.1.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -29,8 +29,12 @@ namespace LeafletTesting
             bundles.Add(new ScriptBundle("~/bundles/leaflet").Include(
                  "~/Scripts/leaflet/leaflet.js"));
             bundles.Add(new ScriptBundle("~/bundles/leafletExtensions").Include(
-                 "~/Scripts/leaflet/LeafletExtensions/custom.js",
-                 "~/Scripts/leaflet/LeafletExtensions/leaflet-bing-layer.min.js"
+                 "~/Scripts/leaflet/LeafletExtensions/LeafletExtensions.js",
+                 "~/Scripts/leaflet/LeafletExtensions/leaflet-bing-layer.min.js",
+                 "~/Scripts/leaflet/LeafletExtensions/MapControls.js",
+                 "~/Scripts/leaflet/LeafletExtensions/ObjectAssignPolyfill.js",
+                   "~/Scripts/leaflet/LeafletExtensions/PromisesPolyfill.js"
+                   
                  ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
