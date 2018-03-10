@@ -81,14 +81,16 @@
 
             OpcosModel.init();
            
-            WatchWarnModel.init()
+            //WatchWarnModel.init()
 
-            WatchWarnModel.reinitilize();
+            WatchWarnModel.reinitilize(true);
 
-            $.when.apply(null, [RadarModel.init()]).then(function () {
-                RadarModel.reinitialize()
+            RadarModel.reinitialize(true)
+
+            //$.when.apply(null, [RadarModel.init()]).then(function () {
+                
     
-            })
+            //})
 
             startGlobalLoop();
         }

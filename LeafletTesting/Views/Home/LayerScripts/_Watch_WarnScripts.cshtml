@@ -37,7 +37,10 @@
 
         var buildInitAttempted = false;
 
-        function buildLayers(callback) {
+        function buildLayers(forceShow = false, callback) {
+            if (!isActive && !forceShow)
+                return;
+
             if (!buildInitAttempted && jsonFileList == undefined) {
                 buildInitAttempted = true;
                 console.log("Error nothing in jsonFileList - will attempt initilization")
@@ -45,7 +48,7 @@
                     if (jsonFileList != undefined)
                         buildInitAttempted = false;
                     console.log("Successfully initilized")
-                    buildLayers();
+                    buildLayers(forceShow);
                 })
                 return;
             }

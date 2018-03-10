@@ -3,7 +3,6 @@
 <script>
     var RadarModel = (function () {
 
-        var radarLayerArray = [];
         var imageFileList;
 
 
@@ -25,6 +24,8 @@
             //    }
             //})
             //$('#imageTimeSliderElement').addClass("sliderElement");
+
+
         }
 
 
@@ -44,31 +45,26 @@
 
         var buildInitAttempted = false;
 
-        function buildLayers(forceShow, callback) {
-            //debugger
-            //if ((!isActive && !forceShow) || !isActive && forceShow)
-            //    return;
+        function buildLayers(forceShow = false, callback) {
+            if (!isActive && !forceShow)
+                return;
             if (!buildInitAttempted && imageFileList == undefined) {
                 buildInitAttempted = true;
                 console.log("Error nothing in imageFileList - will attempt initilization")
                 $.when.apply(null, [init()]).then(function () {
-                    if (fileList != undefined)
+                    if (imageFileList != undefined)
                         buildInitAttempted = false;
                     console.log("Successfully initilized")
-
                     buildLayers(forceShow);
                 })
                 return;
             }
 
             isActive = false;
-            removeAllLayers();
-            delete radarLayerArray;
-            radarLayerArray = [];
 
             var imageUrl = imageFileList[0],
-                imageBounds = [[50.40, -127.62], [21.64, -66.50], { }];
-            imageLayer = L.imageOverlay(imageUrl, imageBounds).leafAddToMap();
+                imageBounds = [[50.40, -127.62], [21.64, -66.50], {}];
+            imageLayer = L.imageOverlay("", imageBounds).leafAddToMap();
 
                 resume();
                 triggerCallback(callback);
@@ -84,21 +80,13 @@
             isActive = false;
         }
         var resume = function () {
-          //  removeAllLayers();
+            imageLayer.setUrl(imageFileList[globalIndex])
             isActive = true;
-           // imageLayer.leafAddToMap();
         }
-
-        function removeAllLayers() {
-           // imageLayer.setOpacity(0)
-          //  getMap().removeLayer(imageLayer);
-            //imageLayer.remove();
-        }
-
 
         var hide = function () {
-            //removeAllLayers();
             isActive = false;
+            imageLayer.setUrl("");
         }
 
         return {
