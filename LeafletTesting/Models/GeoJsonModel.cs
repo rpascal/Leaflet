@@ -21,8 +21,6 @@ namespace FE_Weather.Models
     public class Properties
     {
         public string type { get; set; }
-        public bool show_on_map { get; set; } = true;
-
     }
 
     public class Feature<T> where T : Properties
