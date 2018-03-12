@@ -143,13 +143,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
-    <Compile Include="Controllers\BaseDataProvider.cs" />
-    <Compile Include="Controllers\BaseViewModel.cs" />
-    <Compile Include="Controllers\BoundsJsonModel.cs" />
-    <Compile Include="Controllers\GeoJsonModel.cs" />
+    <Compile Include="DataProviders\BaseDataProvider.cs" />
+    <Compile Include="Models\BaseViewModel.cs" />
+    <Compile Include="Models\BoundsJsonModel.cs" />
+    <Compile Include="Models\GeoJsonModel_23.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="DataProviders\CreateBoundsJsonProvider.cs" />
+    <Compile Include="Models\GeoJsonModel.cs" />
+    <Compile Include="DataProviders\LightningDataProvider.cs" />
+    <Compile Include="Models\LightningStrikeModel.cs" />
     <Compile Include="DataProviders\WinterDataProvider.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -160,6 +163,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\leaflet.css" />
+    <Content Include="Content\leaflet\images\layers-2x.png" />
+    <Content Include="Content\leaflet\images\layers.png" />
+    <Content Include="Content\leaflet\images\marker-icon-2x.png" />
+    <Content Include="Content\leaflet\images\marker-icon.png" />
+    <Content Include="Content\leaflet\images\marker-shadow.png" />
     <Content Include="Data\currentsfcanl.txt" />
     <Content Include="Data\endMonthAnomaly.txt" />
     <Content Include="Data\fnames.txt" />
@@ -176,6 +184,18 @@
     <Content Include="Data\hrly_ggl_8.txt" />
     <Content Include="Data\hrly_ggl_9.txt" />
     <Content Include="Data\lb_result_intermediate.txt" />
+    <Content Include="Data\Lightning\ltg_1.txt" />
+    <Content Include="Data\Lightning\ltg_10.txt" />
+    <Content Include="Data\Lightning\ltg_11.txt" />
+    <Content Include="Data\Lightning\ltg_12.txt" />
+    <Content Include="Data\Lightning\ltg_2.txt" />
+    <Content Include="Data\Lightning\ltg_3.txt" />
+    <Content Include="Data\Lightning\ltg_4.txt" />
+    <Content Include="Data\Lightning\ltg_5.txt" />
+    <Content Include="Data\Lightning\ltg_6.txt" />
+    <Content Include="Data\Lightning\ltg_7.txt" />
+    <Content Include="Data\Lightning\ltg_8.txt" />
+    <Content Include="Data\Lightning\ltg_9.txt" />
     <Content Include="Data\ltg_1.txt" />
     <Content Include="Data\ltg_10.txt" />
     <Content Include="Data\ltg_11.txt" />
@@ -247,6 +267,18 @@
     <Content Include="Data\WinterJsons\winterWarnings_7.json" />
     <Content Include="Data\WinterJsons\winterWarnings_8.json" />
     <Content Include="Data\WinterJsons\winterWarnings_9.json" />
+    <Content Include="Data\Lightning\Lightning_0.json" />
+    <Content Include="Data\Lightning\Lightning_1.json" />
+    <Content Include="Data\Lightning\Lightning_10.json" />
+    <Content Include="Data\Lightning\Lightning_11.json" />
+    <Content Include="Data\Lightning\Lightning_2.json" />
+    <Content Include="Data\Lightning\Lightning_3.json" />
+    <Content Include="Data\Lightning\Lightning_4.json" />
+    <Content Include="Data\Lightning\Lightning_5.json" />
+    <Content Include="Data\Lightning\Lightning_6.json" />
+    <Content Include="Data\Lightning\Lightning_7.json" />
+    <Content Include="Data\Lightning\Lightning_8.json" />
+    <Content Include="Data\Lightning\Lightning_9.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -316,10 +348,10 @@
     <Content Include="Views\Weather\MapScripts\_MapControlScripts.cshtml" />
     <Content Include="Views\Weather\_MapScripts.cshtml" />
     <Content Include="Views\Home\LayerScripts\_RadarOverlayScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts\_LightningPinsScripts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System;
+using FE_Weather.Data.MapDataProviders;
 
 namespace LeafletTesting.Web.Controllers
 {
@@ -16,12 +17,15 @@ namespace LeafletTesting.Web.Controllers
     {
         //private string dataFilePath = ConfigurationManager.AppSettings["DataFilePath"];
         private readonly IWinterDataProvider _providerWinter;
+        private readonly ILightningDataProvider _ILightningDataProvider;
+
         //private string winterDataFilePath = ConfigurationManager.AppSettings["WinterDataFilePath"];
         //private string DataFilePath = ConfigurationManager.AppSettings["DataFilePath"];
 
         public HomeController()
         {
             _providerWinter = new WinterDataProvider();
+            _ILightningDataProvider = new LightningDataProvider();
         }
 
         public ActionResult Index()
@@ -58,6 +62,24 @@ namespace LeafletTesting.Web.Controllers
                 var companyPolygons = reader.ReadToEnd();
                 return Content(companyPolygons, "application/json");
             }
+        }
+
+        
+
+        [HttpGet]
+        public ActionResult GetLightning()
+        {
+
+
+            //var radarDataFilePath = Server.MapPath(ConfigurationManager.AppSettings["DataFilePath"]);
+            var LightningFilePath = Server.MapPath(ConfigurationManager.AppSettings["LightningDataFilePath"]);
+            var LightningJsonFileNames = ConfigurationManager.AppSettings["LightningImageFileNames"];
+            _ILightningDataProvider.generateLightningJsonFiles(LightningFilePath, LightningFilePath);
+            List<string> FileList = Directory.GetFiles(LightningFilePath, LightningJsonFileNames)
+                                    .Select(file => ConfigurationManager.AppSettings["LightningDataFilePath"] + Path.GetFileName(file))
+                                    .OrderBy(x => Regex.Replace(x, "[0-9]+", match => match.Value.PadLeft(10, '0'))).ToList();
+
+            return Json(FileList, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

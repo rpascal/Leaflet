@@ -58,6 +58,7 @@
                 var pastIndex = globalIndex == 0 ? 11 : globalIndex - 1;
                 RadarModel.loop(currentIndex, pastIndex);
                 WatchWarnModel.loop(currentIndex, pastIndex);
+                LightningModel.loop(currentIndex, pastIndex);
             }
         }, 1000)
     }
@@ -83,9 +84,11 @@
            
             //WatchWarnModel.init()
 
-            WatchWarnModel.reinitilize(true);
+            //WatchWarnModel.reinitilize(true);
 
-            RadarModel.reinitialize(true)
+           // RadarModel.reinitialize(true)
+
+            LightningModel.reinitialize(true);
 
             //$.when.apply(null, [RadarModel.init()]).then(function () {
                 

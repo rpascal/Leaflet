@@ -1,0 +1,139 @@
+﻿@using System.Configuration;
+<script>
+    var LightningModel = (function () {
+
+        var lightningLayerArray = [];
+        var jsonFileList;
+        var isActive = false;
+
+        var init = function () {
+
+            return $.ajax({
+                url: "@Url.Action("GetLightning", "Home")",
+                type: "GET",
+                dataType: "json"
+            }).done(function (ltgJsonFileList) {
+                jsonFileList = ltgJsonFileList;
+            }).fail(function (err) {
+                console.log('initShapesLightning err: ', err);
+            })
+        }
+
+        var buildInitAttempted = false;
+
+        function buildLayers(forceShow, callback) {
+            if (!isActive && !forceShow)
+                return;
+
+            if (!buildInitAttempted && jsonFileList == undefined) {
+                buildInitAttempted = true;
+                console.log("Error nothing in jsonFileList - will attempt initilization")
+                $.when.apply(null, [init()]).then(function () {
+                    if (jsonFileList != undefined)
+                        buildInitAttempted = false;
+                    console.log("Successfully initilized")
+                    buildLayers(forceShow);
+                })
+                return;
+            }
+
+            isActive = false;
+            removeAllLayers();
+            delete lightningLayerArray;
+            lightningLayerArray = [];
+
+            function popUp(feature, layer) {
+                var infoboxTemplateLightning = '<div class="customMapInfobox">'
+                    
+
+                layer.bindPopup(infoboxTemplateLightning);
+            }
+
+            let promises = jsonFileList.map(function (item) {
+                return $.ajax(
+                    {
+                        url: item,
+                        type: "GET",
+                        dataType: "json"
+                    }).done(function (ltgJsonLayer) {
+                        //lightningLayerArray.push(createGeoJsonLayer(
+                        //    {
+                        //        data: ltgJsonLayer,
+                        //        //newStyles: function (feature) {
+                        //        //    return {
+                        //        //        color: feature.properties.strokeColor,
+                        //        //        fillOpacity: feature.properties.fillOpacity || 0
+                        //        //    }
+                        //        //},
+                        //        onEachFeature: popUp
+                        //    }
+                        //));
+                        //L.geoJSON(ltgJsonLayer, {
+                        //    pointToLayer: function (feature, latlng) {
+                        //        debugger
+
+                        //        return L.circleMarker(latlng, {
+                        //            // Stroke properties
+                        //            color: '#5EA4D4',
+                        //            opacity: 0.75,
+                        //            weight: 2,
+
+                        //            // Fill properties
+                        //            fillColor: '#5EA4D4',
+                        //            fillOpacity: 0.25,
+
+                        //            radius: 2
+                        //        });
+                        //    }
+                        //}).addTo(getMap());
+
+                    }).fail(function (err) {
+                        console.log('createLtgGroupErr: ', err);
+                    })
+            })
+
+            $.when.apply(null, promises).then(function () {
+                resume();
+                triggerCallback(callback);
+            })
+        }
+
+        function removeAllLayers() {
+            lightningLayerArray.forEach(function (item) {
+                //item.remove();
+            })
+        }
+
+        var loop = function (currentIndex, pastIndex) {
+            if (isActive) {
+                console.log("lign")
+               // lightningLayerArray[pastIndex].remove();
+                lightningLayerArray[currentIndex].leafAddToMap();
+            }
+        }
+
+        var pause = function () {
+            removeAllLayers();
+            isActive = false;
+        }
+        var resume = function () {
+            removeAllLayers();
+            isActive = true;
+            //debugger
+            lightningLayerArray[1].addTo(getMap());
+        }
+
+        var hide = function () {
+
+            isActive = false;
+        }
+
+        return {
+            init: init,
+            loop: loop,
+            reinitialize: buildLayers,
+            pause: pause,
+            resume: resume,
+        };
+    })();
+</script>
