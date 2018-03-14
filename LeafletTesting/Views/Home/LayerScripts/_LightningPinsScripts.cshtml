@@ -56,35 +56,40 @@
                         type: "GET",
                         dataType: "json"
                     }).done(function (ltgJsonLayer) {
-                        //lightningLayerArray.push(createGeoJsonLayer(
-                        //    {
-                        //        data: ltgJsonLayer,
-                        //        //newStyles: function (feature) {
-                        //        //    return {
-                        //        //        color: feature.properties.strokeColor,
-                        //        //        fillOpacity: feature.properties.fillOpacity || 0
-                        //        //    }
-                        //        //},
-                        //        onEachFeature: popUp
-                        //    }
-                        //));
+                        console.log(ltgJsonLayer.features[0])
+
+                        //ltgJsonLayer.features[0].properties = {};
+
+                       // L.geoJSON(ltgJsonLayer.features[0]).leafAddToMap();
+
+                        lightningLayerArray.push(createGeoJsonLayer(
+                            {
+                                data: ltgJsonLayer,
+                                //newStyles: function (feature) {
+                                //    return {
+                                //        color: feature.properties.strokeColor,
+                                //        fillOpacity: feature.properties.fillOpacity || 0
+                                //    }
+                                //},
+                                pointToLayer: function (feature, latlng) {
+                                    return L.circleMarker(latlng, {
+                                        // Stroke properties
+                                        color: '#5EA4D4',
+                                        opacity: 0.75,
+                                        weight: 2,
+
+                                        // Fill properties
+                                        fillColor: '#5EA4D4',
+                                        fillOpacity: 0.25,
+
+                                        radius: 2
+                                    });
+                                },
+                                onEachFeature: popUp
+                            }
+                        ));
                         //L.geoJSON(ltgJsonLayer, {
-                        //    pointToLayer: function (feature, latlng) {
-                        //        debugger
 
-                        //        return L.circleMarker(latlng, {
-                        //            // Stroke properties
-                        //            color: '#5EA4D4',
-                        //            opacity: 0.75,
-                        //            weight: 2,
-
-                        //            // Fill properties
-                        //            fillColor: '#5EA4D4',
-                        //            fillOpacity: 0.25,
-
-                        //            radius: 2
-                        //        });
-                        //    }
                         //}).addTo(getMap());
 
                     }).fail(function (err) {
@@ -100,14 +105,14 @@
 
         function removeAllLayers() {
             lightningLayerArray.forEach(function (item) {
-                //item.remove();
+                item.remove();
             })
         }
 
         var loop = function (currentIndex, pastIndex) {
             if (isActive) {
                 console.log("lign")
-               // lightningLayerArray[pastIndex].remove();
+                lightningLayerArray[pastIndex].remove();
                 lightningLayerArray[currentIndex].leafAddToMap();
             }
         }
@@ -120,7 +125,7 @@
             removeAllLayers();
             isActive = true;
             //debugger
-            lightningLayerArray[1].addTo(getMap());
+            lightningLayerArray[globalIndex].addTo(getMap());
         }
 
         var hide = function () {

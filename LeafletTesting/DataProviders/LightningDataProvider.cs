@@ -58,8 +58,8 @@ namespace FE_Weather.Data.MapDataProviders
 
                         propertiesLineList = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
-                        var lat = Double.Parse(propertiesLineList[2]);
-                        var lon = Double.Parse(propertiesLineList[3]);
+                        var lon = Double.Parse(propertiesLineList[2]);
+                        var lat = Double.Parse(propertiesLineList[3]);
 
                         FeaturePoint<LightningStrikeDataProperties> feature = new FeaturePoint<LightningStrikeDataProperties>()
                         {
@@ -78,7 +78,7 @@ namespace FE_Weather.Data.MapDataProviders
                 }
 
 
-                using (StreamWriter file = File.CreateText(lightningDataFilepath + "ltg_" + i+ ".json"))
+                using (StreamWriter file = File.CreateText(lightningDataFilepath + "ltg_" + (i+1)+ ".json"))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     serializer.Formatting = Formatting.None;

@@ -30,7 +30,7 @@ namespace LeafletTesting
                  "~/Scripts/leaflet/leaflet.js"));
             bundles.Add(new ScriptBundle("~/bundles/leafletExtensions").Include(
                  "~/Scripts/leaflet/LeafletExtensions/LeafletExtensions.js",
-                 "~/Scripts/leaflet/LeafletExtensions/leaflet-bing-layer.min.js",
+                 "~/Scripts/leaflet/LeafletExtensions/leaflet-bing-layer.js",
                  "~/Scripts/leaflet/LeafletExtensions/MapControls.js",
                  "~/Scripts/leaflet/LeafletExtensions/ObjectAssignPolyfill.js",
                    "~/Scripts/leaflet/LeafletExtensions/PromisesPolyfill.js"

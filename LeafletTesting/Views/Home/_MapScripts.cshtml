@@ -77,23 +77,18 @@
             var map = L.map('map').setView(mapCenter, 4);
             GlobalMapRef = map;
 
-            L.tileLayer.bing(mapCreds).addTo(map);
+            L.tileLayer.bing({ bingMapsKey: mapCreds, imagerySet: "RoadOnDemand", style:"me|lbc:ffffff;loc:000000_pl|bsc:144b53;boc:00000000_pt|ic:0c4152;fc:000000;sc:0c4152_trs|sc:000000;fc:000000_hg|sc:158399;fc:000000_cah|sc:158399;fc:000000_ard|sc:157399;fc:000000_mr|sc:157399;fc:000000_rl|sc:146474;fc:000000_str|fc:115166_wt|fc:021019_ar|fc:115166_g|lc:0b334d" }).addTo(map);
             bindMapEvents();
 
             OpcosModel.init();
            
             //WatchWarnModel.init()
 
-            //WatchWarnModel.reinitilize(true);
+            WatchWarnModel.reinitilize(true);
 
-           // RadarModel.reinitialize(true)
+            RadarModel.reinitialize(true)
 
             LightningModel.reinitialize(true);
-
-            //$.when.apply(null, [RadarModel.init()]).then(function () {
-                
-    
-            //})
 
             startGlobalLoop();
         }
