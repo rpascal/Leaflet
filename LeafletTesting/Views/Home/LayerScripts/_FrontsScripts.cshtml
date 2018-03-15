@@ -1,0 +1,62 @@
+﻿@using System.Configuration;
+<script>
+
+    var FrontsModel = (function () {
+        var frontLayer;
+
+        var init = function () {
+            $.ajax({
+                url: '/Data/Fronts/FrontsGeoJson.json',
+                type: "GET",
+                dataType: "json"
+            }).done(function (data) {
+                frontLayer = (createGeoJsonLayer(
+                    {
+                        data: data,
+                        newStyles: function (feature) {
+                            return {
+                                color: feature.properties.strokeColor,
+                                fillOpacity: feature.properties.fillOpacity || 0
+                            }
+                        },
+                        //onEachFeature: popUp,
+                        pointToLayer: function (feature, latlng) {
+                            if (feature.properties.Identifier == "Point") {
+                                return new L.Marker(latlng, {
+                                    icon: new L.DivIcon({
+                                        className: 'test',
+                                        // html here defines what goes in the div created for each marker
+                                        html: '<i style="color: white"; class="fa">' + feature.properties.Text + '</i>',
+                                        // and the marker width and height
+                                        iconSize: [40, 40]
+                                    })
+                                });
+                            }
+
+                        }
+                    }
+                ));
+                show();
+            }).fail(function (err) {
+                console.log('createWinterGroupErr: ', err);
+            })
+        };
+
+
+        var show = function () {
+                frontLayer.leafAddAllLayers();
+        }
+
+        var hide = function () {
+                frontLayer.leafRemoveAllInnerLayers();
+        }
+        return {
+            init: init,
+            show: show,
+            hide: hide
+        };
+    })();
+
+</script>
+
+

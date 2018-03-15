@@ -38,6 +38,15 @@ namespace LeafletTesting.Models
         public List<List<List<double>>> coordinates { get; set; } = new List<List<List<double>>>();
     }
 
+    public class LineStringGeometry : BaseGeometry
+    {
+        public LineStringGeometry()
+        {
+            type = "LineString";
+        }
+        public List<List<double>> coordinates { get; set; } = new List<List<double>>();
+    }
+
     public class PointGeometry : BaseGeometry
     {
         public PointGeometry()
@@ -96,4 +105,20 @@ namespace LeafletTesting.Models
         public decimal Polarity { get; set; }
         public int OrderBy { get; set; }
     }
+
+    public class FrontsDataProperties : BaseProperties
+    {
+        public string ObjectType { get; set; }
+        public string strokeColor { get; set; }
+        public string Num_LatLongPairs { get; set; }
+        public string ObjectSize { get; set; }
+        public string Text { get; set; }
+        public string Width { get; set; }
+        public string Smoothing { get; set; }
+        public string ClosedLineFlag { get; set; }
+        public string FilledLineFlag { get; set; }
+        public string PipDirection { get; set; }
+        public string Identifier { get; set; }
+    }
+
 }

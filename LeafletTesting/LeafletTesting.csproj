@@ -144,9 +144,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="DataProviders\BaseDataProvider.cs" />
+    <Compile Include="DataProviders\FrontsDataProvider.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\BoundsJsonModel.cs" />
-    <Compile Include="Models\GeoJsonModel_23.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="DataProviders\CreateBoundsJsonProvider.cs" />
@@ -267,6 +267,7 @@
     <Content Include="Data\WinterJsons\winterWarnings_7.json" />
     <Content Include="Data\WinterJsons\winterWarnings_8.json" />
     <Content Include="Data\WinterJsons\winterWarnings_9.json" />
+    <Content Include="Data\Fronts\FrontsGeoJson.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -337,6 +338,7 @@
     <Content Include="Views\Weather\_MapScripts.cshtml" />
     <Content Include="Views\Home\LayerScripts\_RadarOverlayScripts.cshtml" />
     <Content Include="Views\Home\LayerScripts\_LightningPinsScripts.cshtml" />
+    <Content Include="Views\Home\LayerScripts\_FrontsScripts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
