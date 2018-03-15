@@ -4,56 +4,73 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FE_Weather.Models
+namespace LeafletTesting.Models
 {
-    public class GeoJsonModel<T> where T : Properties
+    public class FeatureCollection
     {
         public string name { get; set; } = "Name";
         public string type { get; set; } = "FeatureCollection";
-        public List<Feature<T>> features { get; set; }
+        public List<Feature> features { get; set; }
     }
-    public class Geometry
+    public class Feature
     {
-        public string type { get; set; } = "Polygon";
-        public List<List<List<double>>> coordinates { get; set; } = new List<List<List<double>>>();
+        public string type { get; set; } = "Feature";
+        public BaseGeometry geometry { get; set; }
+        public BaseProperties properties { get; set; }
     }
 
-    public class Properties
+    public class BaseGeometry
+    {
+        public string type { get; set; }
+    }
+    public class BaseProperties
     {
         public string type { get; set; }
     }
 
-    public class Feature<T> where T : Properties
+    public class PolygonGeometry : BaseGeometry
     {
-        public string type { get; set; } = "Feature";
-        public Geometry geometry { get; set; }
-        public T properties { get; set; }
+        public PolygonGeometry()
+        {
+            type = "Polygon";
+        }
+
+        public List<List<List<double>>> coordinates { get; set; } = new List<List<List<double>>>();
     }
 
-
-    /*NEED SEPERATE POINT MODEL*/
-    public class GeoJsonModelPoint<T> where T : Properties
+    public class PointGeometry : BaseGeometry
     {
-        public string name { get; set; } = "Name";
-        public string type { get; set; } = "FeatureCollection";
-        public List<FeaturePoint<T>> features { get; set; }
-    }
-    public class GeometryPoint
-    {
-        public string type { get; set; } = "Point";
+        public PointGeometry()
+        {
+            type = "Point";
+        }
         public List<double> coordinates { get; set; } = new List<double>();
     }
 
-    public class FeaturePoint<T> where T : Properties
-    {
-        public string type { get; set; } = "Feature";
-        public GeometryPoint geometry { get; set; }
-        public T properties { get; set; }
-    }
+
+
+
+
+
+    /*NEED SEPERATE POINT MODEL*/
+    //public class GeoJsonModelPoint<T> where T : BaseProperties
+    //{
+    //    public string name { get; set; } = "Name";
+    //    public string type { get; set; } = "FeatureCollection";
+    //    public List<FeaturePoint<T>> features { get; set; }
+    //}
+   
+
+    //public class FeaturePoint<T> where T : BaseProperties
+    //{
+    //    public string type { get; set; } = "Feature";
+    //    public GeometryPoint geometry { get; set; }
+    //    public T properties { get; set; }
+    //}
     /*NEED SEPERATE POINT MODEL*/
 
 
-    public class WinterDataProperties : Properties
+    public class WinterDataProperties : BaseProperties
     {
         public string StartDateTime { get; set; }
         public string EndDateTime { get; set; }
@@ -67,12 +84,12 @@ namespace FE_Weather.Models
 
     }
 
-    public class WarnDataProperties : Properties
+    public class WarnDataProperties : BaseProperties
     {
         public string Station { get; set; }
     }
 
-    public class LightningStrikeDataProperties : Properties
+    public class LightningStrikeDataProperties : BaseProperties
     {
         public string Date { get; set; }
         public string Time { get; set; }

@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.IO;
-using FE_Weather.Models;
+using LeafletTesting.Models;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
-namespace FE_Weather.Data.MapDataProviders
+namespace LeafletTesting.Data.MapDataProviders
 {
     public interface ILightningDataProvider
     {
@@ -29,7 +29,7 @@ namespace FE_Weather.Data.MapDataProviders
             {
                 var path = paths[i];
 
-                List<FeaturePoint<LightningStrikeDataProperties>> mainListFeatures = new List<FeaturePoint<LightningStrikeDataProperties>>();
+                List<Feature> mainListFeatures = new List<Feature>();
 
                 var stringData = new List<string>();
 
@@ -61,14 +61,14 @@ namespace FE_Weather.Data.MapDataProviders
                         var lon = Double.Parse(propertiesLineList[2]);
                         var lat = Double.Parse(propertiesLineList[3]);
 
-                        FeaturePoint<LightningStrikeDataProperties> feature = new FeaturePoint<LightningStrikeDataProperties>()
+                        Feature feature = new Feature()
                         {
                             properties = new LightningStrikeDataProperties
                             {
                                 Date = propertiesLineList[0],
                                 Polarity = Convert.ToDecimal(propertiesLineList[4])
                             },
-                            geometry = new GeometryPoint() {
+                            geometry = new PointGeometry() {
                                 coordinates = new List<double> {  lat, lon  }
                             }                            
                         };
@@ -82,7 +82,7 @@ namespace FE_Weather.Data.MapDataProviders
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     serializer.Formatting = Formatting.None;
-                    serializer.Serialize(file, new GeoJsonModelPoint<LightningStrikeDataProperties> { name = "Lightning_", features = mainListFeatures });
+                    serializer.Serialize(file, new FeatureCollection { name = "Lightning_", features = mainListFeatures });
                 }
 
             }

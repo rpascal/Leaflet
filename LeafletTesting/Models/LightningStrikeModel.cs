@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FE_Weather.Models
+namespace LeafletTesting.Models
 {
     public class LightningStrikeModel
     {

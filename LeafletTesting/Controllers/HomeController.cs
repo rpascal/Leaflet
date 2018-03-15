@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System;
-using FE_Weather.Data.MapDataProviders;
+using LeafletTesting.Data.MapDataProviders;
 
 namespace LeafletTesting.Web.Controllers
 {
@@ -38,7 +38,7 @@ namespace LeafletTesting.Web.Controllers
         {
             var winterDataFilePath = Server.MapPath(ConfigurationManager.AppSettings["WinterDataFilePath"]);
             var DataFilePath = Server.MapPath(ConfigurationManager.AppSettings["DataFilePath"]);
-            //_providerWinter.generateWinterJsonFiles(winterDataFilePath, DataFilePath);
+            _providerWinter.generateWinterJsonFiles(winterDataFilePath, DataFilePath);
 
             var winterFileNames = ConfigurationManager.AppSettings["WinterJsonFileNames"];
             List<string> FileList = Directory.GetFiles(winterDataFilePath, winterFileNames)

@@ -34,8 +34,8 @@ namespace LeafletTesting.Data.MapDataProviders
             List<WinterJsonModel> fipData = _providerCreateBoundsJson.getWinterJson(winterDataFilepath, DataFilePath);
 
             var stringData = new List<string>();
-            var mainListFeatures = new List<Feature<WinterDataProperties>>();
 
+            var features = new List<Feature>();
 
 
             foreach (string path in paths)
@@ -78,21 +78,6 @@ namespace LeafletTesting.Data.MapDataProviders
                     }
                     else
                     {
-                        WinterDataProperties properties = new WinterDataProperties
-                        {
-                            type = propertiesLineList[1],
-                            PolyBorderColor = GetBorderColor(propertiesLineList[1], types.WINTER),
-                            PolyBorderThickness = GetPolyBorderThickness(propertiesLineList[0], types.WINTER),
-                            StartDateTime = ParseDateTime(propertiesLineList[2]),
-                            EndDateTime = ParseDateTime(propertiesLineList[3]),
-                            InfoboxTitle = GetInfoboxTitle(propertiesLineList[1], types.WINTER)
-                        };
-
-                        Feature<WinterDataProperties> feature = new Feature<WinterDataProperties>()
-                        {
-                            properties = properties
-                        };
-                        Geometry geometry = new Geometry();
 
 
                         string[] tempLine = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -102,11 +87,27 @@ namespace LeafletTesting.Data.MapDataProviders
                         string center = tempLine[9];
 
 
-                        feature.properties.State = state;
-                        feature.properties.Center = center;
-                        feature.properties.Fips = fip;
-                        feature.properties.city = city;
+                        
+                        WinterDataProperties properties = new WinterDataProperties
+                        {
+                            type = propertiesLineList[1],
+                            strokeColor = GetBorderColor(propertiesLineList[1], types.WINTER),
+                            strokeThickness = GetPolyBorderThickness(propertiesLineList[0], types.WINTER),
+                            StartDateTime = ParseDateTime(propertiesLineList[2]),
+                            EndDateTime = ParseDateTime(propertiesLineList[3]),
+                            InfoboxTitle = GetInfoboxTitle(propertiesLineList[1], types.WINTER),
+                            State = state,
+                        Center = center,
+                       Fips = fip,
+                        City = city,
 
+                    };
+
+                        Feature feature = new Feature()
+                        {
+                            properties = properties
+                        };
+                        PolygonGeometry geometry = new PolygonGeometry();
 
                         var coordinates = fipData.Where(x => x.FIPS == fip).Select(s =>
                         {
@@ -124,32 +125,34 @@ namespace LeafletTesting.Data.MapDataProviders
 
                         feature.geometry = geometry;
 
-                        if (mainListFeatures.Exists(x => x.properties.Fips.Equals(fip))) {
-                            mainListFeatures.Remove(mainListFeatures.Find(x => x.properties.Fips.Equals(fip)));
+                        if (features.Exists(x => ((WinterDataProperties)x.properties).Fips.Equals(fip)))
+                        {
+                            features.Remove(features.Find(x => ((WinterDataProperties)x.properties).Fips.Equals(fip)));
                         }
-                        mainListFeatures.Add(feature);
+                        features.Add(feature);
 
                     }
                 };
 
                 List<DateTime> dates = getListOfDates(DataFilePath);
-  
+
 
                 for (int i = 0; i < dates.Count; i++)
                 {
                     DateTime currentDate = dates[i];
-                    List<Feature<WinterDataProperties>> dateFilteredFeatures = new List<Feature<WinterDataProperties>>();
+                    List<Feature> dateFilteredFeatures = new List<Feature>();
 
                     if (i == dates.Count - 1)
                     {
-                        dateFilteredFeatures = mainListFeatures.Where(x =>
+                        dateFilteredFeatures = features.Where(x =>
                         {
-                            return Convert.ToDateTime(x.properties.EndDateTime) >= currentDate;
+                            return Convert.ToDateTime(((WinterDataProperties)x.properties).EndDateTime) >= currentDate;
                         }).ToList();
                     }
-                    else {
+                    else
+                    {
                         DateTime nextDate = dates[i + 1];
-                        dateFilteredFeatures = mainListFeatures.Where(x =>
+                        dateFilteredFeatures = features.Where(x =>
                         {
                             /*
                              Check if endDate is after or equal to current date
@@ -157,18 +160,18 @@ namespace LeafletTesting.Data.MapDataProviders
                              check if startDate is BEFORE the next date
                           
                              */
-                            return Convert.ToDateTime(x.properties.EndDateTime) >= currentDate 
-                            && Convert.ToDateTime(x.properties.StartDateTime) < nextDate;
+                            return Convert.ToDateTime(((WinterDataProperties)x.properties).EndDateTime) >= currentDate
+                            && Convert.ToDateTime(((WinterDataProperties)x.properties).StartDateTime) < nextDate;
                         }).ToList();
                     }
 
-       
+
 
                     using (StreamWriter file = File.CreateText(winterDataFilepath + "winterWarnings_" + i + ".json"))
                     {
                         JsonSerializer serializer = new JsonSerializer();
                         serializer.Formatting = Formatting.None;
-                        serializer.Serialize(file, new GeoJsonModel<WinterDataProperties> { name = "winterWarnings_" + i, features = dateFilteredFeatures });
+                        serializer.Serialize(file, new FeatureCollection { name = "winterWarnings_" + i, features = dateFilteredFeatures });
                     }
                 }
             }
